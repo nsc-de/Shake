@@ -110,6 +110,7 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public class <span class="typeNameLabel">Interpreter</span>
 extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+<div class="block"><a href="../../../../../../com/github/nsc/de/compiler/interpreter/Interpreter.html" title="class in com.github.nsc.de.compiler.interpreter"><code>Interpreter</code></a> for executing the code directly</div>
 </li>
 </ul>
 </div>
@@ -128,7 +129,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/compiler/interpreter/Interpreter.html#Interpreter--">Interpreter</a></span>()</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/compiler/interpreter/Interpreter.html#Interpreter--">Interpreter</a></span>()</code>
+<div class="block">Constructor for <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Interpreter.html" title="class in com.github.nsc.de.compiler.interpreter"><code>Interpreter</code></a></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/compiler/interpreter/Interpreter.html#Interpreter-com.github.nsc.de.compiler.interpreter.Scope-">Interpreter</a></span>(<a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;global)</code>
+<div class="block">Constructor for <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Interpreter.html" title="class in com.github.nsc.de.compiler.interpreter"><code>Interpreter</code></a></div>
+</td>
 </tr>
 </table>
 </li>
@@ -157,27 +165,37 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/compiler/interpreter/Interpreter.html#visit-com.github.nsc.de.compiler.parser.node.Node-">visit</a></span>(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/Node.html" title="interface in com.github.nsc.de.compiler.parser.node">Node</a>&nbsp;n)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/compiler/interpreter/Interpreter.html#visit-com.github.nsc.de.compiler.parser.node.Node-">visit</a></span>(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/Node.html" title="interface in com.github.nsc.de.compiler.parser.node">Node</a>&nbsp;n)</code>
+<div class="block">Visit a <a href="../../../../../../com/github/nsc/de/compiler/parser/node/Node.html" title="interface in com.github.nsc.de.compiler.parser.node"><code>Node</code></a> (using the <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Interpreter.html#global"><code>global</code></a> <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter"><code>Scope</code></a>)</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/compiler/interpreter/Interpreter.html#visit-com.github.nsc.de.compiler.parser.node.Node-com.github.nsc.de.compiler.interpreter.Scope-">visit</a></span>(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/Node.html" title="interface in com.github.nsc.de.compiler.parser.node">Node</a>&nbsp;n,
-     <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>&nbsp;</td>
+     <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>
+<div class="block">Visits the given <a href="../../../../../../com/github/nsc/de/compiler/parser/node/Node.html" title="interface in com.github.nsc.de.compiler.parser.node"><code>Node</code></a> using the specified <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter"><code>Scope</code></a></div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/compiler/interpreter/Interpreter.html#visitAddNode-com.github.nsc.de.compiler.parser.node.expression.AddNode-com.github.nsc.de.compiler.interpreter.Scope-">visitAddNode</a></span>(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/AddNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression">AddNode</a>&nbsp;n,
-            <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>&nbsp;</td>
+            <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>
+<div class="block">Visit an <a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/AddNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression"><code>AddNode</code></a> (Addition)</div>
+</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/compiler/interpreter/Interpreter.html#visitBiggerEqualsNode-com.github.nsc.de.compiler.parser.node.logical.LogicalBiggerEqualsNode-com.github.nsc.de.compiler.interpreter.Scope-">visitBiggerEqualsNode</a></span>(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalBiggerEqualsNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical">LogicalBiggerEqualsNode</a>&nbsp;n,
-                     <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>&nbsp;</td>
+                     <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>
+<div class="block">Visit an <a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalBiggerEqualsNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical"><code>LogicalBiggerEqualsNode</code></a></div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/compiler/interpreter/Interpreter.html#visitBiggerNode-com.github.nsc.de.compiler.parser.node.logical.LogicalBiggerNode-com.github.nsc.de.compiler.interpreter.Scope-">visitBiggerNode</a></span>(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalBiggerNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical">LogicalBiggerNode</a>&nbsp;n,
-               <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>&nbsp;</td>
+               <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>
+<div class="block">Visit an <a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalBiggerEqualsNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical"><code>LogicalBiggerEqualsNode</code></a></div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/ObjectValue.html" title="class in com.github.nsc.de.compiler.interpreter.values">ObjectValue</a></code></td>
@@ -192,11 +210,15 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/compiler/interpreter/Interpreter.html#visitDivNode-com.github.nsc.de.compiler.parser.node.expression.DivNode-com.github.nsc.de.compiler.interpreter.Scope-">visitDivNode</a></span>(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/DivNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression">DivNode</a>&nbsp;n,
-            <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>&nbsp;</td>
+            <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>
+<div class="block">Visit a <a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/DivNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression"><code>DivNode</code></a> (Division)</div>
+</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/DoubleValue.html" title="class in com.github.nsc.de.compiler.interpreter.values">DoubleValue</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/compiler/interpreter/Interpreter.html#visitDoubleNode-com.github.nsc.de.compiler.parser.node.expression.DoubleNode-">visitDoubleNode</a></span>(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/DoubleNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression">DoubleNode</a>&nbsp;n)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/compiler/interpreter/Interpreter.html#visitDoubleNode-com.github.nsc.de.compiler.parser.node.expression.DoubleNode-">visitDoubleNode</a></span>(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/DoubleNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression">DoubleNode</a>&nbsp;n)</code>
+<div class="block">Visit a <a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/DoubleNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression"><code>DoubleNode</code></a></div>
+</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a></code></td>
@@ -206,7 +228,9 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/compiler/interpreter/Interpreter.html#visitEqEqualsNode-com.github.nsc.de.compiler.parser.node.logical.LogicalEqEqualsNode-com.github.nsc.de.compiler.interpreter.Scope-">visitEqEqualsNode</a></span>(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalEqEqualsNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical">LogicalEqEqualsNode</a>&nbsp;n,
-                 <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>&nbsp;</td>
+                 <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>
+<div class="block">Visit an <a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalEqEqualsNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical"><code>LogicalEqEqualsNode</code></a></div>
+</td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a></code></td>
@@ -235,107 +259,149 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </tr>
 <tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/IntegerValue.html" title="class in com.github.nsc.de.compiler.interpreter.values">IntegerValue</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/compiler/interpreter/Interpreter.html#visitIntegerNode-com.github.nsc.de.compiler.parser.node.expression.IntegerNode-">visitIntegerNode</a></span>(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/IntegerNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression">IntegerNode</a>&nbsp;n)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/compiler/interpreter/Interpreter.html#visitIntegerNode-com.github.nsc.de.compiler.parser.node.expression.IntegerNode-">visitIntegerNode</a></span>(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/IntegerNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression">IntegerNode</a>&nbsp;n)</code>
+<div class="block">Visit an <a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/IntegerNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression"><code>IntegerNode</code></a></div>
+</td>
 </tr>
 <tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/compiler/interpreter/Interpreter.html#visitLogicalAndNode-com.github.nsc.de.compiler.parser.node.logical.LogicalAndNode-com.github.nsc.de.compiler.interpreter.Scope-">visitLogicalAndNode</a></span>(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalAndNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical">LogicalAndNode</a>&nbsp;n,
-                   <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>&nbsp;</td>
+                   <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>
+<div class="block">Visit an <a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalAndNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical"><code>LogicalAndNode</code></a></div>
+</td>
 </tr>
 <tr id="i20" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/compiler/interpreter/Interpreter.html#visitLogicalOrNode-com.github.nsc.de.compiler.parser.node.logical.LogicalOrNode-com.github.nsc.de.compiler.interpreter.Scope-">visitLogicalOrNode</a></span>(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalOrNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical">LogicalOrNode</a>&nbsp;n,
-                  <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>&nbsp;</td>
+                  <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>
+<div class="block">Visit an <a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalOrNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical"><code>LogicalOrNode</code></a></div>
+</td>
 </tr>
 <tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/compiler/interpreter/Interpreter.html#visitModNode-com.github.nsc.de.compiler.parser.node.expression.ModNode-com.github.nsc.de.compiler.interpreter.Scope-">visitModNode</a></span>(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/ModNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression">ModNode</a>&nbsp;n,
-            <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>&nbsp;</td>
+            <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>
+<div class="block">Visit a <a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/ModNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression"><code>ModNode</code></a> (Modulo)</div>
+</td>
 </tr>
 <tr id="i22" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/compiler/interpreter/Interpreter.html#visitMulNode-com.github.nsc.de.compiler.parser.node.expression.MulNode-com.github.nsc.de.compiler.interpreter.Scope-">visitMulNode</a></span>(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/MulNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression">MulNode</a>&nbsp;n,
-            <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>&nbsp;</td>
+            <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>
+<div class="block">Visit a <a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/MulNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression"><code>MulNode</code></a> (Multiplication)</div>
+</td>
 </tr>
 <tr id="i23" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/compiler/interpreter/Interpreter.html#visitPowNode-com.github.nsc.de.compiler.parser.node.expression.PowNode-com.github.nsc.de.compiler.interpreter.Scope-">visitPowNode</a></span>(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/PowNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression">PowNode</a>&nbsp;n,
-            <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>&nbsp;</td>
+            <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>
+<div class="block">Visit a <a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/PowNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression"><code>PowNode</code></a> (Modulo)</div>
+</td>
 </tr>
 <tr id="i24" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/compiler/interpreter/Interpreter.html#visitSmallerEqualsNode-com.github.nsc.de.compiler.parser.node.logical.LogicalSmallerEqualsNode-com.github.nsc.de.compiler.interpreter.Scope-">visitSmallerEqualsNode</a></span>(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalSmallerEqualsNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical">LogicalSmallerEqualsNode</a>&nbsp;n,
-                      <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>&nbsp;</td>
+                      <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>
+<div class="block">Visit an <a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalSmallerEqualsNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical"><code>LogicalSmallerEqualsNode</code></a></div>
+</td>
 </tr>
 <tr id="i25" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/compiler/interpreter/Interpreter.html#visitSmallerNode-com.github.nsc.de.compiler.parser.node.logical.LogicalSmallerNode-com.github.nsc.de.compiler.interpreter.Scope-">visitSmallerNode</a></span>(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalSmallerNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical">LogicalSmallerNode</a>&nbsp;n,
-                <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>&nbsp;</td>
+                <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>
+<div class="block">Visit an <a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalSmallerEqualsNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical"><code>LogicalSmallerEqualsNode</code></a></div>
+</td>
 </tr>
 <tr id="i26" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/compiler/interpreter/Interpreter.html#visitSubNode-com.github.nsc.de.compiler.parser.node.expression.SubNode-com.github.nsc.de.compiler.interpreter.Scope-">visitSubNode</a></span>(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/SubNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression">SubNode</a>&nbsp;n,
-            <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>&nbsp;</td>
+            <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>
+<div class="block">Visit a <a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/SubNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression"><code>SubNode</code></a> (Subtraction)</div>
+</td>
 </tr>
 <tr id="i27" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/compiler/interpreter/Interpreter.html#visitTree-com.github.nsc.de.compiler.parser.node.Tree-com.github.nsc.de.compiler.interpreter.Scope-">visitTree</a></span>(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/Tree.html" title="class in com.github.nsc.de.compiler.parser.node">Tree</a>&nbsp;t,
-         <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>&nbsp;</td>
+         <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>
+<div class="block">Visit a <a href="../../../../../../com/github/nsc/de/compiler/parser/node/Tree.html" title="class in com.github.nsc.de.compiler.parser.node"><code>Tree</code></a></div>
+</td>
 </tr>
 <tr id="i28" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/compiler/interpreter/Interpreter.html#visitVariableAddAssignmentNode-com.github.nsc.de.compiler.parser.node.variables.VariableAddAssignmentNode-com.github.nsc.de.compiler.interpreter.Scope-">visitVariableAddAssignmentNode</a></span>(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableAddAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables">VariableAddAssignmentNode</a>&nbsp;n,
-                              <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>&nbsp;</td>
+                              <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>
+<div class="block">Visit a <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableAddAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableAddAssignmentNode</code></a></div>
+</td>
 </tr>
 <tr id="i29" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/compiler/interpreter/Interpreter.html#visitVariableAssignmentNode-com.github.nsc.de.compiler.parser.node.variables.VariableAssignmentNode-com.github.nsc.de.compiler.interpreter.Scope-">visitVariableAssignmentNode</a></span>(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables">VariableAssignmentNode</a>&nbsp;n,
-                           <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>&nbsp;</td>
+                           <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>
+<div class="block">Visit a <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableAssignmentNode</code></a></div>
+</td>
 </tr>
 <tr id="i30" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/compiler/interpreter/Interpreter.html#visitVariableDeclarationNode-com.github.nsc.de.compiler.parser.node.variables.VariableDeclarationNode-com.github.nsc.de.compiler.interpreter.Scope-">visitVariableDeclarationNode</a></span>(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableDeclarationNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables">VariableDeclarationNode</a>&nbsp;n,
-                            <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>&nbsp;</td>
+                            <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>
+<div class="block">Visit a <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableDeclarationNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableDeclarationNode</code></a></div>
+</td>
 </tr>
 <tr id="i31" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/compiler/interpreter/Interpreter.html#visitVariableDecreaseNode-com.github.nsc.de.compiler.parser.node.variables.VariableDecreaseNode-com.github.nsc.de.compiler.interpreter.Scope-">visitVariableDecreaseNode</a></span>(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableDecreaseNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables">VariableDecreaseNode</a>&nbsp;n,
-                         <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>&nbsp;</td>
+                         <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>
+<div class="block">Visit a <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableDecreaseNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableDecreaseNode</code></a></div>
+</td>
 </tr>
 <tr id="i32" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/compiler/interpreter/Interpreter.html#visitVariableDivAssignmentNode-com.github.nsc.de.compiler.parser.node.variables.VariableDivAssignmentNode-com.github.nsc.de.compiler.interpreter.Scope-">visitVariableDivAssignmentNode</a></span>(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableDivAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables">VariableDivAssignmentNode</a>&nbsp;n,
-                              <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>&nbsp;</td>
+                              <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>
+<div class="block">Visit a <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableDivAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableDivAssignmentNode</code></a></div>
+</td>
 </tr>
 <tr id="i33" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/compiler/interpreter/Interpreter.html#visitVariableIncreaseNode-com.github.nsc.de.compiler.parser.node.variables.VariableIncreaseNode-com.github.nsc.de.compiler.interpreter.Scope-">visitVariableIncreaseNode</a></span>(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableIncreaseNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables">VariableIncreaseNode</a>&nbsp;n,
-                         <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>&nbsp;</td>
+                         <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>
+<div class="block">Visit a <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableIncreaseNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableIncreaseNode</code></a></div>
+</td>
 </tr>
 <tr id="i34" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/compiler/interpreter/Interpreter.html#visitVariableModAssignmentNode-com.github.nsc.de.compiler.parser.node.variables.VariableModAssignmentNode-com.github.nsc.de.compiler.interpreter.Scope-">visitVariableModAssignmentNode</a></span>(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableModAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables">VariableModAssignmentNode</a>&nbsp;n,
-                              <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>&nbsp;</td>
+                              <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>
+<div class="block">Visit a <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableModAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableModAssignmentNode</code></a></div>
+</td>
 </tr>
 <tr id="i35" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/compiler/interpreter/Interpreter.html#visitVariableMulAssignmentNode-com.github.nsc.de.compiler.parser.node.variables.VariableMulAssignmentNode-com.github.nsc.de.compiler.interpreter.Scope-">visitVariableMulAssignmentNode</a></span>(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableMulAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables">VariableMulAssignmentNode</a>&nbsp;n,
-                              <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>&nbsp;</td>
+                              <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>
+<div class="block">Visit a <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableMulAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableMulAssignmentNode</code></a></div>
+</td>
 </tr>
 <tr id="i36" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/compiler/interpreter/Interpreter.html#visitVariablePowAssignmentNode-com.github.nsc.de.compiler.parser.node.variables.VariablePowAssignmentNode-com.github.nsc.de.compiler.interpreter.Scope-">visitVariablePowAssignmentNode</a></span>(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariablePowAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables">VariablePowAssignmentNode</a>&nbsp;n,
-                              <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>&nbsp;</td>
+                              <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>
+<div class="block">Visit a <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariablePowAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariablePowAssignmentNode</code></a></div>
+</td>
 </tr>
 <tr id="i37" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/compiler/interpreter/Interpreter.html#visitVariableSubAssignmentNode-com.github.nsc.de.compiler.parser.node.variables.VariableSubAssignmentNode-com.github.nsc.de.compiler.interpreter.Scope-">visitVariableSubAssignmentNode</a></span>(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableSubAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables">VariableSubAssignmentNode</a>&nbsp;n,
-                              <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>&nbsp;</td>
+                              <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>
+<div class="block">Visit a <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableSubAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableSubAssignmentNode</code></a></div>
+</td>
 </tr>
 <tr id="i38" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/compiler/interpreter/Interpreter.html#visitVariableUsageNode-com.github.nsc.de.compiler.parser.node.variables.VariableUsageNode-com.github.nsc.de.compiler.interpreter.Scope-">visitVariableUsageNode</a></span>(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableUsageNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables">VariableUsageNode</a>&nbsp;n,
-                      <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>&nbsp;</td>
+                      <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</code>
+<div class="block">Visit a <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableUsageNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableUsageNode</code></a></div>
+</td>
 </tr>
 <tr id="i39" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a></code></td>
@@ -364,6 +430,20 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
+<a name="Interpreter-com.github.nsc.de.compiler.interpreter.Scope-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Interpreter</h4>
+<pre>public&nbsp;Interpreter(<a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;global)</pre>
+<div class="block">Constructor for <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Interpreter.html" title="class in com.github.nsc.de.compiler.interpreter"><code>Interpreter</code></a></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>global</code> - the global <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter"><code>Scope</code></a> (<a href="../../../../../../com/github/nsc/de/compiler/interpreter/Interpreter.html#global"><code>global</code></a>)</dd>
+</dl>
+</li>
+</ul>
 <a name="Interpreter--">
 <!--   -->
 </a>
@@ -371,6 +451,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>Interpreter</h4>
 <pre>public&nbsp;Interpreter()</pre>
+<div class="block">Constructor for <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Interpreter.html" title="class in com.github.nsc.de.compiler.interpreter"><code>Interpreter</code></a></div>
 </li>
 </ul>
 </li>
@@ -388,6 +469,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>visit</h4>
 <pre>public&nbsp;<a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a>&nbsp;visit(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/Node.html" title="interface in com.github.nsc.de.compiler.parser.node">Node</a>&nbsp;n)</pre>
+<div class="block">Visit a <a href="../../../../../../com/github/nsc/de/compiler/parser/node/Node.html" title="interface in com.github.nsc.de.compiler.parser.node"><code>Node</code></a> (using the <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Interpreter.html#global"><code>global</code></a> <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter"><code>Scope</code></a>)</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>n</code> - the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/Node.html" title="interface in com.github.nsc.de.compiler.parser.node"><code>Node</code></a> to visit</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the resulting <a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values"><code>InterpreterValue</code></a> of the operation</dd>
+</dl>
 </li>
 </ul>
 <a name="visit-com.github.nsc.de.compiler.parser.node.Node-com.github.nsc.de.compiler.interpreter.Scope-">
@@ -398,6 +486,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <h4>visit</h4>
 <pre>public&nbsp;<a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a>&nbsp;visit(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/Node.html" title="interface in com.github.nsc.de.compiler.parser.node">Node</a>&nbsp;n,
                               <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</pre>
+<div class="block">Visits the given <a href="../../../../../../com/github/nsc/de/compiler/parser/node/Node.html" title="interface in com.github.nsc.de.compiler.parser.node"><code>Node</code></a> using the specified <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter"><code>Scope</code></a></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>n</code> - the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/Node.html" title="interface in com.github.nsc.de.compiler.parser.node"><code>Node</code></a> to visit</dd>
+<dd><code>scope</code> - the <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter"><code>Scope</code></a> to use</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the resulting <a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values"><code>InterpreterValue</code></a> of the operation</dd>
+</dl>
 </li>
 </ul>
 <a name="visitTree-com.github.nsc.de.compiler.parser.node.Tree-com.github.nsc.de.compiler.interpreter.Scope-">
@@ -408,6 +504,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <h4>visitTree</h4>
 <pre>public&nbsp;<a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a>&nbsp;visitTree(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/Tree.html" title="class in com.github.nsc.de.compiler.parser.node">Tree</a>&nbsp;t,
                                   <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</pre>
+<div class="block">Visit a <a href="../../../../../../com/github/nsc/de/compiler/parser/node/Tree.html" title="class in com.github.nsc.de.compiler.parser.node"><code>Tree</code></a></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>t</code> - the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/Tree.html" title="class in com.github.nsc.de.compiler.parser.node"><code>Tree</code></a> to visit</dd>
+<dd><code>scope</code> - the scope to use for visiting the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/Tree.html" title="class in com.github.nsc.de.compiler.parser.node"><code>Tree</code></a></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the latest <a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values"><code>InterpreterValue</code></a> of the tree</dd>
+</dl>
 </li>
 </ul>
 <a name="visitIntegerNode-com.github.nsc.de.compiler.parser.node.expression.IntegerNode-">
@@ -417,6 +521,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>visitIntegerNode</h4>
 <pre>public&nbsp;<a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/IntegerValue.html" title="class in com.github.nsc.de.compiler.interpreter.values">IntegerValue</a>&nbsp;visitIntegerNode(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/IntegerNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression">IntegerNode</a>&nbsp;n)</pre>
+<div class="block">Visit an <a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/IntegerNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression"><code>IntegerNode</code></a></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>n</code> - the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/IntegerNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression"><code>IntegerNode</code></a> to process</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/IntegerValue.html" title="class in com.github.nsc.de.compiler.interpreter.values"><code>IntegerValue</code></a> that is created</dd>
+</dl>
 </li>
 </ul>
 <a name="visitDoubleNode-com.github.nsc.de.compiler.parser.node.expression.DoubleNode-">
@@ -426,6 +537,13 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li class="blockList">
 <h4>visitDoubleNode</h4>
 <pre>public&nbsp;<a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/DoubleValue.html" title="class in com.github.nsc.de.compiler.interpreter.values">DoubleValue</a>&nbsp;visitDoubleNode(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/DoubleNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression">DoubleNode</a>&nbsp;n)</pre>
+<div class="block">Visit a <a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/DoubleNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression"><code>DoubleNode</code></a></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>n</code> - the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/DoubleNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression"><code>DoubleNode</code></a> to process</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/DoubleValue.html" title="class in com.github.nsc.de.compiler.interpreter.values"><code>DoubleValue</code></a> that is created</dd>
+</dl>
 </li>
 </ul>
 <a name="visitAddNode-com.github.nsc.de.compiler.parser.node.expression.AddNode-com.github.nsc.de.compiler.interpreter.Scope-">
@@ -436,6 +554,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <h4>visitAddNode</h4>
 <pre>public&nbsp;<a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a>&nbsp;visitAddNode(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/AddNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression">AddNode</a>&nbsp;n,
                                      <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</pre>
+<div class="block">Visit an <a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/AddNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression"><code>AddNode</code></a> (Addition)</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>n</code> - the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/AddNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression"><code>AddNode</code></a> to visit</dd>
+<dd><code>scope</code> - the <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter"><code>Scope</code></a> for visiting the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/AddNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression"><code>AddNode</code></a></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the addition-result</dd>
+</dl>
 </li>
 </ul>
 <a name="visitSubNode-com.github.nsc.de.compiler.parser.node.expression.SubNode-com.github.nsc.de.compiler.interpreter.Scope-">
@@ -446,6 +572,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <h4>visitSubNode</h4>
 <pre>public&nbsp;<a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a>&nbsp;visitSubNode(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/SubNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression">SubNode</a>&nbsp;n,
                                      <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</pre>
+<div class="block">Visit a <a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/SubNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression"><code>SubNode</code></a> (Subtraction)</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>n</code> - the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/SubNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression"><code>SubNode</code></a> to visit</dd>
+<dd><code>scope</code> - the <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter"><code>Scope</code></a> for visiting the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/SubNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression"><code>SubNode</code></a></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the subtraction-result</dd>
+</dl>
 </li>
 </ul>
 <a name="visitMulNode-com.github.nsc.de.compiler.parser.node.expression.MulNode-com.github.nsc.de.compiler.interpreter.Scope-">
@@ -456,6 +590,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <h4>visitMulNode</h4>
 <pre>public&nbsp;<a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a>&nbsp;visitMulNode(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/MulNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression">MulNode</a>&nbsp;n,
                                      <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</pre>
+<div class="block">Visit a <a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/MulNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression"><code>MulNode</code></a> (Multiplication)</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>n</code> - the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/MulNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression"><code>MulNode</code></a> to visit</dd>
+<dd><code>scope</code> - the <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter"><code>Scope</code></a> for visiting the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/MulNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression"><code>MulNode</code></a></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the multiplication-result</dd>
+</dl>
 </li>
 </ul>
 <a name="visitDivNode-com.github.nsc.de.compiler.parser.node.expression.DivNode-com.github.nsc.de.compiler.interpreter.Scope-">
@@ -466,6 +608,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <h4>visitDivNode</h4>
 <pre>public&nbsp;<a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a>&nbsp;visitDivNode(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/DivNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression">DivNode</a>&nbsp;n,
                                      <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</pre>
+<div class="block">Visit a <a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/DivNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression"><code>DivNode</code></a> (Division)</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>n</code> - the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/DivNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression"><code>DivNode</code></a> to visit</dd>
+<dd><code>scope</code> - the <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter"><code>Scope</code></a> for visiting the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/DivNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression"><code>DivNode</code></a></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the division-result</dd>
+</dl>
 </li>
 </ul>
 <a name="visitModNode-com.github.nsc.de.compiler.parser.node.expression.ModNode-com.github.nsc.de.compiler.interpreter.Scope-">
@@ -476,6 +626,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <h4>visitModNode</h4>
 <pre>public&nbsp;<a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a>&nbsp;visitModNode(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/ModNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression">ModNode</a>&nbsp;n,
                                      <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</pre>
+<div class="block">Visit a <a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/ModNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression"><code>ModNode</code></a> (Modulo)</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>n</code> - the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/ModNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression"><code>ModNode</code></a> to visit</dd>
+<dd><code>scope</code> - the <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter"><code>Scope</code></a> for visiting the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/ModNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression"><code>ModNode</code></a></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the modulo-result</dd>
+</dl>
 </li>
 </ul>
 <a name="visitPowNode-com.github.nsc.de.compiler.parser.node.expression.PowNode-com.github.nsc.de.compiler.interpreter.Scope-">
@@ -486,6 +644,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <h4>visitPowNode</h4>
 <pre>public&nbsp;<a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a>&nbsp;visitPowNode(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/PowNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression">PowNode</a>&nbsp;n,
                                      <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</pre>
+<div class="block">Visit a <a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/PowNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression"><code>PowNode</code></a> (Modulo)</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>n</code> - the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/PowNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression"><code>PowNode</code></a> to visit</dd>
+<dd><code>scope</code> - the <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter"><code>Scope</code></a> for visiting the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/expression/PowNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression"><code>PowNode</code></a></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the power-result</dd>
+</dl>
 </li>
 </ul>
 <a name="visitVariableDeclarationNode-com.github.nsc.de.compiler.parser.node.variables.VariableDeclarationNode-com.github.nsc.de.compiler.interpreter.Scope-">
@@ -496,6 +662,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <h4>visitVariableDeclarationNode</h4>
 <pre>public&nbsp;<a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a>&nbsp;visitVariableDeclarationNode(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableDeclarationNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables">VariableDeclarationNode</a>&nbsp;n,
                                                      <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</pre>
+<div class="block">Visit a <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableDeclarationNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableDeclarationNode</code></a></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>n</code> - the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableDeclarationNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableDeclarationNode</code></a> to process</dd>
+<dd><code>scope</code> - the <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter"><code>Scope</code></a> for visiting the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableDeclarationNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableDeclarationNode</code></a></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>If the <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Variable.html" title="class in com.github.nsc.de.compiler.interpreter"><code>Variable</code></a> gets a value assigned the value that is assigned, if not NULL</dd>
+</dl>
 </li>
 </ul>
 <a name="visitVariableAssignmentNode-com.github.nsc.de.compiler.parser.node.variables.VariableAssignmentNode-com.github.nsc.de.compiler.interpreter.Scope-">
@@ -506,6 +680,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <h4>visitVariableAssignmentNode</h4>
 <pre>public&nbsp;<a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a>&nbsp;visitVariableAssignmentNode(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables">VariableAssignmentNode</a>&nbsp;n,
                                                     <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</pre>
+<div class="block">Visit a <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableAssignmentNode</code></a></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>n</code> - the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableAssignmentNode</code></a> to visit</dd>
+<dd><code>scope</code> - the <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter"><code>Scope</code></a> for visiting the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableAssignmentNode</code></a></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The value that is assigned to the variable</dd>
+</dl>
 </li>
 </ul>
 <a name="visitVariableAddAssignmentNode-com.github.nsc.de.compiler.parser.node.variables.VariableAddAssignmentNode-com.github.nsc.de.compiler.interpreter.Scope-">
@@ -516,6 +698,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <h4>visitVariableAddAssignmentNode</h4>
 <pre>public&nbsp;<a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a>&nbsp;visitVariableAddAssignmentNode(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableAddAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables">VariableAddAssignmentNode</a>&nbsp;n,
                                                        <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</pre>
+<div class="block">Visit a <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableAddAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableAddAssignmentNode</code></a></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>n</code> - the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableAddAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableAddAssignmentNode</code></a> to visit</dd>
+<dd><code>scope</code> - the <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter"><code>Scope</code></a> for visiting the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableAddAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableAddAssignmentNode</code></a></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The value that is assigned to the variable (So the old variable value plus the value given.)</dd>
+</dl>
 </li>
 </ul>
 <a name="visitVariableSubAssignmentNode-com.github.nsc.de.compiler.parser.node.variables.VariableSubAssignmentNode-com.github.nsc.de.compiler.interpreter.Scope-">
@@ -526,6 +716,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <h4>visitVariableSubAssignmentNode</h4>
 <pre>public&nbsp;<a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a>&nbsp;visitVariableSubAssignmentNode(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableSubAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables">VariableSubAssignmentNode</a>&nbsp;n,
                                                        <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</pre>
+<div class="block">Visit a <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableSubAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableSubAssignmentNode</code></a></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>n</code> - the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableSubAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableSubAssignmentNode</code></a> to visit</dd>
+<dd><code>scope</code> - the <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter"><code>Scope</code></a> for visiting the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableSubAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableSubAssignmentNode</code></a></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The value that is assigned to the variable (So the old variable value minus the value given.)</dd>
+</dl>
 </li>
 </ul>
 <a name="visitVariableMulAssignmentNode-com.github.nsc.de.compiler.parser.node.variables.VariableMulAssignmentNode-com.github.nsc.de.compiler.interpreter.Scope-">
@@ -536,6 +734,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <h4>visitVariableMulAssignmentNode</h4>
 <pre>public&nbsp;<a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a>&nbsp;visitVariableMulAssignmentNode(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableMulAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables">VariableMulAssignmentNode</a>&nbsp;n,
                                                        <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</pre>
+<div class="block">Visit a <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableMulAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableMulAssignmentNode</code></a></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>n</code> - the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableMulAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableMulAssignmentNode</code></a> to visit</dd>
+<dd><code>scope</code> - the <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter"><code>Scope</code></a> for visiting the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableMulAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableMulAssignmentNode</code></a></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The value that is assigned to the variable (So the old variable value times the value given.)</dd>
+</dl>
 </li>
 </ul>
 <a name="visitVariableDivAssignmentNode-com.github.nsc.de.compiler.parser.node.variables.VariableDivAssignmentNode-com.github.nsc.de.compiler.interpreter.Scope-">
@@ -546,6 +752,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <h4>visitVariableDivAssignmentNode</h4>
 <pre>public&nbsp;<a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a>&nbsp;visitVariableDivAssignmentNode(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableDivAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables">VariableDivAssignmentNode</a>&nbsp;n,
                                                        <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</pre>
+<div class="block">Visit a <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableDivAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableDivAssignmentNode</code></a></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>n</code> - the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableDivAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableDivAssignmentNode</code></a> to visit</dd>
+<dd><code>scope</code> - the <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter"><code>Scope</code></a> for visiting the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableDivAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableDivAssignmentNode</code></a></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The value that is assigned to the variable (So the old variable value by the value given.)</dd>
+</dl>
 </li>
 </ul>
 <a name="visitVariableModAssignmentNode-com.github.nsc.de.compiler.parser.node.variables.VariableModAssignmentNode-com.github.nsc.de.compiler.interpreter.Scope-">
@@ -556,6 +770,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <h4>visitVariableModAssignmentNode</h4>
 <pre>public&nbsp;<a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a>&nbsp;visitVariableModAssignmentNode(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableModAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables">VariableModAssignmentNode</a>&nbsp;n,
                                                        <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</pre>
+<div class="block">Visit a <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableModAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableModAssignmentNode</code></a></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>n</code> - the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableModAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableModAssignmentNode</code></a> to visit</dd>
+<dd><code>scope</code> - the <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter"><code>Scope</code></a> for visiting the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableModAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableModAssignmentNode</code></a></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The value that is assigned to the variable (So the old variable value modulo the value given.)</dd>
+</dl>
 </li>
 </ul>
 <a name="visitVariablePowAssignmentNode-com.github.nsc.de.compiler.parser.node.variables.VariablePowAssignmentNode-com.github.nsc.de.compiler.interpreter.Scope-">
@@ -566,6 +788,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <h4>visitVariablePowAssignmentNode</h4>
 <pre>public&nbsp;<a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a>&nbsp;visitVariablePowAssignmentNode(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariablePowAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables">VariablePowAssignmentNode</a>&nbsp;n,
                                                        <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</pre>
+<div class="block">Visit a <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariablePowAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariablePowAssignmentNode</code></a></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>n</code> - the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariablePowAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariablePowAssignmentNode</code></a> to visit</dd>
+<dd><code>scope</code> - the <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter"><code>Scope</code></a> for visiting the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariablePowAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariablePowAssignmentNode</code></a></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The value that is assigned to the variable (So the old variable value power the value given.)</dd>
+</dl>
 </li>
 </ul>
 <a name="visitVariableIncreaseNode-com.github.nsc.de.compiler.parser.node.variables.VariableIncreaseNode-com.github.nsc.de.compiler.interpreter.Scope-">
@@ -576,6 +806,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <h4>visitVariableIncreaseNode</h4>
 <pre>public&nbsp;<a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a>&nbsp;visitVariableIncreaseNode(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableIncreaseNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables">VariableIncreaseNode</a>&nbsp;n,
                                                   <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</pre>
+<div class="block">Visit a <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableIncreaseNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableIncreaseNode</code></a></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>n</code> - the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableIncreaseNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableIncreaseNode</code></a> to visit</dd>
+<dd><code>scope</code> - the <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter"><code>Scope</code></a> for visiting the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableIncreaseNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableIncreaseNode</code></a></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The old value of the Variable</dd>
+</dl>
 </li>
 </ul>
 <a name="visitVariableDecreaseNode-com.github.nsc.de.compiler.parser.node.variables.VariableDecreaseNode-com.github.nsc.de.compiler.interpreter.Scope-">
@@ -586,6 +824,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <h4>visitVariableDecreaseNode</h4>
 <pre>public&nbsp;<a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a>&nbsp;visitVariableDecreaseNode(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableDecreaseNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables">VariableDecreaseNode</a>&nbsp;n,
                                                   <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</pre>
+<div class="block">Visit a <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableDecreaseNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableDecreaseNode</code></a></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>n</code> - the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableDecreaseNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableDecreaseNode</code></a> to visit</dd>
+<dd><code>scope</code> - the <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter"><code>Scope</code></a> for visiting the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableDecreaseNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableDecreaseNode</code></a></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The old value of the Variable</dd>
+</dl>
 </li>
 </ul>
 <a name="visitVariableUsageNode-com.github.nsc.de.compiler.parser.node.variables.VariableUsageNode-com.github.nsc.de.compiler.interpreter.Scope-">
@@ -596,6 +842,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <h4>visitVariableUsageNode</h4>
 <pre>public&nbsp;<a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a>&nbsp;visitVariableUsageNode(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableUsageNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables">VariableUsageNode</a>&nbsp;n,
                                                <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</pre>
+<div class="block">Visit a <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableUsageNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableUsageNode</code></a></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>n</code> - the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableUsageNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableUsageNode</code></a> to visit</dd>
+<dd><code>scope</code> - the <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter"><code>Scope</code></a> for visiting the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/variables/VariableUsageNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableUsageNode</code></a></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The value of the <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Variable.html" title="class in com.github.nsc.de.compiler.interpreter"><code>Variable</code></a></dd>
+</dl>
 </li>
 </ul>
 <a name="visitEqEqualsNode-com.github.nsc.de.compiler.parser.node.logical.LogicalEqEqualsNode-com.github.nsc.de.compiler.interpreter.Scope-">
@@ -606,6 +860,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <h4>visitEqEqualsNode</h4>
 <pre>public&nbsp;<a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a>&nbsp;visitEqEqualsNode(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalEqEqualsNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical">LogicalEqEqualsNode</a>&nbsp;n,
                                           <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</pre>
+<div class="block">Visit an <a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalEqEqualsNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical"><code>LogicalEqEqualsNode</code></a></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>n</code> - the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalEqEqualsNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical"><code>LogicalEqEqualsNode</code></a> to visit</dd>
+<dd><code>scope</code> - the <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter"><code>Scope</code></a> for visiting the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalEqEqualsNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical"><code>LogicalEqEqualsNode</code></a></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>are the two sides of the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalEqEqualsNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical"><code>LogicalEqEqualsNode</code></a> the same?</dd>
+</dl>
 </li>
 </ul>
 <a name="visitBiggerEqualsNode-com.github.nsc.de.compiler.parser.node.logical.LogicalBiggerEqualsNode-com.github.nsc.de.compiler.interpreter.Scope-">
@@ -616,6 +878,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <h4>visitBiggerEqualsNode</h4>
 <pre>public&nbsp;<a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a>&nbsp;visitBiggerEqualsNode(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalBiggerEqualsNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical">LogicalBiggerEqualsNode</a>&nbsp;n,
                                               <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</pre>
+<div class="block">Visit an <a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalBiggerEqualsNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical"><code>LogicalBiggerEqualsNode</code></a></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>n</code> - the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalBiggerEqualsNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical"><code>LogicalBiggerEqualsNode</code></a> to visit</dd>
+<dd><code>scope</code> - the <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter"><code>Scope</code></a> for visiting the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalBiggerEqualsNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical"><code>LogicalBiggerEqualsNode</code></a></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>is the left side of the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalBiggerEqualsNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical"><code>LogicalBiggerEqualsNode</code></a> bigger or equal to the right side</dd>
+</dl>
 </li>
 </ul>
 <a name="visitSmallerEqualsNode-com.github.nsc.de.compiler.parser.node.logical.LogicalSmallerEqualsNode-com.github.nsc.de.compiler.interpreter.Scope-">
@@ -626,6 +896,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <h4>visitSmallerEqualsNode</h4>
 <pre>public&nbsp;<a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a>&nbsp;visitSmallerEqualsNode(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalSmallerEqualsNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical">LogicalSmallerEqualsNode</a>&nbsp;n,
                                                <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</pre>
+<div class="block">Visit an <a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalSmallerEqualsNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical"><code>LogicalSmallerEqualsNode</code></a></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>n</code> - the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalSmallerEqualsNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical"><code>LogicalSmallerEqualsNode</code></a> to visit</dd>
+<dd><code>scope</code> - the <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter"><code>Scope</code></a> for visiting the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalSmallerEqualsNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical"><code>LogicalSmallerEqualsNode</code></a></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>is the left side of the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalSmallerEqualsNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical"><code>LogicalSmallerEqualsNode</code></a> smaller or equal to the right side</dd>
+</dl>
 </li>
 </ul>
 <a name="visitBiggerNode-com.github.nsc.de.compiler.parser.node.logical.LogicalBiggerNode-com.github.nsc.de.compiler.interpreter.Scope-">
@@ -636,6 +914,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <h4>visitBiggerNode</h4>
 <pre>public&nbsp;<a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a>&nbsp;visitBiggerNode(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalBiggerNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical">LogicalBiggerNode</a>&nbsp;n,
                                         <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</pre>
+<div class="block">Visit an <a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalBiggerEqualsNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical"><code>LogicalBiggerEqualsNode</code></a></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>n</code> - the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalBiggerEqualsNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical"><code>LogicalBiggerEqualsNode</code></a> to visit</dd>
+<dd><code>scope</code> - the <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter"><code>Scope</code></a> for visiting the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalBiggerEqualsNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical"><code>LogicalBiggerEqualsNode</code></a></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>is the left side of the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalBiggerEqualsNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical"><code>LogicalBiggerEqualsNode</code></a> bigger than the right side</dd>
+</dl>
 </li>
 </ul>
 <a name="visitSmallerNode-com.github.nsc.de.compiler.parser.node.logical.LogicalSmallerNode-com.github.nsc.de.compiler.interpreter.Scope-">
@@ -646,6 +932,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <h4>visitSmallerNode</h4>
 <pre>public&nbsp;<a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a>&nbsp;visitSmallerNode(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalSmallerNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical">LogicalSmallerNode</a>&nbsp;n,
                                          <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</pre>
+<div class="block">Visit an <a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalSmallerEqualsNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical"><code>LogicalSmallerEqualsNode</code></a></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>n</code> - the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalSmallerEqualsNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical"><code>LogicalSmallerEqualsNode</code></a> to visit</dd>
+<dd><code>scope</code> - the <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter"><code>Scope</code></a> for visiting the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalSmallerEqualsNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical"><code>LogicalSmallerEqualsNode</code></a></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>is the left side of the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalSmallerEqualsNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical"><code>LogicalSmallerEqualsNode</code></a> bigger than the right side</dd>
+</dl>
 </li>
 </ul>
 <a name="visitLogicalAndNode-com.github.nsc.de.compiler.parser.node.logical.LogicalAndNode-com.github.nsc.de.compiler.interpreter.Scope-">
@@ -656,6 +950,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <h4>visitLogicalAndNode</h4>
 <pre>public&nbsp;<a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a>&nbsp;visitLogicalAndNode(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalAndNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical">LogicalAndNode</a>&nbsp;n,
                                             <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</pre>
+<div class="block">Visit an <a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalAndNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical"><code>LogicalAndNode</code></a></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>n</code> - the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalAndNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical"><code>LogicalAndNode</code></a> to visit</dd>
+<dd><code>scope</code> - the <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter"><code>Scope</code></a> for visiting the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalAndNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical"><code>LogicalAndNode</code></a></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>is at least one of the two sides true</dd>
+</dl>
 </li>
 </ul>
 <a name="visitLogicalOrNode-com.github.nsc.de.compiler.parser.node.logical.LogicalOrNode-com.github.nsc.de.compiler.interpreter.Scope-">
@@ -666,6 +968,14 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <h4>visitLogicalOrNode</h4>
 <pre>public&nbsp;<a href="../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a>&nbsp;visitLogicalOrNode(<a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalOrNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical">LogicalOrNode</a>&nbsp;n,
                                            <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter">Scope</a>&nbsp;scope)</pre>
+<div class="block">Visit an <a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalOrNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical"><code>LogicalOrNode</code></a></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>n</code> - the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalOrNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical"><code>LogicalOrNode</code></a> to visit</dd>
+<dd><code>scope</code> - the <a href="../../../../../../com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter"><code>Scope</code></a> for visiting the <a href="../../../../../../com/github/nsc/de/compiler/parser/node/logical/LogicalOrNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical"><code>LogicalOrNode</code></a></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>are both sides true</dd>
+</dl>
 </li>
 </ul>
 <a name="visitWhileNode-com.github.nsc.de.compiler.parser.node.loops.WhileNode-com.github.nsc.de.compiler.interpreter.Scope-">

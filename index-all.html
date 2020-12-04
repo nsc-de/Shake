@@ -975,9 +975,17 @@
 <div class="block">Constructor for <a href="com/github/nsc/de/compiler/interpreter/values/IntegerValue.html" title="class in com.github.nsc.de.compiler.interpreter.values"><code>IntegerValue</code></a></div>
 </dd>
 <dt><a href="com/github/nsc/de/compiler/interpreter/Interpreter.html" title="class in com.github.nsc.de.compiler.interpreter"><span class="typeNameLink">Interpreter</span></a> - Class in <a href="com/github/nsc/de/compiler/interpreter/package-summary.html">com.github.nsc.de.compiler.interpreter</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block"><a href="com/github/nsc/de/compiler/interpreter/Interpreter.html" title="class in com.github.nsc.de.compiler.interpreter"><code>Interpreter</code></a> for executing the code directly</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/interpreter/Interpreter.html#Interpreter-com.github.nsc.de.compiler.interpreter.Scope-">Interpreter(Scope)</a></span> - Constructor for class com.github.nsc.de.compiler.interpreter.<a href="com/github/nsc/de/compiler/interpreter/Interpreter.html" title="class in com.github.nsc.de.compiler.interpreter">Interpreter</a></dt>
+<dd>
+<div class="block">Constructor for <a href="com/github/nsc/de/compiler/interpreter/Interpreter.html" title="class in com.github.nsc.de.compiler.interpreter"><code>Interpreter</code></a></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/interpreter/Interpreter.html#Interpreter--">Interpreter()</a></span> - Constructor for class com.github.nsc.de.compiler.interpreter.<a href="com/github/nsc/de/compiler/interpreter/Interpreter.html" title="class in com.github.nsc.de.compiler.interpreter">Interpreter</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Constructor for <a href="com/github/nsc/de/compiler/interpreter/Interpreter.html" title="class in com.github.nsc.de.compiler.interpreter"><code>Interpreter</code></a></div>
+</dd>
 <dt><a href="com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values"><span class="typeNameLink">InterpreterValue</span></a> - Interface in <a href="com/github/nsc/de/compiler/interpreter/values/package-summary.html">com.github.nsc.de.compiler.interpreter.values</a></dt>
 <dd>
 <div class="block">A Value for the Interpreter, any type of value will implement this interface</div>
@@ -2020,9 +2028,13 @@ the order they are declared.</div>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/Generator.html#visit-com.github.nsc.de.compiler.parser.node.Node-">visit(Node)</a></span> - Method in class com.github.nsc.de.compiler.generators.<a href="com/github/nsc/de/compiler/generators/Generator.html" title="class in com.github.nsc.de.compiler.generators">Generator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/interpreter/Interpreter.html#visit-com.github.nsc.de.compiler.parser.node.Node-">visit(Node)</a></span> - Method in class com.github.nsc.de.compiler.interpreter.<a href="com/github/nsc/de/compiler/interpreter/Interpreter.html" title="class in com.github.nsc.de.compiler.interpreter">Interpreter</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Visit a <a href="com/github/nsc/de/compiler/parser/node/Node.html" title="interface in com.github.nsc.de.compiler.parser.node"><code>Node</code></a> (using the <a href="com/github/nsc/de/compiler/interpreter/Interpreter.html#global"><code>Interpreter.global</code></a> <a href="com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter"><code>Scope</code></a>)</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/interpreter/Interpreter.html#visit-com.github.nsc.de.compiler.parser.node.Node-com.github.nsc.de.compiler.interpreter.Scope-">visit(Node, Scope)</a></span> - Method in class com.github.nsc.de.compiler.interpreter.<a href="com/github/nsc/de/compiler/interpreter/Interpreter.html" title="class in com.github.nsc.de.compiler.interpreter">Interpreter</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Visits the given <a href="com/github/nsc/de/compiler/parser/node/Node.html" title="interface in com.github.nsc.de.compiler.parser.node"><code>Node</code></a> using the specified <a href="com/github/nsc/de/compiler/interpreter/Scope.html" title="class in com.github.nsc.de.compiler.interpreter"><code>Scope</code></a></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/Generator.html#visitAddNode-com.github.nsc.de.compiler.parser.node.expression.AddNode-">visitAddNode(AddNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.<a href="com/github/nsc/de/compiler/generators/Generator.html" title="class in com.github.nsc.de.compiler.generators">Generator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html#visitAddNode-com.github.nsc.de.compiler.parser.node.expression.AddNode-">visitAddNode(AddNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.java.<a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html" title="class in com.github.nsc.de.compiler.generators.java">JavaGenerator</a></dt>
@@ -2032,7 +2044,9 @@ the order they are declared.</div>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html#visitAddNode-com.github.nsc.de.compiler.parser.node.expression.AddNode-">visitAddNode(AddNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.json.<a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html" title="class in com.github.nsc.de.compiler.generators.json">JsonGenerator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/interpreter/Interpreter.html#visitAddNode-com.github.nsc.de.compiler.parser.node.expression.AddNode-com.github.nsc.de.compiler.interpreter.Scope-">visitAddNode(AddNode, Scope)</a></span> - Method in class com.github.nsc.de.compiler.interpreter.<a href="com/github/nsc/de/compiler/interpreter/Interpreter.html" title="class in com.github.nsc.de.compiler.interpreter">Interpreter</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Visit an <a href="com/github/nsc/de/compiler/parser/node/expression/AddNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression"><code>AddNode</code></a> (Addition)</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/Generator.html#visitBiggerEqualsNode-com.github.nsc.de.compiler.parser.node.logical.LogicalBiggerEqualsNode-">visitBiggerEqualsNode(LogicalBiggerEqualsNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.<a href="com/github/nsc/de/compiler/generators/Generator.html" title="class in com.github.nsc.de.compiler.generators">Generator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html#visitBiggerEqualsNode-com.github.nsc.de.compiler.parser.node.logical.LogicalBiggerEqualsNode-">visitBiggerEqualsNode(LogicalBiggerEqualsNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.java.<a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html" title="class in com.github.nsc.de.compiler.generators.java">JavaGenerator</a></dt>
@@ -2042,7 +2056,9 @@ the order they are declared.</div>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html#visitBiggerEqualsNode-com.github.nsc.de.compiler.parser.node.logical.LogicalBiggerEqualsNode-">visitBiggerEqualsNode(LogicalBiggerEqualsNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.json.<a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html" title="class in com.github.nsc.de.compiler.generators.json">JsonGenerator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/interpreter/Interpreter.html#visitBiggerEqualsNode-com.github.nsc.de.compiler.parser.node.logical.LogicalBiggerEqualsNode-com.github.nsc.de.compiler.interpreter.Scope-">visitBiggerEqualsNode(LogicalBiggerEqualsNode, Scope)</a></span> - Method in class com.github.nsc.de.compiler.interpreter.<a href="com/github/nsc/de/compiler/interpreter/Interpreter.html" title="class in com.github.nsc.de.compiler.interpreter">Interpreter</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Visit an <a href="com/github/nsc/de/compiler/parser/node/logical/LogicalBiggerEqualsNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical"><code>LogicalBiggerEqualsNode</code></a></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/Generator.html#visitBiggerNode-com.github.nsc.de.compiler.parser.node.logical.LogicalBiggerNode-">visitBiggerNode(LogicalBiggerNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.<a href="com/github/nsc/de/compiler/generators/Generator.html" title="class in com.github.nsc.de.compiler.generators">Generator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html#visitBiggerNode-com.github.nsc.de.compiler.parser.node.logical.LogicalBiggerNode-">visitBiggerNode(LogicalBiggerNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.java.<a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html" title="class in com.github.nsc.de.compiler.generators.java">JavaGenerator</a></dt>
@@ -2052,7 +2068,9 @@ the order they are declared.</div>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html#visitBiggerNode-com.github.nsc.de.compiler.parser.node.logical.LogicalBiggerNode-">visitBiggerNode(LogicalBiggerNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.json.<a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html" title="class in com.github.nsc.de.compiler.generators.json">JsonGenerator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/interpreter/Interpreter.html#visitBiggerNode-com.github.nsc.de.compiler.parser.node.logical.LogicalBiggerNode-com.github.nsc.de.compiler.interpreter.Scope-">visitBiggerNode(LogicalBiggerNode, Scope)</a></span> - Method in class com.github.nsc.de.compiler.interpreter.<a href="com/github/nsc/de/compiler/interpreter/Interpreter.html" title="class in com.github.nsc.de.compiler.interpreter">Interpreter</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Visit an <a href="com/github/nsc/de/compiler/parser/node/logical/LogicalBiggerEqualsNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical"><code>LogicalBiggerEqualsNode</code></a></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/Generator.html#visitClassConstruction-com.github.nsc.de.compiler.parser.node.objects.ClassConstructionNode-">visitClassConstruction(ClassConstructionNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.<a href="com/github/nsc/de/compiler/generators/Generator.html" title="class in com.github.nsc.de.compiler.generators">Generator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html#visitClassConstruction-com.github.nsc.de.compiler.parser.node.objects.ClassConstructionNode-">visitClassConstruction(ClassConstructionNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.java.<a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html" title="class in com.github.nsc.de.compiler.generators.java">JavaGenerator</a></dt>
@@ -2082,7 +2100,9 @@ the order they are declared.</div>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html#visitDivNode-com.github.nsc.de.compiler.parser.node.expression.DivNode-">visitDivNode(DivNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.json.<a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html" title="class in com.github.nsc.de.compiler.generators.json">JsonGenerator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/interpreter/Interpreter.html#visitDivNode-com.github.nsc.de.compiler.parser.node.expression.DivNode-com.github.nsc.de.compiler.interpreter.Scope-">visitDivNode(DivNode, Scope)</a></span> - Method in class com.github.nsc.de.compiler.interpreter.<a href="com/github/nsc/de/compiler/interpreter/Interpreter.html" title="class in com.github.nsc.de.compiler.interpreter">Interpreter</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Visit a <a href="com/github/nsc/de/compiler/parser/node/expression/DivNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression"><code>DivNode</code></a> (Division)</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/Generator.html#visitDoubleNode-com.github.nsc.de.compiler.parser.node.expression.DoubleNode-">visitDoubleNode(DoubleNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.<a href="com/github/nsc/de/compiler/generators/Generator.html" title="class in com.github.nsc.de.compiler.generators">Generator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html#visitDoubleNode-com.github.nsc.de.compiler.parser.node.expression.DoubleNode-">visitDoubleNode(DoubleNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.java.<a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html" title="class in com.github.nsc.de.compiler.generators.java">JavaGenerator</a></dt>
@@ -2092,7 +2112,9 @@ the order they are declared.</div>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html#visitDoubleNode-com.github.nsc.de.compiler.parser.node.expression.DoubleNode-">visitDoubleNode(DoubleNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.json.<a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html" title="class in com.github.nsc.de.compiler.generators.json">JsonGenerator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/interpreter/Interpreter.html#visitDoubleNode-com.github.nsc.de.compiler.parser.node.expression.DoubleNode-">visitDoubleNode(DoubleNode)</a></span> - Method in class com.github.nsc.de.compiler.interpreter.<a href="com/github/nsc/de/compiler/interpreter/Interpreter.html" title="class in com.github.nsc.de.compiler.interpreter">Interpreter</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Visit a <a href="com/github/nsc/de/compiler/parser/node/expression/DoubleNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression"><code>DoubleNode</code></a></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/Generator.html#visitDoWhileNode-com.github.nsc.de.compiler.parser.node.loops.DoWhileNode-">visitDoWhileNode(DoWhileNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.<a href="com/github/nsc/de/compiler/generators/Generator.html" title="class in com.github.nsc.de.compiler.generators">Generator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html#visitDoWhileNode-com.github.nsc.de.compiler.parser.node.loops.DoWhileNode-">visitDoWhileNode(DoWhileNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.java.<a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html" title="class in com.github.nsc.de.compiler.generators.java">JavaGenerator</a></dt>
@@ -2112,7 +2134,9 @@ the order they are declared.</div>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html#visitEqEqualsNode-com.github.nsc.de.compiler.parser.node.logical.LogicalEqEqualsNode-">visitEqEqualsNode(LogicalEqEqualsNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.json.<a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html" title="class in com.github.nsc.de.compiler.generators.json">JsonGenerator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/interpreter/Interpreter.html#visitEqEqualsNode-com.github.nsc.de.compiler.parser.node.logical.LogicalEqEqualsNode-com.github.nsc.de.compiler.interpreter.Scope-">visitEqEqualsNode(LogicalEqEqualsNode, Scope)</a></span> - Method in class com.github.nsc.de.compiler.interpreter.<a href="com/github/nsc/de/compiler/interpreter/Interpreter.html" title="class in com.github.nsc.de.compiler.interpreter">Interpreter</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Visit an <a href="com/github/nsc/de/compiler/parser/node/logical/LogicalEqEqualsNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical"><code>LogicalEqEqualsNode</code></a></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/Generator.html#visitForNode-com.github.nsc.de.compiler.parser.node.loops.ForNode-">visitForNode(ForNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.<a href="com/github/nsc/de/compiler/generators/Generator.html" title="class in com.github.nsc.de.compiler.generators">Generator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html#visitForNode-com.github.nsc.de.compiler.parser.node.loops.ForNode-">visitForNode(ForNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.java.<a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html" title="class in com.github.nsc.de.compiler.generators.java">JavaGenerator</a></dt>
@@ -2172,7 +2196,9 @@ the order they are declared.</div>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html#visitIntegerNode-com.github.nsc.de.compiler.parser.node.expression.IntegerNode-">visitIntegerNode(IntegerNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.json.<a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html" title="class in com.github.nsc.de.compiler.generators.json">JsonGenerator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/interpreter/Interpreter.html#visitIntegerNode-com.github.nsc.de.compiler.parser.node.expression.IntegerNode-">visitIntegerNode(IntegerNode)</a></span> - Method in class com.github.nsc.de.compiler.interpreter.<a href="com/github/nsc/de/compiler/interpreter/Interpreter.html" title="class in com.github.nsc.de.compiler.interpreter">Interpreter</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Visit an <a href="com/github/nsc/de/compiler/parser/node/expression/IntegerNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression"><code>IntegerNode</code></a></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/Generator.html#visitLogicalAndNode-com.github.nsc.de.compiler.parser.node.logical.LogicalAndNode-">visitLogicalAndNode(LogicalAndNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.<a href="com/github/nsc/de/compiler/generators/Generator.html" title="class in com.github.nsc.de.compiler.generators">Generator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html#visitLogicalAndNode-com.github.nsc.de.compiler.parser.node.logical.LogicalAndNode-">visitLogicalAndNode(LogicalAndNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.java.<a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html" title="class in com.github.nsc.de.compiler.generators.java">JavaGenerator</a></dt>
@@ -2182,7 +2208,9 @@ the order they are declared.</div>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html#visitLogicalAndNode-com.github.nsc.de.compiler.parser.node.logical.LogicalAndNode-">visitLogicalAndNode(LogicalAndNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.json.<a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html" title="class in com.github.nsc.de.compiler.generators.json">JsonGenerator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/interpreter/Interpreter.html#visitLogicalAndNode-com.github.nsc.de.compiler.parser.node.logical.LogicalAndNode-com.github.nsc.de.compiler.interpreter.Scope-">visitLogicalAndNode(LogicalAndNode, Scope)</a></span> - Method in class com.github.nsc.de.compiler.interpreter.<a href="com/github/nsc/de/compiler/interpreter/Interpreter.html" title="class in com.github.nsc.de.compiler.interpreter">Interpreter</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Visit an <a href="com/github/nsc/de/compiler/parser/node/logical/LogicalAndNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical"><code>LogicalAndNode</code></a></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/Generator.html#visitLogicalFalseNode-com.github.nsc.de.compiler.parser.node.logical.LogicalFalseNode-">visitLogicalFalseNode(LogicalFalseNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.<a href="com/github/nsc/de/compiler/generators/Generator.html" title="class in com.github.nsc.de.compiler.generators">Generator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html#visitLogicalFalseNode-com.github.nsc.de.compiler.parser.node.logical.LogicalFalseNode-">visitLogicalFalseNode(LogicalFalseNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.java.<a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html" title="class in com.github.nsc.de.compiler.generators.java">JavaGenerator</a></dt>
@@ -2200,7 +2228,9 @@ the order they are declared.</div>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html#visitLogicalOrNode-com.github.nsc.de.compiler.parser.node.logical.LogicalOrNode-">visitLogicalOrNode(LogicalOrNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.json.<a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html" title="class in com.github.nsc.de.compiler.generators.json">JsonGenerator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/interpreter/Interpreter.html#visitLogicalOrNode-com.github.nsc.de.compiler.parser.node.logical.LogicalOrNode-com.github.nsc.de.compiler.interpreter.Scope-">visitLogicalOrNode(LogicalOrNode, Scope)</a></span> - Method in class com.github.nsc.de.compiler.interpreter.<a href="com/github/nsc/de/compiler/interpreter/Interpreter.html" title="class in com.github.nsc.de.compiler.interpreter">Interpreter</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Visit an <a href="com/github/nsc/de/compiler/parser/node/logical/LogicalOrNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical"><code>LogicalOrNode</code></a></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/Generator.html#visitLogicalTrueNode-com.github.nsc.de.compiler.parser.node.logical.LogicalTrueNode-">visitLogicalTrueNode(LogicalTrueNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.<a href="com/github/nsc/de/compiler/generators/Generator.html" title="class in com.github.nsc.de.compiler.generators">Generator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html#visitLogicalTrueNode-com.github.nsc.de.compiler.parser.node.logical.LogicalTrueNode-">visitLogicalTrueNode(LogicalTrueNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.java.<a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html" title="class in com.github.nsc.de.compiler.generators.java">JavaGenerator</a></dt>
@@ -2210,7 +2240,9 @@ the order they are declared.</div>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html#visitLogicalTrueNode-com.github.nsc.de.compiler.parser.node.logical.LogicalTrueNode-">visitLogicalTrueNode(LogicalTrueNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.json.<a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html" title="class in com.github.nsc.de.compiler.generators.json">JsonGenerator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/interpreter/Interpreter.html#visitModNode-com.github.nsc.de.compiler.parser.node.expression.ModNode-com.github.nsc.de.compiler.interpreter.Scope-">visitModNode(ModNode, Scope)</a></span> - Method in class com.github.nsc.de.compiler.interpreter.<a href="com/github/nsc/de/compiler/interpreter/Interpreter.html" title="class in com.github.nsc.de.compiler.interpreter">Interpreter</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Visit a <a href="com/github/nsc/de/compiler/parser/node/expression/ModNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression"><code>ModNode</code></a> (Modulo)</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/Generator.html#visitMulNode-com.github.nsc.de.compiler.parser.node.expression.MulNode-">visitMulNode(MulNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.<a href="com/github/nsc/de/compiler/generators/Generator.html" title="class in com.github.nsc.de.compiler.generators">Generator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html#visitMulNode-com.github.nsc.de.compiler.parser.node.expression.MulNode-">visitMulNode(MulNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.java.<a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html" title="class in com.github.nsc.de.compiler.generators.java">JavaGenerator</a></dt>
@@ -2220,7 +2252,9 @@ the order they are declared.</div>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html#visitMulNode-com.github.nsc.de.compiler.parser.node.expression.MulNode-">visitMulNode(MulNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.json.<a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html" title="class in com.github.nsc.de.compiler.generators.json">JsonGenerator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/interpreter/Interpreter.html#visitMulNode-com.github.nsc.de.compiler.parser.node.expression.MulNode-com.github.nsc.de.compiler.interpreter.Scope-">visitMulNode(MulNode, Scope)</a></span> - Method in class com.github.nsc.de.compiler.interpreter.<a href="com/github/nsc/de/compiler/interpreter/Interpreter.html" title="class in com.github.nsc.de.compiler.interpreter">Interpreter</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Visit a <a href="com/github/nsc/de/compiler/parser/node/expression/MulNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression"><code>MulNode</code></a> (Multiplication)</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/Generator.html#visitPowNode-com.github.nsc.de.compiler.parser.node.expression.PowNode-">visitPowNode(PowNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.<a href="com/github/nsc/de/compiler/generators/Generator.html" title="class in com.github.nsc.de.compiler.generators">Generator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html#visitPowNode-com.github.nsc.de.compiler.parser.node.expression.PowNode-">visitPowNode(PowNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.java.<a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html" title="class in com.github.nsc.de.compiler.generators.java">JavaGenerator</a></dt>
@@ -2230,7 +2264,9 @@ the order they are declared.</div>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html#visitPowNode-com.github.nsc.de.compiler.parser.node.expression.PowNode-">visitPowNode(PowNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.json.<a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html" title="class in com.github.nsc.de.compiler.generators.json">JsonGenerator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/interpreter/Interpreter.html#visitPowNode-com.github.nsc.de.compiler.parser.node.expression.PowNode-com.github.nsc.de.compiler.interpreter.Scope-">visitPowNode(PowNode, Scope)</a></span> - Method in class com.github.nsc.de.compiler.interpreter.<a href="com/github/nsc/de/compiler/interpreter/Interpreter.html" title="class in com.github.nsc.de.compiler.interpreter">Interpreter</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Visit a <a href="com/github/nsc/de/compiler/parser/node/expression/PowNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression"><code>PowNode</code></a> (Modulo)</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/Generator.html#visitSmallerEqualsNode-com.github.nsc.de.compiler.parser.node.logical.LogicalSmallerEqualsNode-">visitSmallerEqualsNode(LogicalSmallerEqualsNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.<a href="com/github/nsc/de/compiler/generators/Generator.html" title="class in com.github.nsc.de.compiler.generators">Generator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html#visitSmallerEqualsNode-com.github.nsc.de.compiler.parser.node.logical.LogicalSmallerEqualsNode-">visitSmallerEqualsNode(LogicalSmallerEqualsNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.java.<a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html" title="class in com.github.nsc.de.compiler.generators.java">JavaGenerator</a></dt>
@@ -2240,7 +2276,9 @@ the order they are declared.</div>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html#visitSmallerEqualsNode-com.github.nsc.de.compiler.parser.node.logical.LogicalSmallerEqualsNode-">visitSmallerEqualsNode(LogicalSmallerEqualsNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.json.<a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html" title="class in com.github.nsc.de.compiler.generators.json">JsonGenerator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/interpreter/Interpreter.html#visitSmallerEqualsNode-com.github.nsc.de.compiler.parser.node.logical.LogicalSmallerEqualsNode-com.github.nsc.de.compiler.interpreter.Scope-">visitSmallerEqualsNode(LogicalSmallerEqualsNode, Scope)</a></span> - Method in class com.github.nsc.de.compiler.interpreter.<a href="com/github/nsc/de/compiler/interpreter/Interpreter.html" title="class in com.github.nsc.de.compiler.interpreter">Interpreter</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Visit an <a href="com/github/nsc/de/compiler/parser/node/logical/LogicalSmallerEqualsNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical"><code>LogicalSmallerEqualsNode</code></a></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/Generator.html#visitSmallerNode-com.github.nsc.de.compiler.parser.node.logical.LogicalSmallerNode-">visitSmallerNode(LogicalSmallerNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.<a href="com/github/nsc/de/compiler/generators/Generator.html" title="class in com.github.nsc.de.compiler.generators">Generator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html#visitSmallerNode-com.github.nsc.de.compiler.parser.node.logical.LogicalSmallerNode-">visitSmallerNode(LogicalSmallerNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.java.<a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html" title="class in com.github.nsc.de.compiler.generators.java">JavaGenerator</a></dt>
@@ -2250,7 +2288,9 @@ the order they are declared.</div>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html#visitSmallerNode-com.github.nsc.de.compiler.parser.node.logical.LogicalSmallerNode-">visitSmallerNode(LogicalSmallerNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.json.<a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html" title="class in com.github.nsc.de.compiler.generators.json">JsonGenerator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/interpreter/Interpreter.html#visitSmallerNode-com.github.nsc.de.compiler.parser.node.logical.LogicalSmallerNode-com.github.nsc.de.compiler.interpreter.Scope-">visitSmallerNode(LogicalSmallerNode, Scope)</a></span> - Method in class com.github.nsc.de.compiler.interpreter.<a href="com/github/nsc/de/compiler/interpreter/Interpreter.html" title="class in com.github.nsc.de.compiler.interpreter">Interpreter</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Visit an <a href="com/github/nsc/de/compiler/parser/node/logical/LogicalSmallerEqualsNode.html" title="class in com.github.nsc.de.compiler.parser.node.logical"><code>LogicalSmallerEqualsNode</code></a></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/Generator.html#visitSubNode-com.github.nsc.de.compiler.parser.node.expression.SubNode-">visitSubNode(SubNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.<a href="com/github/nsc/de/compiler/generators/Generator.html" title="class in com.github.nsc.de.compiler.generators">Generator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html#visitSubNode-com.github.nsc.de.compiler.parser.node.expression.SubNode-">visitSubNode(SubNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.java.<a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html" title="class in com.github.nsc.de.compiler.generators.java">JavaGenerator</a></dt>
@@ -2260,7 +2300,9 @@ the order they are declared.</div>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html#visitSubNode-com.github.nsc.de.compiler.parser.node.expression.SubNode-">visitSubNode(SubNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.json.<a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html" title="class in com.github.nsc.de.compiler.generators.json">JsonGenerator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/interpreter/Interpreter.html#visitSubNode-com.github.nsc.de.compiler.parser.node.expression.SubNode-com.github.nsc.de.compiler.interpreter.Scope-">visitSubNode(SubNode, Scope)</a></span> - Method in class com.github.nsc.de.compiler.interpreter.<a href="com/github/nsc/de/compiler/interpreter/Interpreter.html" title="class in com.github.nsc.de.compiler.interpreter">Interpreter</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Visit a <a href="com/github/nsc/de/compiler/parser/node/expression/SubNode.html" title="class in com.github.nsc.de.compiler.parser.node.expression"><code>SubNode</code></a> (Subtraction)</div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/Generator.html#visitTree-com.github.nsc.de.compiler.parser.node.Tree-">visitTree(Tree)</a></span> - Method in class com.github.nsc.de.compiler.generators.<a href="com/github/nsc/de/compiler/generators/Generator.html" title="class in com.github.nsc.de.compiler.generators">Generator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html#visitTree-com.github.nsc.de.compiler.parser.node.Tree-">visitTree(Tree)</a></span> - Method in class com.github.nsc.de.compiler.generators.java.<a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html" title="class in com.github.nsc.de.compiler.generators.java">JavaGenerator</a></dt>
@@ -2270,7 +2312,9 @@ the order they are declared.</div>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html#visitTree-com.github.nsc.de.compiler.parser.node.Tree-">visitTree(Tree)</a></span> - Method in class com.github.nsc.de.compiler.generators.json.<a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html" title="class in com.github.nsc.de.compiler.generators.json">JsonGenerator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/interpreter/Interpreter.html#visitTree-com.github.nsc.de.compiler.parser.node.Tree-com.github.nsc.de.compiler.interpreter.Scope-">visitTree(Tree, Scope)</a></span> - Method in class com.github.nsc.de.compiler.interpreter.<a href="com/github/nsc/de/compiler/interpreter/Interpreter.html" title="class in com.github.nsc.de.compiler.interpreter">Interpreter</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Visit a <a href="com/github/nsc/de/compiler/parser/node/Tree.html" title="class in com.github.nsc.de.compiler.parser.node"><code>Tree</code></a></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/Generator.html#visitVariableAddAssignmentNode-com.github.nsc.de.compiler.parser.node.variables.VariableAddAssignmentNode-">visitVariableAddAssignmentNode(VariableAddAssignmentNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.<a href="com/github/nsc/de/compiler/generators/Generator.html" title="class in com.github.nsc.de.compiler.generators">Generator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html#visitVariableAddAssignmentNode-com.github.nsc.de.compiler.parser.node.variables.VariableAddAssignmentNode-">visitVariableAddAssignmentNode(VariableAddAssignmentNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.java.<a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html" title="class in com.github.nsc.de.compiler.generators.java">JavaGenerator</a></dt>
@@ -2280,7 +2324,9 @@ the order they are declared.</div>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html#visitVariableAddAssignmentNode-com.github.nsc.de.compiler.parser.node.variables.VariableAddAssignmentNode-">visitVariableAddAssignmentNode(VariableAddAssignmentNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.json.<a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html" title="class in com.github.nsc.de.compiler.generators.json">JsonGenerator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/interpreter/Interpreter.html#visitVariableAddAssignmentNode-com.github.nsc.de.compiler.parser.node.variables.VariableAddAssignmentNode-com.github.nsc.de.compiler.interpreter.Scope-">visitVariableAddAssignmentNode(VariableAddAssignmentNode, Scope)</a></span> - Method in class com.github.nsc.de.compiler.interpreter.<a href="com/github/nsc/de/compiler/interpreter/Interpreter.html" title="class in com.github.nsc.de.compiler.interpreter">Interpreter</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Visit a <a href="com/github/nsc/de/compiler/parser/node/variables/VariableAddAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableAddAssignmentNode</code></a></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/Generator.html#visitVariableAssignmentNode-com.github.nsc.de.compiler.parser.node.variables.VariableAssignmentNode-">visitVariableAssignmentNode(VariableAssignmentNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.<a href="com/github/nsc/de/compiler/generators/Generator.html" title="class in com.github.nsc.de.compiler.generators">Generator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html#visitVariableAssignmentNode-com.github.nsc.de.compiler.parser.node.variables.VariableAssignmentNode-">visitVariableAssignmentNode(VariableAssignmentNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.java.<a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html" title="class in com.github.nsc.de.compiler.generators.java">JavaGenerator</a></dt>
@@ -2290,7 +2336,9 @@ the order they are declared.</div>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html#visitVariableAssignmentNode-com.github.nsc.de.compiler.parser.node.variables.VariableAssignmentNode-">visitVariableAssignmentNode(VariableAssignmentNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.json.<a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html" title="class in com.github.nsc.de.compiler.generators.json">JsonGenerator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/interpreter/Interpreter.html#visitVariableAssignmentNode-com.github.nsc.de.compiler.parser.node.variables.VariableAssignmentNode-com.github.nsc.de.compiler.interpreter.Scope-">visitVariableAssignmentNode(VariableAssignmentNode, Scope)</a></span> - Method in class com.github.nsc.de.compiler.interpreter.<a href="com/github/nsc/de/compiler/interpreter/Interpreter.html" title="class in com.github.nsc.de.compiler.interpreter">Interpreter</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Visit a <a href="com/github/nsc/de/compiler/parser/node/variables/VariableAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableAssignmentNode</code></a></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/Generator.html#visitVariableDeclarationNode-com.github.nsc.de.compiler.parser.node.variables.VariableDeclarationNode-">visitVariableDeclarationNode(VariableDeclarationNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.<a href="com/github/nsc/de/compiler/generators/Generator.html" title="class in com.github.nsc.de.compiler.generators">Generator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html#visitVariableDeclarationNode-com.github.nsc.de.compiler.parser.node.variables.VariableDeclarationNode-">visitVariableDeclarationNode(VariableDeclarationNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.java.<a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html" title="class in com.github.nsc.de.compiler.generators.java">JavaGenerator</a></dt>
@@ -2300,7 +2348,9 @@ the order they are declared.</div>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html#visitVariableDeclarationNode-com.github.nsc.de.compiler.parser.node.variables.VariableDeclarationNode-">visitVariableDeclarationNode(VariableDeclarationNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.json.<a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html" title="class in com.github.nsc.de.compiler.generators.json">JsonGenerator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/interpreter/Interpreter.html#visitVariableDeclarationNode-com.github.nsc.de.compiler.parser.node.variables.VariableDeclarationNode-com.github.nsc.de.compiler.interpreter.Scope-">visitVariableDeclarationNode(VariableDeclarationNode, Scope)</a></span> - Method in class com.github.nsc.de.compiler.interpreter.<a href="com/github/nsc/de/compiler/interpreter/Interpreter.html" title="class in com.github.nsc.de.compiler.interpreter">Interpreter</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Visit a <a href="com/github/nsc/de/compiler/parser/node/variables/VariableDeclarationNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableDeclarationNode</code></a></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/Generator.html#visitVariableDecreaseNode-com.github.nsc.de.compiler.parser.node.variables.VariableDecreaseNode-">visitVariableDecreaseNode(VariableDecreaseNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.<a href="com/github/nsc/de/compiler/generators/Generator.html" title="class in com.github.nsc.de.compiler.generators">Generator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html#visitVariableDecreaseNode-com.github.nsc.de.compiler.parser.node.variables.VariableDecreaseNode-">visitVariableDecreaseNode(VariableDecreaseNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.java.<a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html" title="class in com.github.nsc.de.compiler.generators.java">JavaGenerator</a></dt>
@@ -2310,7 +2360,9 @@ the order they are declared.</div>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html#visitVariableDecreaseNode-com.github.nsc.de.compiler.parser.node.variables.VariableDecreaseNode-">visitVariableDecreaseNode(VariableDecreaseNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.json.<a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html" title="class in com.github.nsc.de.compiler.generators.json">JsonGenerator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/interpreter/Interpreter.html#visitVariableDecreaseNode-com.github.nsc.de.compiler.parser.node.variables.VariableDecreaseNode-com.github.nsc.de.compiler.interpreter.Scope-">visitVariableDecreaseNode(VariableDecreaseNode, Scope)</a></span> - Method in class com.github.nsc.de.compiler.interpreter.<a href="com/github/nsc/de/compiler/interpreter/Interpreter.html" title="class in com.github.nsc.de.compiler.interpreter">Interpreter</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Visit a <a href="com/github/nsc/de/compiler/parser/node/variables/VariableDecreaseNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableDecreaseNode</code></a></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/Generator.html#visitVariableDivAssignmentNode-com.github.nsc.de.compiler.parser.node.variables.VariableDivAssignmentNode-">visitVariableDivAssignmentNode(VariableDivAssignmentNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.<a href="com/github/nsc/de/compiler/generators/Generator.html" title="class in com.github.nsc.de.compiler.generators">Generator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html#visitVariableDivAssignmentNode-com.github.nsc.de.compiler.parser.node.variables.VariableDivAssignmentNode-">visitVariableDivAssignmentNode(VariableDivAssignmentNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.java.<a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html" title="class in com.github.nsc.de.compiler.generators.java">JavaGenerator</a></dt>
@@ -2320,7 +2372,9 @@ the order they are declared.</div>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html#visitVariableDivAssignmentNode-com.github.nsc.de.compiler.parser.node.variables.VariableDivAssignmentNode-">visitVariableDivAssignmentNode(VariableDivAssignmentNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.json.<a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html" title="class in com.github.nsc.de.compiler.generators.json">JsonGenerator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/interpreter/Interpreter.html#visitVariableDivAssignmentNode-com.github.nsc.de.compiler.parser.node.variables.VariableDivAssignmentNode-com.github.nsc.de.compiler.interpreter.Scope-">visitVariableDivAssignmentNode(VariableDivAssignmentNode, Scope)</a></span> - Method in class com.github.nsc.de.compiler.interpreter.<a href="com/github/nsc/de/compiler/interpreter/Interpreter.html" title="class in com.github.nsc.de.compiler.interpreter">Interpreter</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Visit a <a href="com/github/nsc/de/compiler/parser/node/variables/VariableDivAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableDivAssignmentNode</code></a></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/Generator.html#visitVariableIncreaseNode-com.github.nsc.de.compiler.parser.node.variables.VariableIncreaseNode-">visitVariableIncreaseNode(VariableIncreaseNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.<a href="com/github/nsc/de/compiler/generators/Generator.html" title="class in com.github.nsc.de.compiler.generators">Generator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html#visitVariableIncreaseNode-com.github.nsc.de.compiler.parser.node.variables.VariableIncreaseNode-">visitVariableIncreaseNode(VariableIncreaseNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.java.<a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html" title="class in com.github.nsc.de.compiler.generators.java">JavaGenerator</a></dt>
@@ -2330,9 +2384,13 @@ the order they are declared.</div>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html#visitVariableIncreaseNode-com.github.nsc.de.compiler.parser.node.variables.VariableIncreaseNode-">visitVariableIncreaseNode(VariableIncreaseNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.json.<a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html" title="class in com.github.nsc.de.compiler.generators.json">JsonGenerator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/interpreter/Interpreter.html#visitVariableIncreaseNode-com.github.nsc.de.compiler.parser.node.variables.VariableIncreaseNode-com.github.nsc.de.compiler.interpreter.Scope-">visitVariableIncreaseNode(VariableIncreaseNode, Scope)</a></span> - Method in class com.github.nsc.de.compiler.interpreter.<a href="com/github/nsc/de/compiler/interpreter/Interpreter.html" title="class in com.github.nsc.de.compiler.interpreter">Interpreter</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Visit a <a href="com/github/nsc/de/compiler/parser/node/variables/VariableIncreaseNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableIncreaseNode</code></a></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/interpreter/Interpreter.html#visitVariableModAssignmentNode-com.github.nsc.de.compiler.parser.node.variables.VariableModAssignmentNode-com.github.nsc.de.compiler.interpreter.Scope-">visitVariableModAssignmentNode(VariableModAssignmentNode, Scope)</a></span> - Method in class com.github.nsc.de.compiler.interpreter.<a href="com/github/nsc/de/compiler/interpreter/Interpreter.html" title="class in com.github.nsc.de.compiler.interpreter">Interpreter</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Visit a <a href="com/github/nsc/de/compiler/parser/node/variables/VariableModAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableModAssignmentNode</code></a></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/Generator.html#visitVariableMulAssignmentNode-com.github.nsc.de.compiler.parser.node.variables.VariableMulAssignmentNode-">visitVariableMulAssignmentNode(VariableMulAssignmentNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.<a href="com/github/nsc/de/compiler/generators/Generator.html" title="class in com.github.nsc.de.compiler.generators">Generator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html#visitVariableMulAssignmentNode-com.github.nsc.de.compiler.parser.node.variables.VariableMulAssignmentNode-">visitVariableMulAssignmentNode(VariableMulAssignmentNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.java.<a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html" title="class in com.github.nsc.de.compiler.generators.java">JavaGenerator</a></dt>
@@ -2342,7 +2400,9 @@ the order they are declared.</div>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html#visitVariableMulAssignmentNode-com.github.nsc.de.compiler.parser.node.variables.VariableMulAssignmentNode-">visitVariableMulAssignmentNode(VariableMulAssignmentNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.json.<a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html" title="class in com.github.nsc.de.compiler.generators.json">JsonGenerator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/interpreter/Interpreter.html#visitVariableMulAssignmentNode-com.github.nsc.de.compiler.parser.node.variables.VariableMulAssignmentNode-com.github.nsc.de.compiler.interpreter.Scope-">visitVariableMulAssignmentNode(VariableMulAssignmentNode, Scope)</a></span> - Method in class com.github.nsc.de.compiler.interpreter.<a href="com/github/nsc/de/compiler/interpreter/Interpreter.html" title="class in com.github.nsc.de.compiler.interpreter">Interpreter</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Visit a <a href="com/github/nsc/de/compiler/parser/node/variables/VariableMulAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableMulAssignmentNode</code></a></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/Generator.html#visitVariablePowAssignmentNode-com.github.nsc.de.compiler.parser.node.variables.VariablePowAssignmentNode-">visitVariablePowAssignmentNode(VariablePowAssignmentNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.<a href="com/github/nsc/de/compiler/generators/Generator.html" title="class in com.github.nsc.de.compiler.generators">Generator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html#visitVariablePowAssignmentNode-com.github.nsc.de.compiler.parser.node.variables.VariablePowAssignmentNode-">visitVariablePowAssignmentNode(VariablePowAssignmentNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.java.<a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html" title="class in com.github.nsc.de.compiler.generators.java">JavaGenerator</a></dt>
@@ -2352,7 +2412,9 @@ the order they are declared.</div>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html#visitVariablePowAssignmentNode-com.github.nsc.de.compiler.parser.node.variables.VariablePowAssignmentNode-">visitVariablePowAssignmentNode(VariablePowAssignmentNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.json.<a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html" title="class in com.github.nsc.de.compiler.generators.json">JsonGenerator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/interpreter/Interpreter.html#visitVariablePowAssignmentNode-com.github.nsc.de.compiler.parser.node.variables.VariablePowAssignmentNode-com.github.nsc.de.compiler.interpreter.Scope-">visitVariablePowAssignmentNode(VariablePowAssignmentNode, Scope)</a></span> - Method in class com.github.nsc.de.compiler.interpreter.<a href="com/github/nsc/de/compiler/interpreter/Interpreter.html" title="class in com.github.nsc.de.compiler.interpreter">Interpreter</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Visit a <a href="com/github/nsc/de/compiler/parser/node/variables/VariablePowAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariablePowAssignmentNode</code></a></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/Generator.html#visitVariableSubAssignmentNode-com.github.nsc.de.compiler.parser.node.variables.VariableSubAssignmentNode-">visitVariableSubAssignmentNode(VariableSubAssignmentNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.<a href="com/github/nsc/de/compiler/generators/Generator.html" title="class in com.github.nsc.de.compiler.generators">Generator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html#visitVariableSubAssignmentNode-com.github.nsc.de.compiler.parser.node.variables.VariableSubAssignmentNode-">visitVariableSubAssignmentNode(VariableSubAssignmentNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.java.<a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html" title="class in com.github.nsc.de.compiler.generators.java">JavaGenerator</a></dt>
@@ -2362,7 +2424,9 @@ the order they are declared.</div>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html#visitVariableSubAssignmentNode-com.github.nsc.de.compiler.parser.node.variables.VariableSubAssignmentNode-">visitVariableSubAssignmentNode(VariableSubAssignmentNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.json.<a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html" title="class in com.github.nsc.de.compiler.generators.json">JsonGenerator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/interpreter/Interpreter.html#visitVariableSubAssignmentNode-com.github.nsc.de.compiler.parser.node.variables.VariableSubAssignmentNode-com.github.nsc.de.compiler.interpreter.Scope-">visitVariableSubAssignmentNode(VariableSubAssignmentNode, Scope)</a></span> - Method in class com.github.nsc.de.compiler.interpreter.<a href="com/github/nsc/de/compiler/interpreter/Interpreter.html" title="class in com.github.nsc.de.compiler.interpreter">Interpreter</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Visit a <a href="com/github/nsc/de/compiler/parser/node/variables/VariableSubAssignmentNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableSubAssignmentNode</code></a></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/Generator.html#visitVariableUsageNode-com.github.nsc.de.compiler.parser.node.variables.VariableUsageNode-">visitVariableUsageNode(VariableUsageNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.<a href="com/github/nsc/de/compiler/generators/Generator.html" title="class in com.github.nsc.de.compiler.generators">Generator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html#visitVariableUsageNode-com.github.nsc.de.compiler.parser.node.variables.VariableUsageNode-">visitVariableUsageNode(VariableUsageNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.java.<a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html" title="class in com.github.nsc.de.compiler.generators.java">JavaGenerator</a></dt>
@@ -2372,7 +2436,9 @@ the order they are declared.</div>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html#visitVariableUsageNode-com.github.nsc.de.compiler.parser.node.variables.VariableUsageNode-">visitVariableUsageNode(VariableUsageNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.json.<a href="com/github/nsc/de/compiler/generators/json/JsonGenerator.html" title="class in com.github.nsc.de.compiler.generators.json">JsonGenerator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/interpreter/Interpreter.html#visitVariableUsageNode-com.github.nsc.de.compiler.parser.node.variables.VariableUsageNode-com.github.nsc.de.compiler.interpreter.Scope-">visitVariableUsageNode(VariableUsageNode, Scope)</a></span> - Method in class com.github.nsc.de.compiler.interpreter.<a href="com/github/nsc/de/compiler/interpreter/Interpreter.html" title="class in com.github.nsc.de.compiler.interpreter">Interpreter</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Visit a <a href="com/github/nsc/de/compiler/parser/node/variables/VariableUsageNode.html" title="class in com.github.nsc.de.compiler.parser.node.variables"><code>VariableUsageNode</code></a></div>
+</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/Generator.html#visitWhileNode-com.github.nsc.de.compiler.parser.node.loops.WhileNode-">visitWhileNode(WhileNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.<a href="com/github/nsc/de/compiler/generators/Generator.html" title="class in com.github.nsc.de.compiler.generators">Generator</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html#visitWhileNode-com.github.nsc.de.compiler.parser.node.loops.WhileNode-">visitWhileNode(WhileNode)</a></span> - Method in class com.github.nsc.de.compiler.generators.java.<a href="com/github/nsc/de/compiler/generators/java/JavaGenerator.html" title="class in com.github.nsc.de.compiler.generators.java">JavaGenerator</a></dt>
