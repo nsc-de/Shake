@@ -170,13 +170,13 @@ implements <a href="../../../../../../../com/github/nsc/de/compiler/interpreter/
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/compiler/interpreter/values/BooleanValue.html#and-com.github.nsc.de.compiler.interpreter.values.InterpreterValue-">and</a></span>(<a href="../../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a>&nbsp;v)</code>
-<div class="block">This function gets executed when the operator '&amp;&amp;' is used on the value</div>
+<div class="block">This function will be executed when the operator '&amp;&amp;' is used on the value</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/compiler/interpreter/values/BooleanValue.html#equals-com.github.nsc.de.compiler.interpreter.values.InterpreterValue-">equals</a></span>(<a href="../../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a>&nbsp;v)</code>
-<div class="block">This function gets executed when the operator '==' is used on the value</div>
+<div class="block">This function will be executed when the operator '==' is used on the value</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
@@ -206,7 +206,7 @@ implements <a href="../../../../../../../com/github/nsc/de/compiler/interpreter/
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/compiler/interpreter/values/BooleanValue.html#or-com.github.nsc.de.compiler.interpreter.values.InterpreterValue-">or</a></span>(<a href="../../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a>&nbsp;v)</code>
-<div class="block">This function gets executed when the operator '||' is used on the value</div>
+<div class="block">This function will be executed when the operator '||' is used on the value</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
@@ -387,7 +387,7 @@ not permitted.)</div>
 <li class="blockList">
 <h4>or</h4>
 <pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a>&nbsp;or(<a href="../../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a>&nbsp;v)</pre>
-<div class="block">This function gets executed when the operator '||' is used on the value</div>
+<div class="block">This function will be executed when the operator '||' is used on the value</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html#or-com.github.nsc.de.compiler.interpreter.values.InterpreterValue-">or</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a></code></dd>
@@ -405,7 +405,7 @@ not permitted.)</div>
 <li class="blockList">
 <h4>and</h4>
 <pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a>&nbsp;and(<a href="../../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a>&nbsp;v)</pre>
-<div class="block">This function gets executed when the operator '&amp;&amp;' is used on the value</div>
+<div class="block">This function will be executed when the operator '&amp;&amp;' is used on the value</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html#and-com.github.nsc.de.compiler.interpreter.values.InterpreterValue-">and</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a></code></dd>
@@ -423,7 +423,7 @@ not permitted.)</div>
 <li class="blockList">
 <h4>equals</h4>
 <pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a>&nbsp;equals(<a href="../../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a>&nbsp;v)</pre>
-<div class="block">This function gets executed when the operator '==' is used on the value</div>
+<div class="block">This function will be executed when the operator '==' is used on the value</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html#equals-com.github.nsc.de.compiler.interpreter.values.InterpreterValue-">equals</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../com/github/nsc/de/compiler/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.compiler.interpreter.values">InterpreterValue</a></code></dd>
