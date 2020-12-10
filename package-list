@@ -1,4 +1,5 @@
 com.github.nsc.de.compiler
+com.github.nsc.de.compiler.cli
 com.github.nsc.de.compiler.generators
 com.github.nsc.de.compiler.generators.java
 com.github.nsc.de.compiler.generators.java.nodes
