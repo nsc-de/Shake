@@ -188,11 +188,19 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Error.html?
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/util/CompilerError.html#CompilerError-java.lang.String-java.lang.String-java.lang.String-com.github.nsc.de.shake.lexer.Position-com.github.nsc.de.shake.lexer.Position-">CompilerError</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/util/CompilerError.html#CompilerError-java.lang.String-java.lang.String-java.lang.String-com.github.nsc.de.shake.lexer.characterinputstream.position.PositionMap-int-int-">CompilerError</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
              <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
              <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;details,
-             <a href="../../../../../../com/github/nsc/de/shake/lexer/Position.html" title="class in com.github.nsc.de.shake.lexer">Position</a>&nbsp;start,
-             <a href="../../../../../../com/github/nsc/de/shake/lexer/Position.html" title="class in com.github.nsc.de.shake.lexer">Position</a>&nbsp;end)</code>&nbsp;</td>
+             <a href="../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/position/PositionMap.html" title="class in com.github.nsc.de.shake.lexer.characterinputstream.position">PositionMap</a>&nbsp;map,
+             int&nbsp;start,
+             int&nbsp;end)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/util/CompilerError.html#CompilerError-java.lang.String-java.lang.String-java.lang.String-com.github.nsc.de.shake.lexer.characterinputstream.position.Position-com.github.nsc.de.shake.lexer.characterinputstream.position.Position-">CompilerError</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
+             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+             <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;details,
+             <a href="../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/position/Position.html" title="class in com.github.nsc.de.shake.lexer.characterinputstream.position">Position</a>&nbsp;start,
+             <a href="../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/position/Position.html" title="class in com.github.nsc.de.shake.lexer.characterinputstream.position">Position</a>&nbsp;end)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -214,7 +222,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Error.html?
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/util/CompilerError.html#getDetails--">getDetails</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/shake/lexer/Position.html" title="class in com.github.nsc.de.shake.lexer">Position</a></code></td>
+<td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/position/Position.html" title="class in com.github.nsc.de.shake.lexer.characterinputstream.position">Position</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/util/CompilerError.html#getEnd--">getEnd</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
@@ -226,7 +234,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Error.html?
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/util/CompilerError.html#getName--">getName</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/shake/lexer/Position.html" title="class in com.github.nsc.de.shake.lexer">Position</a></code></td>
+<td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/position/Position.html" title="class in com.github.nsc.de.shake.lexer.characterinputstream.position">Position</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/util/CompilerError.html#getStart--">getStart</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
@@ -283,7 +291,20 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Error.html?
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="CompilerError-java.lang.String-java.lang.String-java.lang.String-com.github.nsc.de.shake.lexer.Position-com.github.nsc.de.shake.lexer.Position-">
+<a name="CompilerError-java.lang.String-java.lang.String-java.lang.String-com.github.nsc.de.shake.lexer.characterinputstream.position.Position-com.github.nsc.de.shake.lexer.characterinputstream.position.Position-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CompilerError</h4>
+<pre>public&nbsp;CompilerError(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
+                     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+                     <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;details,
+                     <a href="../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/position/Position.html" title="class in com.github.nsc.de.shake.lexer.characterinputstream.position">Position</a>&nbsp;start,
+                     <a href="../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/position/Position.html" title="class in com.github.nsc.de.shake.lexer.characterinputstream.position">Position</a>&nbsp;end)</pre>
+</li>
+</ul>
+<a name="CompilerError-java.lang.String-java.lang.String-java.lang.String-com.github.nsc.de.shake.lexer.characterinputstream.position.PositionMap-int-int-">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -292,8 +313,9 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Error.html?
 <pre>public&nbsp;CompilerError(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;message,
                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
                      <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;details,
-                     <a href="../../../../../../com/github/nsc/de/shake/lexer/Position.html" title="class in com.github.nsc.de.shake.lexer">Position</a>&nbsp;start,
-                     <a href="../../../../../../com/github/nsc/de/shake/lexer/Position.html" title="class in com.github.nsc.de.shake.lexer">Position</a>&nbsp;end)</pre>
+                     <a href="../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/position/PositionMap.html" title="class in com.github.nsc.de.shake.lexer.characterinputstream.position">PositionMap</a>&nbsp;map,
+                     int&nbsp;start,
+                     int&nbsp;end)</pre>
 </li>
 </ul>
 </li>
@@ -328,7 +350,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Error.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>getStart</h4>
-<pre>public&nbsp;<a href="../../../../../../com/github/nsc/de/shake/lexer/Position.html" title="class in com.github.nsc.de.shake.lexer">Position</a>&nbsp;getStart()</pre>
+<pre>public&nbsp;<a href="../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/position/Position.html" title="class in com.github.nsc.de.shake.lexer.characterinputstream.position">Position</a>&nbsp;getStart()</pre>
 </li>
 </ul>
 <a name="getEnd--">
@@ -337,7 +359,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Error.html?
 <ul class="blockList">
 <li class="blockList">
 <h4>getEnd</h4>
-<pre>public&nbsp;<a href="../../../../../../com/github/nsc/de/shake/lexer/Position.html" title="class in com.github.nsc.de.shake.lexer">Position</a>&nbsp;getEnd()</pre>
+<pre>public&nbsp;<a href="../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/position/Position.html" title="class in com.github.nsc.de.shake.lexer.characterinputstream.position">Position</a>&nbsp;getEnd()</pre>
 </li>
 </ul>
 <a name="getMarker--">

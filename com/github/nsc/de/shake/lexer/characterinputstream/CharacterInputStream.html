@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":18,"i8":6,"i9":6,"i10":6,"i11":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":18,"i9":6,"i10":6,"i11":6,"i12":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/StringCharacterInputStream.html" title="class in com.github.nsc.de.shake.lexer.characterinputstream"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/SourceCharacterInputStream.html" title="class in com.github.nsc.de.shake.lexer.characterinputstream"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../../index.html?com/github/nsc/de/shake/lexer/characterinputstream/CharacterInputStream.html" target="_top">Frames</a></li>
@@ -100,7 +100,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><a href="../../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/StringCharacterInputStream.html" title="class in com.github.nsc.de.shake.lexer.characterinputstream">StringCharacterInputStream</a></dd>
+<dd><a href="../../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/SourceCharacterInputStream.html" title="class in com.github.nsc.de.shake.lexer.characterinputstream">SourceCharacterInputStream</a></dd>
 </dl>
 <hr>
 <br>
@@ -110,7 +110,7 @@ var activeTableTab = "activeTableTab";
 <dt><span class="simpleTagLabel">Author:</span></dt>
 <dd><a href="https://github.com/nsc-de">Nicolas Schmidt &lt;@nsc-de&gt;</a></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/StringCharacterInputStream.html" title="class in com.github.nsc.de.shake.lexer.characterinputstream"><code>StringCharacterInputStream</code></a></dd>
+<dd><a href="../../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/SourceCharacterInputStream.html" title="class in com.github.nsc.de.shake.lexer.characterinputstream"><code>SourceCharacterInputStream</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -143,49 +143,55 @@ var activeTableTab = "activeTableTab";
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/lexer/Position.html" title="class in com.github.nsc.de.shake.lexer">Position</a></code></td>
+<td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/CharacterInputStream.html#getPosition--">getPosition</a></span>()</code>
 <div class="block">Returns the actual position of the <a href="../../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/CharacterInputStream.html" title="interface in com.github.nsc.de.shake.lexer.characterinputstream"><code>CharacterInputStream</code></a></div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/CharacterInputStream.html#getSource--">getSource</a></span>()</code>
-<div class="block">Returns the source (mostly file) of the <a href="../../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/CharacterInputStream.html" title="interface in com.github.nsc.de.shake.lexer.characterinputstream"><code>CharacterInputStream</code></a></div>
+<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/position/PositionMaker.html" title="class in com.github.nsc.de.shake.lexer.characterinputstream.position">PositionMaker</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/CharacterInputStream.html#getPositionMaker--">getPositionMaker</a></span>()</code>
+<div class="block">Returns the actual position-maker of the <a href="../../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/CharacterInputStream.html" title="interface in com.github.nsc.de.shake.lexer.characterinputstream"><code>CharacterInputStream</code></a></div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/charactersource/CharacterSource.html" title="interface in com.github.nsc.de.shake.lexer.characterinputstream.charactersource">CharacterSource</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/CharacterInputStream.html#getSource--">getSource</a></span>()</code>
+<div class="block">Returns the source of the <a href="../../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/CharacterInputStream.html" title="interface in com.github.nsc.de.shake.lexer.characterinputstream"><code>CharacterInputStream</code></a></div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/CharacterInputStream.html#has-int-">has</a></span>(int&nbsp;number)</code>
 <div class="block">Checks if the <a href="../../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/CharacterInputStream.html" title="interface in com.github.nsc.de.shake.lexer.characterinputstream"><code>CharacterInputStream</code></a> has a given number of characters left</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/CharacterInputStream.html#hasNext--">hasNext</a></span>()</code>
 <div class="block">Checks if the <a href="../../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/CharacterInputStream.html" title="interface in com.github.nsc.de.shake.lexer.characterinputstream"><code>CharacterInputStream</code></a> has a next character left</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>char</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/CharacterInputStream.html#next--">next</a></span>()</code>
 <div class="block">Returns the next character and continues to the next token</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>default char</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/CharacterInputStream.html#peek--">peek</a></span>()</code>
 <div class="block">Gives back the next character without skipping</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>char</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/CharacterInputStream.html#peek-int-">peek</a></span>(int&nbsp;num)</code>
 <div class="block">Gives back a character of the <a href="../../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/CharacterInputStream.html" title="interface in com.github.nsc.de.shake.lexer.characterinputstream"><code>CharacterInputStream</code></a>
  (relative to the actual position)</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/CharacterInputStream.html#peek-int-int-">peek</a></span>(int&nbsp;from,
     int&nbsp;to)</code>
@@ -193,13 +199,13 @@ var activeTableTab = "activeTableTab";
  (relative to the actual position)</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/CharacterInputStream.html#skip--">skip</a></span>()</code>
 <div class="block">Skips the next character</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/CharacterInputStream.html#skip-int-">skip</a></span>(int&nbsp;number)</code>
 <div class="block">Skips a given number of characters</div>
@@ -226,8 +232,8 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>getSource</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getSource()</pre>
-<div class="block">Returns the source (mostly file) of the <a href="../../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/CharacterInputStream.html" title="interface in com.github.nsc.de.shake.lexer.characterinputstream"><code>CharacterInputStream</code></a></div>
+<pre><a href="../../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/charactersource/CharacterSource.html" title="interface in com.github.nsc.de.shake.lexer.characterinputstream.charactersource">CharacterSource</a>&nbsp;getSource()</pre>
+<div class="block">Returns the source of the <a href="../../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/CharacterInputStream.html" title="interface in com.github.nsc.de.shake.lexer.characterinputstream"><code>CharacterInputStream</code></a></div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the source (mostly file) of the <a href="../../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/CharacterInputStream.html" title="interface in com.github.nsc.de.shake.lexer.characterinputstream"><code>CharacterInputStream</code></a></dd>
@@ -254,11 +260,25 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>getPosition</h4>
-<pre><a href="../../../../../../../com/github/nsc/de/shake/lexer/Position.html" title="class in com.github.nsc.de.shake.lexer">Position</a>&nbsp;getPosition()</pre>
+<pre>int&nbsp;getPosition()</pre>
 <div class="block">Returns the actual position of the <a href="../../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/CharacterInputStream.html" title="interface in com.github.nsc.de.shake.lexer.characterinputstream"><code>CharacterInputStream</code></a></div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the actual position of the <a href="../../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/CharacterInputStream.html" title="interface in com.github.nsc.de.shake.lexer.characterinputstream"><code>CharacterInputStream</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="getPositionMaker--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPositionMaker</h4>
+<pre><a href="../../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/position/PositionMaker.html" title="class in com.github.nsc.de.shake.lexer.characterinputstream.position">PositionMaker</a>&nbsp;getPositionMaker()</pre>
+<div class="block">Returns the actual position-maker of the <a href="../../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/CharacterInputStream.html" title="interface in com.github.nsc.de.shake.lexer.characterinputstream"><code>CharacterInputStream</code></a></div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the actual position-maker of the <a href="../../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/CharacterInputStream.html" title="interface in com.github.nsc.de.shake.lexer.characterinputstream"><code>CharacterInputStream</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -422,7 +442,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/StringCharacterInputStream.html" title="class in com.github.nsc.de.shake.lexer.characterinputstream"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../../com/github/nsc/de/shake/lexer/characterinputstream/SourceCharacterInputStream.html" title="class in com.github.nsc.de.shake.lexer.characterinputstream"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../../index.html?com/github/nsc/de/shake/lexer/characterinputstream/CharacterInputStream.html" target="_top">Frames</a></li>
