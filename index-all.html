@@ -193,7 +193,9 @@
 <dl>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/Function.html#call-com.github.nsc.de.shake.parser.node.functions.FunctionCallNode-com.github.nsc.de.shake.interpreter.Scope-">call(FunctionCallNode, Scope)</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/Function.html" title="class in com.github.nsc.de.shake.interpreter.values">Function</a></dt>
 <dd>
-<div class="block">Function call method</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>
+<div class="block"><span class="deprecationComment">Moved to <a href="com/github/nsc/de/shake/interpreter/values/Function.html#invoke-com.github.nsc.de.shake.parser.node.functions.FunctionCallNode-com.github.nsc.de.shake.interpreter.Scope-"><code>Function.invoke(FunctionCallNode, Scope)</code></a>. Will be removed in the future</span></div>
+</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/generators/java/nodes/JavaVariableType.html#CHAR">CHAR</a></span> - Static variable in class com.github.nsc.de.shake.generators.java.nodes.<a href="com/github/nsc/de/shake/generators/java/nodes/JavaVariableType.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaVariableType</a></dt>
 <dd>&nbsp;</dd>
@@ -205,14 +207,6 @@
 </dd>
 <dt><a href="com/github/nsc/de/shake/lexer/characterinputstream/charactersource/CharacterSource.html" title="interface in com.github.nsc.de.shake.lexer.characterinputstream.charactersource"><span class="typeNameLink">CharacterSource</span></a> - Interface in <a href="com/github/nsc/de/shake/lexer/characterinputstream/charactersource/package-summary.html">com.github.nsc.de.shake.lexer.characterinputstream.charactersource</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="com/github/nsc/de/shake/interpreter/values/Class.html" title="class in com.github.nsc.de.shake.interpreter.values"><span class="typeNameLink">Class</span></a> - Class in <a href="com/github/nsc/de/shake/interpreter/values/package-summary.html">com.github.nsc.de.shake.interpreter.values</a></dt>
-<dd>
-<div class="block">An <a href="com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values"><code>InterpreterValue</code></a> to store class-declarations</div>
-</dd>
-<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/Class.html#Class-java.lang.String-com.github.nsc.de.shake.interpreter.VariableList-com.github.nsc.de.shake.parser.node.variables.VariableDeclarationNode:A-com.github.nsc.de.shake.interpreter.Scope-com.github.nsc.de.shake.interpreter.Interpreter-com.github.nsc.de.shake.interpreter.VariableList-com.github.nsc.de.shake.parser.node.AccessDescriber-boolean-">Class(String, VariableList, VariableDeclarationNode[], Scope, Interpreter, VariableList, AccessDescriber, boolean)</a></span> - Constructor for class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/Class.html" title="class in com.github.nsc.de.shake.interpreter.values">Class</a></dt>
-<dd>
-<div class="block">The Constructor for <a href="com/github/nsc/de/shake/interpreter/values/Class.html" title="class in com.github.nsc.de.shake.interpreter.values"><code>Class</code></a></div>
-</dd>
 <dt><a href="com/github/nsc/de/shake/parser/node/objects/ClassConstructionNode.html" title="class in com.github.nsc.de.shake.parser.node.objects"><span class="typeNameLink">ClassConstructionNode</span></a> - Class in <a href="com/github/nsc/de/shake/parser/node/objects/package-summary.html">com.github.nsc.de.shake.parser.node.objects</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/parser/node/objects/ClassConstructionNode.html#ClassConstructionNode-com.github.nsc.de.shake.parser.node.ValuedNode-com.github.nsc.de.shake.parser.node.ValuedNode:A-">ClassConstructionNode(ValuedNode, ValuedNode[])</a></span> - Constructor for class com.github.nsc.de.shake.parser.node.objects.<a href="com/github/nsc/de/shake/parser/node/objects/ClassConstructionNode.html" title="class in com.github.nsc.de.shake.parser.node.objects">ClassConstructionNode</a></dt>
@@ -227,6 +221,14 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/parser/node/objects/ClassDeclarationNode.html#ClassDeclarationNode-java.lang.String-java.util.List-java.util.List-java.util.List-">ClassDeclarationNode(String, List&lt;VariableDeclarationNode&gt;, List&lt;FunctionDeclarationNode&gt;, List&lt;ClassDeclarationNode&gt;)</a></span> - Constructor for class com.github.nsc.de.shake.parser.node.objects.<a href="com/github/nsc/de/shake/parser/node/objects/ClassDeclarationNode.html" title="class in com.github.nsc.de.shake.parser.node.objects">ClassDeclarationNode</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="com/github/nsc/de/shake/interpreter/values/ClassValue.html" title="class in com.github.nsc.de.shake.interpreter.values"><span class="typeNameLink">ClassValue</span></a> - Class in <a href="com/github/nsc/de/shake/interpreter/values/package-summary.html">com.github.nsc.de.shake.interpreter.values</a></dt>
+<dd>
+<div class="block">An <a href="com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values"><code>InterpreterValue</code></a> to store class-declarations</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/ClassValue.html#ClassValue-java.lang.String-com.github.nsc.de.shake.interpreter.VariableList-com.github.nsc.de.shake.parser.node.variables.VariableDeclarationNode:A-com.github.nsc.de.shake.interpreter.Scope-com.github.nsc.de.shake.interpreter.Interpreter-com.github.nsc.de.shake.interpreter.VariableList-com.github.nsc.de.shake.parser.node.AccessDescriber-boolean-">ClassValue(String, VariableList, VariableDeclarationNode[], Scope, Interpreter, VariableList, AccessDescriber, boolean)</a></span> - Constructor for class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/ClassValue.html" title="class in com.github.nsc.de.shake.interpreter.values">ClassValue</a></dt>
+<dd>
+<div class="block">The Constructor for <a href="com/github/nsc/de/shake/interpreter/values/ClassValue.html" title="class in com.github.nsc.de.shake.interpreter.values"><code>ClassValue</code></a></div>
+</dd>
 <dt><a href="com/github/nsc/de/shake/cli/CliArgumentParser.html" title="class in com.github.nsc.de.shake.cli"><span class="typeNameLink">CliArgumentParser</span></a> - Class in <a href="com/github/nsc/de/shake/cli/package-summary.html">com.github.nsc.de.shake.cli</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/cli/CliArgumentParser.html#CliArgumentParser-java.util.List-">CliArgumentParser(List&lt;CliArgumentParser.CliOption&gt;)</a></span> - Constructor for class com.github.nsc.de.shake.cli.<a href="com/github/nsc/de/shake/cli/CliArgumentParser.html" title="class in com.github.nsc.de.shake.cli">CliArgumentParser</a></dt>
@@ -431,6 +433,8 @@
 </a>
 <h2 class="title">F</h2>
 <dl>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/Variable.html#finalOf-java.lang.String-T-">finalOf(String, T)</a></span> - Static method in class com.github.nsc.de.shake.interpreter.<a href="com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter">Variable</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/generators/java/nodes/JavaVariableType.html#FLOAT">FLOAT</a></span> - Static variable in class com.github.nsc.de.shake.generators.java.nodes.<a href="com/github/nsc/de/shake/generators/java/nodes/JavaVariableType.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaVariableType</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/parser/node/VariableType.html#FLOAT">FLOAT</a></span> - Static variable in class com.github.nsc.de.shake.parser.node.<a href="com/github/nsc/de/shake/parser/node/VariableType.html" title="class in com.github.nsc.de.shake.parser.node">VariableType</a></dt>
@@ -559,11 +563,23 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/parser/node/loops/WhileNode.html#getBody--">getBody()</a></span> - Method in class com.github.nsc.de.shake.parser.node.loops.<a href="com/github/nsc/de/shake/parser/node/loops/WhileNode.html" title="class in com.github.nsc.de.shake.parser.node.loops">WhileNode</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/Class.html#getChild-java.lang.String-">getChild(String)</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/Class.html" title="class in com.github.nsc.de.shake.interpreter.values">Class</a></dt>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/ClassValue.html#getChild-java.lang.String-">getChild(String)</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/ClassValue.html" title="class in com.github.nsc.de.shake.interpreter.values">ClassValue</a></dt>
 <dd>
 <div class="block">This function will be executed when getting a child (variable.child)</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/InterpreterValue.html#getChild-java.lang.String-">getChild(String)</a></span> - Method in interface com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></dt>
+<dd>
+<div class="block">This function will be executed when getting a child (variable.child)</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/Java.html#getChild-java.lang.String-">getChild(String)</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/Java.html" title="class in com.github.nsc.de.shake.interpreter.values">Java</a></dt>
+<dd>
+<div class="block">This function will be executed when getting a child (variable.child)</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/Java.JavaUnknown.html#getChild-java.lang.String-">getChild(String)</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/Java.JavaUnknown.html" title="class in com.github.nsc.de.shake.interpreter.values">Java.JavaUnknown</a></dt>
+<dd>
+<div class="block">This function will be executed when getting a child (variable.child)</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/Java.JavaValue.html#getChild-java.lang.String-">getChild(String)</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/Java.JavaValue.html" title="class in com.github.nsc.de.shake.interpreter.values">Java.JavaValue</a></dt>
 <dd>
 <div class="block">This function will be executed when getting a child (variable.child)</div>
 </dd>
@@ -583,9 +599,9 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/parser/node/objects/ClassDeclarationNode.html#getClasses--">getClasses()</a></span> - Method in class com.github.nsc.de.shake.parser.node.objects.<a href="com/github/nsc/de/shake/parser/node/objects/ClassDeclarationNode.html" title="class in com.github.nsc.de.shake.parser.node.objects">ClassDeclarationNode</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/Class.html#getClassName--">getClassName()</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/Class.html" title="class in com.github.nsc.de.shake.interpreter.values">Class</a></dt>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/ClassValue.html#getClassName--">getClassName()</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/ClassValue.html" title="class in com.github.nsc.de.shake.interpreter.values">ClassValue</a></dt>
 <dd>
-<div class="block">Getter for <a href="com/github/nsc/de/shake/interpreter/values/Class.html#name"><code>Class.name</code></a> (the class name)</div>
+<div class="block">Getter for <a href="com/github/nsc/de/shake/interpreter/values/ClassValue.html#name"><code>ClassValue.name</code></a> (the class name)</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/util/CompilerError.ErrorMarker.html#getColorPreview--">getColorPreview()</a></span> - Method in class com.github.nsc.de.shake.util.<a href="com/github/nsc/de/shake/util/CompilerError.ErrorMarker.html" title="class in com.github.nsc.de.shake.util">CompilerError.ErrorMarker</a></dt>
 <dd>&nbsp;</dd>
@@ -629,9 +645,9 @@
 </dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/util/CompilerError.html#getEnd--">getEnd()</a></span> - Method in error com.github.nsc.de.shake.util.<a href="com/github/nsc/de/shake/util/CompilerError.html" title="class in com.github.nsc.de.shake.util">CompilerError</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/Class.html#getFields--">getFields()</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/Class.html" title="class in com.github.nsc.de.shake.interpreter.values">Class</a></dt>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/ClassValue.html#getFields--">getFields()</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/ClassValue.html" title="class in com.github.nsc.de.shake.interpreter.values">ClassValue</a></dt>
 <dd>
-<div class="block">Getter for <a href="com/github/nsc/de/shake/interpreter/values/Class.html#fields"><code>Class.fields</code></a> (the fields of the class)</div>
+<div class="block">Getter for <a href="com/github/nsc/de/shake/interpreter/values/ClassValue.html#fields"><code>ClassValue.fields</code></a> (the fields of the class)</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/parser/node/objects/ClassDeclarationNode.html#getFields--">getFields()</a></span> - Method in class com.github.nsc.de.shake.parser.node.objects.<a href="com/github/nsc/de/shake/parser/node/objects/ClassDeclarationNode.html" title="class in com.github.nsc.de.shake.parser.node.objects">ClassDeclarationNode</a></dt>
 <dd>&nbsp;</dd>
@@ -659,9 +675,13 @@
 </dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/parser/Parser.html#getInput--">getInput()</a></span> - Method in class com.github.nsc.de.shake.parser.<a href="com/github/nsc/de/shake/parser/Parser.html" title="class in com.github.nsc.de.shake.parser">Parser</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/Class.html#getInterpreter--">getInterpreter()</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/Class.html" title="class in com.github.nsc.de.shake.interpreter.values">Class</a></dt>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/Scope.html#getInterpreter--">getInterpreter()</a></span> - Method in class com.github.nsc.de.shake.interpreter.<a href="com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a></dt>
 <dd>
-<div class="block">Getter for <a href="com/github/nsc/de/shake/interpreter/values/Class.html#interpreter"><code>Class.interpreter</code></a> (the interpreter of the class)</div>
+<div class="block">Getter for the <a href="com/github/nsc/de/shake/interpreter/Interpreter.html" title="class in com.github.nsc.de.shake.interpreter"><code>Interpreter</code></a> of the <a href="com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter"><code>Scope</code></a></div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/ClassValue.html#getInterpreter--">getInterpreter()</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/ClassValue.html" title="class in com.github.nsc.de.shake.interpreter.values">ClassValue</a></dt>
+<dd>
+<div class="block">Getter for <a href="com/github/nsc/de/shake/interpreter/values/ClassValue.html#interpreter"><code>ClassValue.interpreter</code></a> (the interpreter of the class)</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/Function.html#getInterpreter--">getInterpreter()</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/Function.html" title="class in com.github.nsc.de.shake.interpreter.values">Function</a></dt>
 <dd>
@@ -711,10 +731,10 @@
 <dd>
 <div class="block">Returns the name of the type of <a href="com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values"><code>InterpreterValue</code></a> (To identify the type of value)</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/Class.html#getName--">getName()</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/Class.html" title="class in com.github.nsc.de.shake.interpreter.values">Class</a></dt>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/ClassValue.html#getName--">getName()</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/ClassValue.html" title="class in com.github.nsc.de.shake.interpreter.values">ClassValue</a></dt>
 <dd>
 <div class="block">Returns the name of the type of <a href="com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values"><code>InterpreterValue</code></a> (To identify the type of value)
- For <a href="com/github/nsc/de/shake/interpreter/values/Class.html" title="class in com.github.nsc.de.shake.interpreter.values"><code>Class</code></a> it just always returns "class"</div>
+ For <a href="com/github/nsc/de/shake/interpreter/values/ClassValue.html" title="class in com.github.nsc.de.shake.interpreter.values"><code>ClassValue</code></a> it just always returns "class"</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/DoubleValue.html#getName--">getName()</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/DoubleValue.html" title="class in com.github.nsc.de.shake.interpreter.values">DoubleValue</a></dt>
 <dd>
@@ -732,6 +752,22 @@
  For <a href="com/github/nsc/de/shake/interpreter/values/IntegerValue.html" title="class in com.github.nsc.de.shake.interpreter.values"><code>IntegerValue</code></a> it just always returns "integer"</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/InterpreterValue.html#getName--">getName()</a></span> - Method in interface com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></dt>
+<dd>
+<div class="block">Returns the name of the type of <a href="com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values"><code>InterpreterValue</code></a> (To identify the type of value)</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/Java.html#getName--">getName()</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/Java.html" title="class in com.github.nsc.de.shake.interpreter.values">Java</a></dt>
+<dd>
+<div class="block">Returns the name of the type of <a href="com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values"><code>InterpreterValue</code></a> (To identify the type of value)</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/Java.JavaMethod.html#getName--">getName()</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/Java.JavaMethod.html" title="class in com.github.nsc.de.shake.interpreter.values">Java.JavaMethod</a></dt>
+<dd>
+<div class="block">Returns the name of the type of <a href="com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values"><code>InterpreterValue</code></a> (To identify the type of value)</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/Java.JavaUnknown.html#getName--">getName()</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/Java.JavaUnknown.html" title="class in com.github.nsc.de.shake.interpreter.values">Java.JavaUnknown</a></dt>
+<dd>
+<div class="block">Returns the name of the type of <a href="com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values"><code>InterpreterValue</code></a> (To identify the type of value)</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/Java.JavaValue.html#getName--">getName()</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/Java.JavaValue.html" title="class in com.github.nsc.de.shake.interpreter.values">Java.JavaValue</a></dt>
 <dd>
 <div class="block">Returns the name of the type of <a href="com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values"><code>InterpreterValue</code></a> (To identify the type of value)</div>
 </dd>
@@ -769,6 +805,8 @@
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/parser/node/expression/DoubleNode.html#getNumber--">getNumber()</a></span> - Method in class com.github.nsc.de.shake.parser.node.expression.<a href="com/github/nsc/de/shake/parser/node/expression/DoubleNode.html" title="class in com.github.nsc.de.shake.parser.node.expression">DoubleNode</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/parser/node/expression/IntegerNode.html#getNumber--">getNumber()</a></span> - Method in class com.github.nsc.de.shake.parser.node.expression.<a href="com/github/nsc/de/shake/parser/node/expression/IntegerNode.html" title="class in com.github.nsc.de.shake.parser.node.expression">IntegerNode</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/Java.JavaValue.html#getObject--">getObject()</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/Java.JavaValue.html" title="class in com.github.nsc.de.shake.interpreter.values">Java.JavaValue</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/parser/node/expression/AddNode.html#getOperator--">getOperator()</a></span> - Method in class com.github.nsc.de.shake.parser.node.expression.<a href="com/github/nsc/de/shake/parser/node/expression/AddNode.html" title="class in com.github.nsc.de.shake.parser.node.expression">AddNode</a></dt>
 <dd>&nbsp;</dd>
@@ -844,9 +882,9 @@
 </dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/util/CompilerError.ErrorMarker.html#getPreview--">getPreview()</a></span> - Method in class com.github.nsc.de.shake.util.<a href="com/github/nsc/de/shake/util/CompilerError.ErrorMarker.html" title="class in com.github.nsc.de.shake.util">CompilerError.ErrorMarker</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/Class.html#getPrototype--">getPrototype()</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/Class.html" title="class in com.github.nsc.de.shake.interpreter.values">Class</a></dt>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/ClassValue.html#getPrototype--">getPrototype()</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/ClassValue.html" title="class in com.github.nsc.de.shake.interpreter.values">ClassValue</a></dt>
 <dd>
-<div class="block">Getter for <a href="com/github/nsc/de/shake/interpreter/values/Class.html#prototype"><code>Class.prototype</code></a> (the prototype of the class)</div>
+<div class="block">Getter for <a href="com/github/nsc/de/shake/interpreter/values/ClassValue.html#prototype"><code>ClassValue.prototype</code></a> (the prototype of the class)</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/parser/node/expression/ExpressionNode.html#getRight--">getRight()</a></span> - Method in class com.github.nsc.de.shake.parser.node.expression.<a href="com/github/nsc/de/shake/parser/node/expression/ExpressionNode.html" title="class in com.github.nsc.de.shake.parser.node.expression">ExpressionNode</a></dt>
 <dd>&nbsp;</dd>
@@ -856,9 +894,9 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/parser/node/loops/ForNode.html#getRound--">getRound()</a></span> - Method in class com.github.nsc.de.shake.parser.node.loops.<a href="com/github/nsc/de/shake/parser/node/loops/ForNode.html" title="class in com.github.nsc.de.shake.parser.node.loops">ForNode</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/Class.html#getScope--">getScope()</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/Class.html" title="class in com.github.nsc.de.shake.interpreter.values">Class</a></dt>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/ClassValue.html#getScope--">getScope()</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/ClassValue.html" title="class in com.github.nsc.de.shake.interpreter.values">ClassValue</a></dt>
 <dd>
-<div class="block">Getter for <a href="com/github/nsc/de/shake/interpreter/values/Class.html#scope"><code>Class.scope</code></a> (the scope the class is located in)</div>
+<div class="block">Getter for <a href="com/github/nsc/de/shake/interpreter/values/ClassValue.html#scope"><code>ClassValue.scope</code></a> (the scope the class is located in)</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/Function.html#getScope--">getScope()</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/Function.html" title="class in com.github.nsc.de.shake.interpreter.values">Function</a></dt>
 <dd>
@@ -908,9 +946,9 @@
 </dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/util/CompilerError.html#getStart--">getStart()</a></span> - Method in error com.github.nsc.de.shake.util.<a href="com/github/nsc/de/shake/util/CompilerError.html" title="class in com.github.nsc.de.shake.util">CompilerError</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/Class.html#getStatics--">getStatics()</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/Class.html" title="class in com.github.nsc.de.shake.interpreter.values">Class</a></dt>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/ClassValue.html#getStatics--">getStatics()</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/ClassValue.html" title="class in com.github.nsc.de.shake.interpreter.values">ClassValue</a></dt>
 <dd>
-<div class="block">Getter for <a href="com/github/nsc/de/shake/interpreter/values/Class.html#statics"><code>Class.statics</code></a> (the statics of the class)</div>
+<div class="block">Getter for <a href="com/github/nsc/de/shake/interpreter/values/ClassValue.html#statics"><code>ClassValue.statics</code></a> (the statics of the class)</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/parser/node/VariableType.html#getSubtype--">getSubtype()</a></span> - Method in class com.github.nsc.de.shake.parser.node.<a href="com/github/nsc/de/shake/parser/node/VariableType.html" title="class in com.github.nsc.de.shake.parser.node">VariableType</a></dt>
 <dd>&nbsp;</dd>
@@ -922,6 +960,8 @@
 <dd>
 <div class="block">Getter for <a href="com/github/nsc/de/shake/lexer/token/TokenInputStream.html#tokens"><code>TokenInputStream.tokens</code></a> (Gives back an array of <a href="com/github/nsc/de/shake/lexer/token/Token.html" title="class in com.github.nsc.de.shake.lexer.token"><code>Token</code></a>s)</div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/Java.JavaValue.html#getType--">getType()</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/Java.JavaValue.html" title="class in com.github.nsc.de.shake.interpreter.values">Java.JavaValue</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/Variable.html#getType--">getType()</a></span> - Method in class com.github.nsc.de.shake.interpreter.<a href="com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter">Variable</a></dt>
 <dd>
 <div class="block">Getter for the variable-type (<a href="com/github/nsc/de/shake/interpreter/Variable.html#type"><code>Variable.type</code></a>)</div>
@@ -937,6 +977,8 @@
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/parser/node/variables/VariableDeclarationNode.html#getType--">getType()</a></span> - Method in class com.github.nsc.de.shake.parser.node.variables.<a href="com/github/nsc/de/shake/parser/node/variables/VariableDeclarationNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableDeclarationNode</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/parser/node/VariableType.html#getType--">getType()</a></span> - Method in class com.github.nsc.de.shake.parser.node.<a href="com/github/nsc/de/shake/parser/node/VariableType.html" title="class in com.github.nsc.de.shake.parser.node">VariableType</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/Java.JavaUnknown.html#getUnknownName--">getUnknownName()</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/Java.JavaUnknown.html" title="class in com.github.nsc.de.shake.interpreter.values">Java.JavaUnknown</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/BooleanValue.html#getValue--">getValue()</a></span> - Method in enum com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/BooleanValue.html" title="enum in com.github.nsc.de.shake.interpreter.values">BooleanValue</a></dt>
 <dd>
@@ -1102,9 +1144,23 @@
 <dd>
 <div class="block">A Value for the Interpreter, any type of value will implement this interface</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/Class.html#isFinal--">isFinal()</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/Class.html" title="class in com.github.nsc.de.shake.interpreter.values">Class</a></dt>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/Function.html#invoke-com.github.nsc.de.shake.parser.node.functions.FunctionCallNode-com.github.nsc.de.shake.interpreter.Scope-">invoke(FunctionCallNode, Scope)</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/Function.html" title="class in com.github.nsc.de.shake.interpreter.values">Function</a></dt>
 <dd>
-<div class="block">Getter for <a href="com/github/nsc/de/shake/interpreter/values/Class.html#isFinal"><code>Class.isFinal</code></a> (is this class final?)</div>
+<div class="block">Invoke a function</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/InterpreterValue.html#invoke-com.github.nsc.de.shake.parser.node.functions.FunctionCallNode-com.github.nsc.de.shake.interpreter.Scope-">invoke(FunctionCallNode, Scope)</a></span> - Method in interface com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></dt>
+<dd>
+<div class="block">Invoke a value</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/Java.JavaMethod.html#invoke-com.github.nsc.de.shake.parser.node.functions.FunctionCallNode-com.github.nsc.de.shake.interpreter.Scope-">invoke(FunctionCallNode, Scope)</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/Java.JavaMethod.html" title="class in com.github.nsc.de.shake.interpreter.values">Java.JavaMethod</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/Variable.html#invoke-com.github.nsc.de.shake.parser.node.functions.FunctionCallNode-com.github.nsc.de.shake.interpreter.Scope-">invoke(FunctionCallNode, Scope)</a></span> - Method in class com.github.nsc.de.shake.interpreter.<a href="com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter">Variable</a></dt>
+<dd>
+<div class="block">Invoke a value</div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/ClassValue.html#isFinal--">isFinal()</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/ClassValue.html" title="class in com.github.nsc.de.shake.interpreter.values">ClassValue</a></dt>
+<dd>
+<div class="block">Getter for <a href="com/github/nsc/de/shake/interpreter/values/ClassValue.html#isFinal"><code>ClassValue.isFinal</code></a> (is this class final?)</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/Function.html#isFinal--">isFinal()</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/Function.html" title="class in com.github.nsc.de.shake.interpreter.values">Function</a></dt>
 <dd>
@@ -1136,6 +1192,16 @@
 </a>
 <h2 class="title">J</h2>
 <dl>
+<dt><a href="com/github/nsc/de/shake/interpreter/values/Java.html" title="class in com.github.nsc.de.shake.interpreter.values"><span class="typeNameLink">Java</span></a> - Class in <a href="com/github/nsc/de/shake/interpreter/values/package-summary.html">com.github.nsc.de.shake.interpreter.values</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/Java.html#Java--">Java()</a></span> - Constructor for class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/Java.html" title="class in com.github.nsc.de.shake.interpreter.values">Java</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="com/github/nsc/de/shake/interpreter/values/Java.JavaMethod.html" title="class in com.github.nsc.de.shake.interpreter.values"><span class="typeNameLink">Java.JavaMethod</span></a> - Class in <a href="com/github/nsc/de/shake/interpreter/values/package-summary.html">com.github.nsc.de.shake.interpreter.values</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="com/github/nsc/de/shake/interpreter/values/Java.JavaUnknown.html" title="class in com.github.nsc.de.shake.interpreter.values"><span class="typeNameLink">Java.JavaUnknown</span></a> - Class in <a href="com/github/nsc/de/shake/interpreter/values/package-summary.html">com.github.nsc.de.shake.interpreter.values</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="com/github/nsc/de/shake/interpreter/values/Java.JavaValue.html" title="class in com.github.nsc.de.shake.interpreter.values"><span class="typeNameLink">Java.JavaValue</span></a>&lt;<a href="com/github/nsc/de/shake/interpreter/values/Java.JavaValue.html" title="type parameter in Java.JavaValue">T</a>&gt; - Class in <a href="com/github/nsc/de/shake/interpreter/values/package-summary.html">com.github.nsc.de.shake.interpreter.values</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="com/github/nsc/de/shake/generators/java/nodes/JavaClass.html" title="class in com.github.nsc.de.shake.generators.java.nodes"><span class="typeNameLink">JavaClass</span></a> - Class in <a href="com/github/nsc/de/shake/generators/java/nodes/package-summary.html">com.github.nsc.de.shake.generators.java.nodes</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/generators/java/nodes/JavaClass.html#JavaClass--">JavaClass()</a></span> - Constructor for class com.github.nsc.de.shake.generators.java.nodes.<a href="com/github/nsc/de/shake/generators/java/nodes/JavaClass.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaClass</a></dt>
@@ -1186,6 +1252,10 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaIntegerPart.html#JavaIntegerPart-int-">JavaIntegerPart(int)</a></span> - Constructor for class com.github.nsc.de.shake.generators.java.nodes.<a href="com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaIntegerPart.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaIntegerPart</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/Java.JavaMethod.html#JavaMethod-java.lang.Class-java.lang.String-java.lang.Object-">JavaMethod(Class, String, Object)</a></span> - Constructor for class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/Java.JavaMethod.html" title="class in com.github.nsc.de.shake.interpreter.values">Java.JavaMethod</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/Java.JavaMethod.html#JavaMethod-java.lang.Class-java.lang.String-">JavaMethod(Class, String)</a></span> - Constructor for class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/Java.JavaMethod.html" title="class in com.github.nsc.de.shake.interpreter.values">Java.JavaMethod</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes"><span class="typeNameLink">JavaNode</span></a> - Interface in <a href="com/github/nsc/de/shake/generators/java/nodes/package-summary.html">com.github.nsc.de.shake.generators.java.nodes</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/github/nsc/de/shake/generators/java/nodes/JavaNode.JavaOperation.html" title="interface in com.github.nsc.de.shake.generators.java.nodes"><span class="typeNameLink">JavaNode.JavaOperation</span></a> - Interface in <a href="com/github/nsc/de/shake/generators/java/nodes/package-summary.html">com.github.nsc.de.shake.generators.java.nodes</a></dt>
@@ -1201,6 +1271,8 @@
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/generators/java/nodes/JavaTree.html#JavaTree-com.github.nsc.de.shake.generators.java.nodes.JavaNode.JavaOperation:A-">JavaTree(JavaNode.JavaOperation[])</a></span> - Constructor for class com.github.nsc.de.shake.generators.java.nodes.<a href="com/github/nsc/de/shake/generators/java/nodes/JavaTree.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaTree</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaValue.html#JavaValue-java.lang.String-">JavaValue(String)</a></span> - Constructor for class com.github.nsc.de.shake.generators.java.nodes.<a href="com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaValue.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaValue</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/Java.JavaValue.html#JavaValue-java.lang.Class-T-">JavaValue(Class&lt;T&gt;, T)</a></span> - Constructor for class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/Java.JavaValue.html" title="class in com.github.nsc.de.shake.interpreter.values">Java.JavaValue</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="com/github/nsc/de/shake/generators/java/nodes/JavaValued.html" title="class in com.github.nsc.de.shake.generators.java.nodes"><span class="typeNameLink">JavaValued</span></a> - Class in <a href="com/github/nsc/de/shake/generators/java/nodes/package-summary.html">com.github.nsc.de.shake.generators.java.nodes</a></dt>
 <dd>&nbsp;</dd>
@@ -1439,7 +1511,7 @@
 <dd>
 <div class="block"><a href="com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values"><code>InterpreterValue</code></a> to store objects</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/ObjectValue.html#ObjectValue-com.github.nsc.de.shake.interpreter.values.Class-">ObjectValue(Class)</a></span> - Constructor for class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/ObjectValue.html" title="class in com.github.nsc.de.shake.interpreter.values">ObjectValue</a></dt>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/ObjectValue.html#ObjectValue-com.github.nsc.de.shake.interpreter.values.ClassValue-">ObjectValue(ClassValue)</a></span> - Constructor for class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/ObjectValue.html" title="class in com.github.nsc.de.shake.interpreter.values">ObjectValue</a></dt>
 <dd>
 <div class="block">Constructor for <a href="com/github/nsc/de/shake/interpreter/values/ObjectValue.html" title="class in com.github.nsc.de.shake.interpreter.values"><code>ObjectValue</code></a></div>
 </dd>
@@ -1606,11 +1678,11 @@
 <dd>
 <div class="block">A scope to keep all the variables inside</div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/Scope.html#Scope-com.github.nsc.de.shake.interpreter.Scope-com.github.nsc.de.shake.interpreter.VariableList-">Scope(Scope, VariableList)</a></span> - Constructor for class com.github.nsc.de.shake.interpreter.<a href="com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a></dt>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/Scope.html#Scope-com.github.nsc.de.shake.interpreter.Scope-com.github.nsc.de.shake.interpreter.VariableList-com.github.nsc.de.shake.interpreter.Interpreter-">Scope(Scope, VariableList, Interpreter)</a></span> - Constructor for class com.github.nsc.de.shake.interpreter.<a href="com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a></dt>
 <dd>
 <div class="block">Constructor for <a href="com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter"><code>Scope</code></a></div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/Scope.html#Scope-com.github.nsc.de.shake.interpreter.Scope-">Scope(Scope)</a></span> - Constructor for class com.github.nsc.de.shake.interpreter.<a href="com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a></dt>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/Scope.html#Scope-com.github.nsc.de.shake.interpreter.Scope-com.github.nsc.de.shake.interpreter.Interpreter-">Scope(Scope, Interpreter)</a></span> - Constructor for class com.github.nsc.de.shake.interpreter.<a href="com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a></dt>
 <dd>
 <div class="block">Constructor for <a href="com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter"><code>Scope</code></a></div>
 </dd>
@@ -1765,6 +1837,26 @@
 </a>
 <h2 class="title">T</h2>
 <dl>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/BooleanValue.html#toJava--">toJava()</a></span> - Method in enum com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/BooleanValue.html" title="enum in com.github.nsc.de.shake.interpreter.values">BooleanValue</a></dt>
+<dd>
+<div class="block">Get the java-representation of the <a href="com/github/nsc/de/shake/interpreter/values/BooleanValue.html" title="enum in com.github.nsc.de.shake.interpreter.values"><code>BooleanValue</code></a></div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/DoubleValue.html#toJava--">toJava()</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/DoubleValue.html" title="class in com.github.nsc.de.shake.interpreter.values">DoubleValue</a></dt>
+<dd>
+<div class="block">Get the java-representation of the <a href="com/github/nsc/de/shake/interpreter/values/DoubleValue.html" title="class in com.github.nsc.de.shake.interpreter.values"><code>DoubleValue</code></a></div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/IntegerValue.html#toJava--">toJava()</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/IntegerValue.html" title="class in com.github.nsc.de.shake.interpreter.values">IntegerValue</a></dt>
+<dd>
+<div class="block">Get the java-representation of the <a href="com/github/nsc/de/shake/interpreter/values/IntegerValue.html" title="class in com.github.nsc.de.shake.interpreter.values"><code>IntegerValue</code></a></div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/InterpreterValue.html#toJava--">toJava()</a></span> - Method in interface com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></dt>
+<dd>
+<div class="block">Get the java-representation of the <a href="com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values"><code>InterpreterValue</code></a></div>
+</dd>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/NullValue.html#toJava--">toJava()</a></span> - Method in enum com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/NullValue.html" title="enum in com.github.nsc.de.shake.interpreter.values">NullValue</a></dt>
+<dd>
+<div class="block">Get the java-representation of the <a href="com/github/nsc/de/shake/interpreter/values/NullValue.html" title="enum in com.github.nsc.de.shake.interpreter.values"><code>NullValue</code></a></div>
+</dd>
 <dt><a href="com/github/nsc/de/shake/lexer/token/Token.html" title="class in com.github.nsc.de.shake.lexer.token"><span class="typeNameLink">Token</span></a> - Class in <a href="com/github/nsc/de/shake/lexer/token/package-summary.html">com.github.nsc.de.shake.lexer.token</a></dt>
 <dd>
 <div class="block">The input of the <a href="com/github/nsc/de/shake/lexer/Lexer.html" title="class in com.github.nsc.de.shake.lexer"><code>Lexer</code></a> gets converted into <a href="com/github/nsc/de/shake/lexer/token/Token.html" title="class in com.github.nsc.de.shake.lexer.token"><code>Token</code></a>s.</div>
@@ -1869,9 +1961,9 @@
 <dd>
 <div class="block">Returns the string representation of the <a href="com/github/nsc/de/shake/interpreter/values/BooleanValue.html" title="enum in com.github.nsc.de.shake.interpreter.values"><code>BooleanValue</code></a></div>
 </dd>
-<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/Class.html#toString--">toString()</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/Class.html" title="class in com.github.nsc.de.shake.interpreter.values">Class</a></dt>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/ClassValue.html#toString--">toString()</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/ClassValue.html" title="class in com.github.nsc.de.shake.interpreter.values">ClassValue</a></dt>
 <dd>
-<div class="block">Returns the string representation of the <a href="com/github/nsc/de/shake/interpreter/values/Class.html" title="class in com.github.nsc.de.shake.interpreter.values"><code>Class</code></a></div>
+<div class="block">Returns the string representation of the <a href="com/github/nsc/de/shake/interpreter/values/ClassValue.html" title="class in com.github.nsc.de.shake.interpreter.values"><code>ClassValue</code></a></div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/DoubleValue.html#toString--">toString()</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/DoubleValue.html" title="class in com.github.nsc.de.shake.interpreter.values">DoubleValue</a></dt>
 <dd>
@@ -1885,6 +1977,12 @@
 <dd>
 <div class="block">Returns the string representation of the <a href="com/github/nsc/de/shake/interpreter/values/IntegerValue.html" title="class in com.github.nsc.de.shake.interpreter.values"><code>IntegerValue</code></a></div>
 </dd>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/Java.JavaMethod.html#toString--">toString()</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/Java.JavaMethod.html" title="class in com.github.nsc.de.shake.interpreter.values">Java.JavaMethod</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/Java.JavaUnknown.html#toString--">toString()</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/Java.JavaUnknown.html" title="class in com.github.nsc.de.shake.interpreter.values">Java.JavaUnknown</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/Java.JavaValue.html#toString--">toString()</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/Java.JavaValue.html" title="class in com.github.nsc.de.shake.interpreter.values">Java.JavaValue</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/NullValue.html#toString--">toString()</a></span> - Method in enum com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/NullValue.html" title="enum in com.github.nsc.de.shake.interpreter.values">NullValue</a></dt>
 <dd>
 <div class="block">Returns the string representation of the <a href="com/github/nsc/de/shake/interpreter/values/NullValue.html" title="enum in com.github.nsc.de.shake.interpreter.values"><code>NullValue</code></a>
@@ -2653,9 +2751,9 @@ the order they are declared.</div>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/parser/node/loops/WhileNode.html#WhileNode-com.github.nsc.de.shake.parser.node.Tree-com.github.nsc.de.shake.parser.node.ValuedNode-">WhileNode(Tree, ValuedNode)</a></span> - Constructor for class com.github.nsc.de.shake.parser.node.loops.<a href="com/github/nsc/de/shake/parser/node/loops/WhileNode.html" title="class in com.github.nsc.de.shake.parser.node.loops">WhileNode</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/Class.html#withScope-com.github.nsc.de.shake.interpreter.Scope-">withScope(Scope)</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/Class.html" title="class in com.github.nsc.de.shake.interpreter.values">Class</a></dt>
+<dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/ClassValue.html#withScope-com.github.nsc.de.shake.interpreter.Scope-">withScope(Scope)</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/ClassValue.html" title="class in com.github.nsc.de.shake.interpreter.values">ClassValue</a></dt>
 <dd>
-<div class="block">Returns the same class, but you can declare what <a href="com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter"><code>Scope</code></a> (<a href="com/github/nsc/de/shake/interpreter/values/Class.html#scope"><code>Class.scope</code></a>) to use (for class declarations)</div>
+<div class="block">Returns the same class, but you can declare what <a href="com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter"><code>Scope</code></a> (<a href="com/github/nsc/de/shake/interpreter/values/ClassValue.html#scope"><code>ClassValue.scope</code></a>) to use (for class declarations)</div>
 </dd>
 <dt><span class="memberNameLink"><a href="com/github/nsc/de/shake/interpreter/values/Function.html#withScope-com.github.nsc.de.shake.interpreter.Scope-">withScope(Scope)</a></span> - Method in class com.github.nsc.de.shake.interpreter.values.<a href="com/github/nsc/de/shake/interpreter/values/Function.html" title="class in com.github.nsc.de.shake.interpreter.values">Function</a></dt>
 <dd>

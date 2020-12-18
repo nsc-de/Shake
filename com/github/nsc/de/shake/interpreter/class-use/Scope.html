@@ -133,7 +133,7 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/Class.html" title="class in com.github.nsc.de.shake.interpreter.values">Class</a></code></td>
+<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ClassValue.html" title="class in com.github.nsc.de.shake.interpreter.values">ClassValue</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Interpreter.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html#createClassDeclaration-com.github.nsc.de.shake.parser.node.objects.ClassDeclarationNode-com.github.nsc.de.shake.interpreter.Scope-">createClassDeclaration</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/objects/ClassDeclarationNode.html" title="class in com.github.nsc.de.shake.parser.node.objects">ClassDeclarationNode</a>&nbsp;n,
                       <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Create a class-declaration (<a href="../../../../../../../com/github/nsc/de/shake/parser/node/objects/ClassDeclarationNode.html" title="class in com.github.nsc.de.shake.parser.node.objects"><code>ClassDeclarationNode</code></a>)</div>
@@ -147,263 +147,270 @@
 </td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
+<td class="colLast"><span class="typeNameLabel">Variable.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#invoke-com.github.nsc.de.shake.parser.node.functions.FunctionCallNode-com.github.nsc.de.shake.interpreter.Scope-">invoke</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/functions/FunctionCallNode.html" title="class in com.github.nsc.de.shake.parser.node.functions">FunctionCallNode</a>&nbsp;node,
+      <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
+<div class="block">Invoke a value</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">VariableList.ScopeVariableList.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/VariableList.ScopeVariableList.html#setScope-com.github.nsc.de.shake.interpreter.Scope-">setScope</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Setter for <a href="../../../../../../../com/github/nsc/de/shake/interpreter/VariableList.ScopeVariableList.html#scope"><code>VariableList.ScopeVariableList.scope</code></a> (the scope to use for all variables)</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Interpreter.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html#visit-com.github.nsc.de.shake.parser.node.Node-com.github.nsc.de.shake.interpreter.Scope-">visit</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/Node.html" title="interface in com.github.nsc.de.shake.parser.node">Node</a>&nbsp;n,
      <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Visits the given <a href="../../../../../../../com/github/nsc/de/shake/parser/node/Node.html" title="interface in com.github.nsc.de.shake.parser.node"><code>Node</code></a> using the specified <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter"><code>Scope</code></a></div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Interpreter.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html#visitAddNode-com.github.nsc.de.shake.parser.node.expression.AddNode-com.github.nsc.de.shake.interpreter.Scope-">visitAddNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/expression/AddNode.html" title="class in com.github.nsc.de.shake.parser.node.expression">AddNode</a>&nbsp;n,
             <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Visit an <a href="../../../../../../../com/github/nsc/de/shake/parser/node/expression/AddNode.html" title="class in com.github.nsc.de.shake.parser.node.expression"><code>AddNode</code></a> (Addition)</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Interpreter.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html#visitBiggerEqualsNode-com.github.nsc.de.shake.parser.node.logical.LogicalBiggerEqualsNode-com.github.nsc.de.shake.interpreter.Scope-">visitBiggerEqualsNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalBiggerEqualsNode.html" title="class in com.github.nsc.de.shake.parser.node.logical">LogicalBiggerEqualsNode</a>&nbsp;n,
                      <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Visit a <a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalBiggerEqualsNode.html" title="class in com.github.nsc.de.shake.parser.node.logical"><code>LogicalBiggerEqualsNode</code></a></div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Interpreter.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html#visitBiggerNode-com.github.nsc.de.shake.parser.node.logical.LogicalBiggerNode-com.github.nsc.de.shake.interpreter.Scope-">visitBiggerNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalBiggerNode.html" title="class in com.github.nsc.de.shake.parser.node.logical">LogicalBiggerNode</a>&nbsp;n,
                <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Visit a <a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalBiggerEqualsNode.html" title="class in com.github.nsc.de.shake.parser.node.logical"><code>LogicalBiggerEqualsNode</code></a></div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ObjectValue.html" title="class in com.github.nsc.de.shake.interpreter.values">ObjectValue</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Interpreter.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html#visitClassConstruction-com.github.nsc.de.shake.parser.node.objects.ClassConstructionNode-com.github.nsc.de.shake.interpreter.Scope-">visitClassConstruction</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/objects/ClassConstructionNode.html" title="class in com.github.nsc.de.shake.parser.node.objects">ClassConstructionNode</a>&nbsp;n,
                       <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Visit a <a href="../../../../../../../com/github/nsc/de/shake/parser/node/objects/ClassConstructionNode.html" title="class in com.github.nsc.de.shake.parser.node.objects"><code>ClassConstructionNode</code></a></div>
 </td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/Class.html" title="class in com.github.nsc.de.shake.interpreter.values">Class</a></code></td>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ClassValue.html" title="class in com.github.nsc.de.shake.interpreter.values">ClassValue</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Interpreter.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html#visitClassDeclarationNode-com.github.nsc.de.shake.parser.node.objects.ClassDeclarationNode-com.github.nsc.de.shake.interpreter.Scope-">visitClassDeclarationNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/objects/ClassDeclarationNode.html" title="class in com.github.nsc.de.shake.parser.node.objects">ClassDeclarationNode</a>&nbsp;node,
                          <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Visit a <a href="../../../../../../../com/github/nsc/de/shake/parser/node/objects/ClassDeclarationNode.html" title="class in com.github.nsc.de.shake.parser.node.objects"><code>ClassDeclarationNode</code></a></div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Interpreter.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html#visitDivNode-com.github.nsc.de.shake.parser.node.expression.DivNode-com.github.nsc.de.shake.interpreter.Scope-">visitDivNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/expression/DivNode.html" title="class in com.github.nsc.de.shake.parser.node.expression">DivNode</a>&nbsp;n,
             <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Visit a <a href="../../../../../../../com/github/nsc/de/shake/parser/node/expression/DivNode.html" title="class in com.github.nsc.de.shake.parser.node.expression"><code>DivNode</code></a> (Division)</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Interpreter.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html#visitDoWhileNode-com.github.nsc.de.shake.parser.node.loops.DoWhileNode-com.github.nsc.de.shake.interpreter.Scope-">visitDoWhileNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/loops/DoWhileNode.html" title="class in com.github.nsc.de.shake.parser.node.loops">DoWhileNode</a>&nbsp;n,
                 <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Visit a <a href="../../../../../../../com/github/nsc/de/shake/parser/node/loops/DoWhileNode.html" title="class in com.github.nsc.de.shake.parser.node.loops"><code>DoWhileNode</code></a></div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Interpreter.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html#visitEqEqualsNode-com.github.nsc.de.shake.parser.node.logical.LogicalEqEqualsNode-com.github.nsc.de.shake.interpreter.Scope-">visitEqEqualsNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalEqEqualsNode.html" title="class in com.github.nsc.de.shake.parser.node.logical">LogicalEqEqualsNode</a>&nbsp;n,
                  <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Visit a <a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalEqEqualsNode.html" title="class in com.github.nsc.de.shake.parser.node.logical"><code>LogicalEqEqualsNode</code></a></div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Interpreter.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html#visitForNode-com.github.nsc.de.shake.parser.node.loops.ForNode-com.github.nsc.de.shake.interpreter.Scope-">visitForNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/loops/ForNode.html" title="class in com.github.nsc.de.shake.parser.node.loops">ForNode</a>&nbsp;n,
             <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Visit a <a href="../../../../../../../com/github/nsc/de/shake/parser/node/loops/ForNode.html" title="class in com.github.nsc.de.shake.parser.node.loops"><code>ForNode</code></a></div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Interpreter.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html#visitFunctionCallNode-com.github.nsc.de.shake.parser.node.functions.FunctionCallNode-com.github.nsc.de.shake.interpreter.Scope-">visitFunctionCallNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/functions/FunctionCallNode.html" title="class in com.github.nsc.de.shake.parser.node.functions">FunctionCallNode</a>&nbsp;node,
                      <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Visit a <a href="../../../../../../../com/github/nsc/de/shake/parser/node/functions/FunctionCallNode.html" title="class in com.github.nsc.de.shake.parser.node.functions"><code>FunctionCallNode</code></a></div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/Function.html" title="class in com.github.nsc.de.shake.interpreter.values">Function</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Interpreter.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html#visitFunctionDeclarationNode-com.github.nsc.de.shake.parser.node.functions.FunctionDeclarationNode-com.github.nsc.de.shake.interpreter.Scope-">visitFunctionDeclarationNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/functions/FunctionDeclarationNode.html" title="class in com.github.nsc.de.shake.parser.node.functions">FunctionDeclarationNode</a>&nbsp;node,
                             <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Visit a <a href="../../../../../../../com/github/nsc/de/shake/parser/node/functions/FunctionDeclarationNode.html" title="class in com.github.nsc.de.shake.parser.node.functions"><code>FunctionDeclarationNode</code></a></div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter">Variable</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Interpreter.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html#visitIdentifier-com.github.nsc.de.shake.parser.node.IdentifierNode-com.github.nsc.de.shake.interpreter.Scope-">visitIdentifier</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/IdentifierNode.html" title="class in com.github.nsc.de.shake.parser.node">IdentifierNode</a>&nbsp;node,
                <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Visit an <a href="../../../../../../../com/github/nsc/de/shake/parser/node/IdentifierNode.html" title="class in com.github.nsc.de.shake.parser.node"><code>IdentifierNode</code></a></div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Interpreter.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html#visitIfNode-com.github.nsc.de.shake.parser.node.IfNode-com.github.nsc.de.shake.interpreter.Scope-">visitIfNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/IfNode.html" title="class in com.github.nsc.de.shake.parser.node">IfNode</a>&nbsp;n,
            <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Visit a if-else statement (<a href="../../../../../../../com/github/nsc/de/shake/parser/node/IfNode.html" title="class in com.github.nsc.de.shake.parser.node"><code>IfNode</code></a>)</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Interpreter.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html#visitLogicalAndNode-com.github.nsc.de.shake.parser.node.logical.LogicalAndNode-com.github.nsc.de.shake.interpreter.Scope-">visitLogicalAndNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalAndNode.html" title="class in com.github.nsc.de.shake.parser.node.logical">LogicalAndNode</a>&nbsp;n,
                    <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Visit a <a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalAndNode.html" title="class in com.github.nsc.de.shake.parser.node.logical"><code>LogicalAndNode</code></a></div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Interpreter.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html#visitLogicalOrNode-com.github.nsc.de.shake.parser.node.logical.LogicalOrNode-com.github.nsc.de.shake.interpreter.Scope-">visitLogicalOrNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalOrNode.html" title="class in com.github.nsc.de.shake.parser.node.logical">LogicalOrNode</a>&nbsp;n,
                   <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Visit a <a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalOrNode.html" title="class in com.github.nsc.de.shake.parser.node.logical"><code>LogicalOrNode</code></a></div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Interpreter.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html#visitModNode-com.github.nsc.de.shake.parser.node.expression.ModNode-com.github.nsc.de.shake.interpreter.Scope-">visitModNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/expression/ModNode.html" title="class in com.github.nsc.de.shake.parser.node.expression">ModNode</a>&nbsp;n,
             <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Visit a <a href="../../../../../../../com/github/nsc/de/shake/parser/node/expression/ModNode.html" title="class in com.github.nsc.de.shake.parser.node.expression"><code>ModNode</code></a> (Modulo)</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Interpreter.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html#visitMulNode-com.github.nsc.de.shake.parser.node.expression.MulNode-com.github.nsc.de.shake.interpreter.Scope-">visitMulNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/expression/MulNode.html" title="class in com.github.nsc.de.shake.parser.node.expression">MulNode</a>&nbsp;n,
             <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Visit a <a href="../../../../../../../com/github/nsc/de/shake/parser/node/expression/MulNode.html" title="class in com.github.nsc.de.shake.parser.node.expression"><code>MulNode</code></a> (Multiplication)</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Interpreter.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html#visitPowNode-com.github.nsc.de.shake.parser.node.expression.PowNode-com.github.nsc.de.shake.interpreter.Scope-">visitPowNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/expression/PowNode.html" title="class in com.github.nsc.de.shake.parser.node.expression">PowNode</a>&nbsp;n,
             <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Visit a <a href="../../../../../../../com/github/nsc/de/shake/parser/node/expression/PowNode.html" title="class in com.github.nsc.de.shake.parser.node.expression"><code>PowNode</code></a> (Modulo)</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Interpreter.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html#visitSmallerEqualsNode-com.github.nsc.de.shake.parser.node.logical.LogicalSmallerEqualsNode-com.github.nsc.de.shake.interpreter.Scope-">visitSmallerEqualsNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalSmallerEqualsNode.html" title="class in com.github.nsc.de.shake.parser.node.logical">LogicalSmallerEqualsNode</a>&nbsp;n,
                       <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Visit a <a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalSmallerEqualsNode.html" title="class in com.github.nsc.de.shake.parser.node.logical"><code>LogicalSmallerEqualsNode</code></a></div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Interpreter.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html#visitSmallerNode-com.github.nsc.de.shake.parser.node.logical.LogicalSmallerNode-com.github.nsc.de.shake.interpreter.Scope-">visitSmallerNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalSmallerNode.html" title="class in com.github.nsc.de.shake.parser.node.logical">LogicalSmallerNode</a>&nbsp;n,
                 <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Visit a <a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalSmallerEqualsNode.html" title="class in com.github.nsc.de.shake.parser.node.logical"><code>LogicalSmallerEqualsNode</code></a></div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Interpreter.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html#visitSubNode-com.github.nsc.de.shake.parser.node.expression.SubNode-com.github.nsc.de.shake.interpreter.Scope-">visitSubNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/expression/SubNode.html" title="class in com.github.nsc.de.shake.parser.node.expression">SubNode</a>&nbsp;n,
             <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Visit a <a href="../../../../../../../com/github/nsc/de/shake/parser/node/expression/SubNode.html" title="class in com.github.nsc.de.shake.parser.node.expression"><code>SubNode</code></a> (Subtraction)</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Interpreter.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html#visitTree-com.github.nsc.de.shake.parser.node.Tree-com.github.nsc.de.shake.interpreter.Scope-">visitTree</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/Tree.html" title="class in com.github.nsc.de.shake.parser.node">Tree</a>&nbsp;t,
          <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Visit a <a href="../../../../../../../com/github/nsc/de/shake/parser/node/Tree.html" title="class in com.github.nsc.de.shake.parser.node"><code>Tree</code></a></div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Interpreter.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html#visitVariableAddAssignmentNode-com.github.nsc.de.shake.parser.node.variables.VariableAddAssignmentNode-com.github.nsc.de.shake.interpreter.Scope-">visitVariableAddAssignmentNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableAddAssignmentNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableAddAssignmentNode</a>&nbsp;n,
                               <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Visit a <a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableAddAssignmentNode.html" title="class in com.github.nsc.de.shake.parser.node.variables"><code>VariableAddAssignmentNode</code></a></div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Interpreter.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html#visitVariableAssignmentNode-com.github.nsc.de.shake.parser.node.variables.VariableAssignmentNode-com.github.nsc.de.shake.interpreter.Scope-">visitVariableAssignmentNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableAssignmentNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableAssignmentNode</a>&nbsp;n,
                            <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Visit a <a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableAssignmentNode.html" title="class in com.github.nsc.de.shake.parser.node.variables"><code>VariableAssignmentNode</code></a></div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Interpreter.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html#visitVariableDeclarationNode-com.github.nsc.de.shake.parser.node.variables.VariableDeclarationNode-com.github.nsc.de.shake.interpreter.Scope-">visitVariableDeclarationNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableDeclarationNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableDeclarationNode</a>&nbsp;n,
                             <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Visit a <a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableDeclarationNode.html" title="class in com.github.nsc.de.shake.parser.node.variables"><code>VariableDeclarationNode</code></a></div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Interpreter.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html#visitVariableDecreaseNode-com.github.nsc.de.shake.parser.node.variables.VariableDecreaseNode-com.github.nsc.de.shake.interpreter.Scope-">visitVariableDecreaseNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableDecreaseNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableDecreaseNode</a>&nbsp;n,
                          <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Visit a <a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableDecreaseNode.html" title="class in com.github.nsc.de.shake.parser.node.variables"><code>VariableDecreaseNode</code></a></div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Interpreter.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html#visitVariableDivAssignmentNode-com.github.nsc.de.shake.parser.node.variables.VariableDivAssignmentNode-com.github.nsc.de.shake.interpreter.Scope-">visitVariableDivAssignmentNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableDivAssignmentNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableDivAssignmentNode</a>&nbsp;n,
                               <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Visit a <a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableDivAssignmentNode.html" title="class in com.github.nsc.de.shake.parser.node.variables"><code>VariableDivAssignmentNode</code></a></div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Interpreter.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html#visitVariableIncreaseNode-com.github.nsc.de.shake.parser.node.variables.VariableIncreaseNode-com.github.nsc.de.shake.interpreter.Scope-">visitVariableIncreaseNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableIncreaseNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableIncreaseNode</a>&nbsp;n,
                          <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Visit a <a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableIncreaseNode.html" title="class in com.github.nsc.de.shake.parser.node.variables"><code>VariableIncreaseNode</code></a></div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Interpreter.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html#visitVariableModAssignmentNode-com.github.nsc.de.shake.parser.node.variables.VariableModAssignmentNode-com.github.nsc.de.shake.interpreter.Scope-">visitVariableModAssignmentNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableModAssignmentNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableModAssignmentNode</a>&nbsp;n,
                               <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Visit a <a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableModAssignmentNode.html" title="class in com.github.nsc.de.shake.parser.node.variables"><code>VariableModAssignmentNode</code></a></div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Interpreter.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html#visitVariableMulAssignmentNode-com.github.nsc.de.shake.parser.node.variables.VariableMulAssignmentNode-com.github.nsc.de.shake.interpreter.Scope-">visitVariableMulAssignmentNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableMulAssignmentNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableMulAssignmentNode</a>&nbsp;n,
                               <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Visit a <a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableMulAssignmentNode.html" title="class in com.github.nsc.de.shake.parser.node.variables"><code>VariableMulAssignmentNode</code></a></div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Interpreter.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html#visitVariablePowAssignmentNode-com.github.nsc.de.shake.parser.node.variables.VariablePowAssignmentNode-com.github.nsc.de.shake.interpreter.Scope-">visitVariablePowAssignmentNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariablePowAssignmentNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariablePowAssignmentNode</a>&nbsp;n,
                               <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Visit a <a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariablePowAssignmentNode.html" title="class in com.github.nsc.de.shake.parser.node.variables"><code>VariablePowAssignmentNode</code></a></div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Interpreter.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html#visitVariableSubAssignmentNode-com.github.nsc.de.shake.parser.node.variables.VariableSubAssignmentNode-com.github.nsc.de.shake.interpreter.Scope-">visitVariableSubAssignmentNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableSubAssignmentNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableSubAssignmentNode</a>&nbsp;n,
                               <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Visit a <a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableSubAssignmentNode.html" title="class in com.github.nsc.de.shake.parser.node.variables"><code>VariableSubAssignmentNode</code></a></div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Interpreter.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html#visitVariableUsageNode-com.github.nsc.de.shake.parser.node.variables.VariableUsageNode-com.github.nsc.de.shake.interpreter.Scope-">visitVariableUsageNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableUsageNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableUsageNode</a>&nbsp;n,
                       <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Visit a <a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableUsageNode.html" title="class in com.github.nsc.de.shake.parser.node.variables"><code>VariableUsageNode</code></a></div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Interpreter.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html#visitWhileNode-com.github.nsc.de.shake.parser.node.loops.WhileNode-com.github.nsc.de.shake.interpreter.Scope-">visitWhileNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/loops/WhileNode.html" title="class in com.github.nsc.de.shake.parser.node.loops">WhileNode</a>&nbsp;n,
               <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Visit a <a href="../../../../../../../com/github/nsc/de/shake/parser/node/loops/WhileNode.html" title="class in com.github.nsc.de.shake.parser.node.loops"><code>WhileNode</code></a></div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html" title="class in com.github.nsc.de.shake.interpreter">VariableList</a></code></td>
 <td class="colLast"><span class="typeNameLabel">VariableList.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html#withScope-com.github.nsc.de.shake.interpreter.Scope-">withScope</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Let's all the children of the <a href="../../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html" title="class in com.github.nsc.de.shake.interpreter"><code>VariableList</code></a> use the given scope</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter">Variable</a>&lt;<a href="../../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="type parameter in Variable">V</a>&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">Variable.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#withScope-com.github.nsc.de.shake.interpreter.Scope-">withScope</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Returns the same variable, but you can declare what <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter"><code>Scope</code></a> to use (for class declarations)</div>
@@ -423,13 +430,15 @@
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html#Scope-com.github.nsc.de.shake.interpreter.Scope-">Scope</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;parent)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html#Scope-com.github.nsc.de.shake.interpreter.Scope-com.github.nsc.de.shake.interpreter.Interpreter-">Scope</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;parent,
+     <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html" title="class in com.github.nsc.de.shake.interpreter">Interpreter</a>&nbsp;interpreter)</code>
 <div class="block">Constructor for <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter"><code>Scope</code></a></div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html#Scope-com.github.nsc.de.shake.interpreter.Scope-com.github.nsc.de.shake.interpreter.VariableList-">Scope</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;parent,
-     <a href="../../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html" title="class in com.github.nsc.de.shake.interpreter">VariableList</a>&nbsp;variables)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html#Scope-com.github.nsc.de.shake.interpreter.Scope-com.github.nsc.de.shake.interpreter.VariableList-com.github.nsc.de.shake.interpreter.Interpreter-">Scope</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;parent,
+     <a href="../../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html" title="class in com.github.nsc.de.shake.interpreter">VariableList</a>&nbsp;variables,
+     <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html" title="class in com.github.nsc.de.shake.interpreter">Interpreter</a>&nbsp;interpreter)</code>
 <div class="block">Constructor for <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter"><code>Scope</code></a></div>
 </td>
 </tr>
@@ -456,8 +465,8 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a></code></td>
-<td class="colLast"><span class="typeNameLabel">Class.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/Class.html#getScope--">getScope</a></span>()</code>
-<div class="block">Getter for <a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/Class.html#scope"><code>Class.scope</code></a> (the scope the class is located in)</div>
+<td class="colLast"><span class="typeNameLabel">ClassValue.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ClassValue.html#getScope--">getScope</a></span>()</code>
+<div class="block">Getter for <a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ClassValue.html#scope"><code>ClassValue.scope</code></a> (the scope the class is located in)</div>
 </td>
 </tr>
 <tr class="rowColor">
@@ -485,16 +494,37 @@
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">Function.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/Function.html#call-com.github.nsc.de.shake.parser.node.functions.FunctionCallNode-com.github.nsc.de.shake.interpreter.Scope-">call</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/functions/FunctionCallNode.html" title="class in com.github.nsc.de.shake.parser.node.functions">FunctionCallNode</a>&nbsp;node,
     <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
-<div class="block">Function call method</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">Moved to <a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/Function.html#invoke-com.github.nsc.de.shake.parser.node.functions.FunctionCallNode-com.github.nsc.de.shake.interpreter.Scope-"><code>Function.invoke(FunctionCallNode, Scope)</code></a>. Will be removed in the future</span></div>
+</div>
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/Class.html" title="class in com.github.nsc.de.shake.interpreter.values">Class</a></code></td>
-<td class="colLast"><span class="typeNameLabel">Class.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/Class.html#withScope-com.github.nsc.de.shake.interpreter.Scope-">withScope</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
-<div class="block">Returns the same class, but you can declare what <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter"><code>Scope</code></a> (<a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/Class.html#scope"><code>Class.scope</code></a>) to use (for class declarations)</div>
+<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
+<td class="colLast"><span class="typeNameLabel">Java.JavaMethod.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/Java.JavaMethod.html#invoke-com.github.nsc.de.shake.parser.node.functions.FunctionCallNode-com.github.nsc.de.shake.interpreter.Scope-">invoke</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/functions/FunctionCallNode.html" title="class in com.github.nsc.de.shake.parser.node.functions">FunctionCallNode</a>&nbsp;node,
+      <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>default <a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
+<td class="colLast"><span class="typeNameLabel">InterpreterValue.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html#invoke-com.github.nsc.de.shake.parser.node.functions.FunctionCallNode-com.github.nsc.de.shake.interpreter.Scope-">invoke</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/functions/FunctionCallNode.html" title="class in com.github.nsc.de.shake.parser.node.functions">FunctionCallNode</a>&nbsp;node,
+      <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
+<div class="block">Invoke a value</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
+<td class="colLast"><span class="typeNameLabel">Function.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/Function.html#invoke-com.github.nsc.de.shake.parser.node.functions.FunctionCallNode-com.github.nsc.de.shake.interpreter.Scope-">invoke</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/functions/FunctionCallNode.html" title="class in com.github.nsc.de.shake.parser.node.functions">FunctionCallNode</a>&nbsp;node,
+      <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
+<div class="block">Invoke a function</div>
 </td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ClassValue.html" title="class in com.github.nsc.de.shake.interpreter.values">ClassValue</a></code></td>
+<td class="colLast"><span class="typeNameLabel">ClassValue.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ClassValue.html#withScope-com.github.nsc.de.shake.interpreter.Scope-">withScope</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
+<div class="block">Returns the same class, but you can declare what <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter"><code>Scope</code></a> (<a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ClassValue.html#scope"><code>ClassValue.scope</code></a>) to use (for class declarations)</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/Function.html" title="class in com.github.nsc.de.shake.interpreter.values">Function</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Function.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/Function.html#withScope-com.github.nsc.de.shake.interpreter.Scope-">withScope</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Returns the same function, but you can declare what <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter"><code>Scope</code></a> (<a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/Function.html#scope"><code>Function.scope</code></a>) to use (for class declarations)</div>
@@ -509,15 +539,15 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/Class.html#Class-java.lang.String-com.github.nsc.de.shake.interpreter.VariableList-com.github.nsc.de.shake.parser.node.variables.VariableDeclarationNode:A-com.github.nsc.de.shake.interpreter.Scope-com.github.nsc.de.shake.interpreter.Interpreter-com.github.nsc.de.shake.interpreter.VariableList-com.github.nsc.de.shake.parser.node.AccessDescriber-boolean-">Class</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
-     <a href="../../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html" title="class in com.github.nsc.de.shake.interpreter">VariableList</a>&nbsp;statics,
-     <a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableDeclarationNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableDeclarationNode</a>[]&nbsp;fields,
-     <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope,
-     <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html" title="class in com.github.nsc.de.shake.interpreter">Interpreter</a>&nbsp;interpreter,
-     <a href="../../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html" title="class in com.github.nsc.de.shake.interpreter">VariableList</a>&nbsp;prototype,
-     <a href="../../../../../../../com/github/nsc/de/shake/parser/node/AccessDescriber.html" title="enum in com.github.nsc.de.shake.parser.node">AccessDescriber</a>&nbsp;access,
-     boolean&nbsp;isFinal)</code>
-<div class="block">The Constructor for <a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/Class.html" title="class in com.github.nsc.de.shake.interpreter.values"><code>Class</code></a></div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ClassValue.html#ClassValue-java.lang.String-com.github.nsc.de.shake.interpreter.VariableList-com.github.nsc.de.shake.parser.node.variables.VariableDeclarationNode:A-com.github.nsc.de.shake.interpreter.Scope-com.github.nsc.de.shake.interpreter.Interpreter-com.github.nsc.de.shake.interpreter.VariableList-com.github.nsc.de.shake.parser.node.AccessDescriber-boolean-">ClassValue</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+          <a href="../../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html" title="class in com.github.nsc.de.shake.interpreter">VariableList</a>&nbsp;statics,
+          <a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableDeclarationNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableDeclarationNode</a>[]&nbsp;fields,
+          <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope,
+          <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html" title="class in com.github.nsc.de.shake.interpreter">Interpreter</a>&nbsp;interpreter,
+          <a href="../../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html" title="class in com.github.nsc.de.shake.interpreter">VariableList</a>&nbsp;prototype,
+          <a href="../../../../../../../com/github/nsc/de/shake/parser/node/AccessDescriber.html" title="enum in com.github.nsc.de.shake.parser.node">AccessDescriber</a>&nbsp;access,
+          boolean&nbsp;isFinal)</code>
+<div class="block">The Constructor for <a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ClassValue.html" title="class in com.github.nsc.de.shake.interpreter.values"><code>ClassValue</code></a></div>
 </td>
 </tr>
 <tr class="rowColor">

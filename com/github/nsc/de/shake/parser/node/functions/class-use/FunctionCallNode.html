@@ -177,6 +177,13 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
+<td class="colLast"><span class="typeNameLabel">Variable.</span><code><span class="memberNameLink"><a href="../../../../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#invoke-com.github.nsc.de.shake.parser.node.functions.FunctionCallNode-com.github.nsc.de.shake.interpreter.Scope-">invoke</a></span>(<a href="../../../../../../../../../com/github/nsc/de/shake/parser/node/functions/FunctionCallNode.html" title="class in com.github.nsc.de.shake.parser.node.functions">FunctionCallNode</a>&nbsp;node,
+      <a href="../../../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
+<div class="block">Invoke a value</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Interpreter.</span><code><span class="memberNameLink"><a href="../../../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html#visitFunctionCallNode-com.github.nsc.de.shake.parser.node.functions.FunctionCallNode-com.github.nsc.de.shake.interpreter.Scope-">visitFunctionCallNode</a></span>(<a href="../../../../../../../../../com/github/nsc/de/shake/parser/node/functions/FunctionCallNode.html" title="class in com.github.nsc.de.shake.parser.node.functions">FunctionCallNode</a>&nbsp;node,
                      <a href="../../../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Visit a <a href="../../../../../../../../../com/github/nsc/de/shake/parser/node/functions/FunctionCallNode.html" title="class in com.github.nsc.de.shake.parser.node.functions"><code>FunctionCallNode</code></a></div>
@@ -200,7 +207,28 @@
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">Function.</span><code><span class="memberNameLink"><a href="../../../../../../../../../com/github/nsc/de/shake/interpreter/values/Function.html#call-com.github.nsc.de.shake.parser.node.functions.FunctionCallNode-com.github.nsc.de.shake.interpreter.Scope-">call</a></span>(<a href="../../../../../../../../../com/github/nsc/de/shake/parser/node/functions/FunctionCallNode.html" title="class in com.github.nsc.de.shake.parser.node.functions">FunctionCallNode</a>&nbsp;node,
     <a href="../../../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
-<div class="block">Function call method</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">Moved to <a href="../../../../../../../../../com/github/nsc/de/shake/interpreter/values/Function.html#invoke-com.github.nsc.de.shake.parser.node.functions.FunctionCallNode-com.github.nsc.de.shake.interpreter.Scope-"><code>Function.invoke(FunctionCallNode, Scope)</code></a>. Will be removed in the future</span></div>
+</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
+<td class="colLast"><span class="typeNameLabel">Java.JavaMethod.</span><code><span class="memberNameLink"><a href="../../../../../../../../../com/github/nsc/de/shake/interpreter/values/Java.JavaMethod.html#invoke-com.github.nsc.de.shake.parser.node.functions.FunctionCallNode-com.github.nsc.de.shake.interpreter.Scope-">invoke</a></span>(<a href="../../../../../../../../../com/github/nsc/de/shake/parser/node/functions/FunctionCallNode.html" title="class in com.github.nsc.de.shake.parser.node.functions">FunctionCallNode</a>&nbsp;node,
+      <a href="../../../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>default <a href="../../../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
+<td class="colLast"><span class="typeNameLabel">InterpreterValue.</span><code><span class="memberNameLink"><a href="../../../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html#invoke-com.github.nsc.de.shake.parser.node.functions.FunctionCallNode-com.github.nsc.de.shake.interpreter.Scope-">invoke</a></span>(<a href="../../../../../../../../../com/github/nsc/de/shake/parser/node/functions/FunctionCallNode.html" title="class in com.github.nsc.de.shake.parser.node.functions">FunctionCallNode</a>&nbsp;node,
+      <a href="../../../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
+<div class="block">Invoke a value</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
+<td class="colLast"><span class="typeNameLabel">Function.</span><code><span class="memberNameLink"><a href="../../../../../../../../../com/github/nsc/de/shake/interpreter/values/Function.html#invoke-com.github.nsc.de.shake.parser.node.functions.FunctionCallNode-com.github.nsc.de.shake.interpreter.Scope-">invoke</a></span>(<a href="../../../../../../../../../com/github/nsc/de/shake/parser/node/functions/FunctionCallNode.html" title="class in com.github.nsc.de.shake.parser.node.functions">FunctionCallNode</a>&nbsp;node,
+      <a href="../../../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
+<div class="block">Invoke a function</div>
 </td>
 </tr>
 </tbody>

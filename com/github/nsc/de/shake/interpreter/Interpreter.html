@@ -154,7 +154,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/shake/interpreter/values/Class.html" title="class in com.github.nsc.de.shake.interpreter.values">Class</a></code></td>
+<td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/shake/interpreter/values/ClassValue.html" title="class in com.github.nsc.de.shake.interpreter.values">ClassValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html#createClassDeclaration-com.github.nsc.de.shake.parser.node.objects.ClassDeclarationNode-com.github.nsc.de.shake.interpreter.Scope-">createClassDeclaration</a></span>(<a href="../../../../../../com/github/nsc/de/shake/parser/node/objects/ClassDeclarationNode.html" title="class in com.github.nsc.de.shake.parser.node.objects">ClassDeclarationNode</a>&nbsp;n,
                       <a href="../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Create a class-declaration (<a href="../../../../../../com/github/nsc/de/shake/parser/node/objects/ClassDeclarationNode.html" title="class in com.github.nsc.de.shake.parser.node.objects"><code>ClassDeclarationNode</code></a>)</div>
@@ -209,7 +209,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/shake/interpreter/values/Class.html" title="class in com.github.nsc.de.shake.interpreter.values">Class</a></code></td>
+<td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/shake/interpreter/values/ClassValue.html" title="class in com.github.nsc.de.shake.interpreter.values">ClassValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html#visitClassDeclarationNode-com.github.nsc.de.shake.parser.node.objects.ClassDeclarationNode-com.github.nsc.de.shake.interpreter.Scope-">visitClassDeclarationNode</a></span>(<a href="../../../../../../com/github/nsc/de/shake/parser/node/objects/ClassDeclarationNode.html" title="class in com.github.nsc.de.shake.parser.node.objects">ClassDeclarationNode</a>&nbsp;node,
                          <a href="../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Visit a <a href="../../../../../../com/github/nsc/de/shake/parser/node/objects/ClassDeclarationNode.html" title="class in com.github.nsc.de.shake.parser.node.objects"><code>ClassDeclarationNode</code></a></div>
@@ -1132,15 +1132,15 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>visitClassDeclarationNode</h4>
-<pre>public&nbsp;<a href="../../../../../../com/github/nsc/de/shake/interpreter/values/Class.html" title="class in com.github.nsc.de.shake.interpreter.values">Class</a>&nbsp;visitClassDeclarationNode(<a href="../../../../../../com/github/nsc/de/shake/parser/node/objects/ClassDeclarationNode.html" title="class in com.github.nsc.de.shake.parser.node.objects">ClassDeclarationNode</a>&nbsp;node,
-                                       <a href="../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</pre>
+<pre>public&nbsp;<a href="../../../../../../com/github/nsc/de/shake/interpreter/values/ClassValue.html" title="class in com.github.nsc.de.shake.interpreter.values">ClassValue</a>&nbsp;visitClassDeclarationNode(<a href="../../../../../../com/github/nsc/de/shake/parser/node/objects/ClassDeclarationNode.html" title="class in com.github.nsc.de.shake.parser.node.objects">ClassDeclarationNode</a>&nbsp;node,
+                                            <a href="../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</pre>
 <div class="block">Visit a <a href="../../../../../../com/github/nsc/de/shake/parser/node/objects/ClassDeclarationNode.html" title="class in com.github.nsc.de.shake.parser.node.objects"><code>ClassDeclarationNode</code></a></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>node</code> - the <a href="../../../../../../com/github/nsc/de/shake/parser/node/objects/ClassDeclarationNode.html" title="class in com.github.nsc.de.shake.parser.node.objects"><code>ClassDeclarationNode</code></a> to visit</dd>
 <dd><code>scope</code> - the <a href="../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter"><code>Scope</code></a> to visit the <a href="../../../../../../com/github/nsc/de/shake/parser/node/objects/ClassDeclarationNode.html" title="class in com.github.nsc.de.shake.parser.node.objects"><code>ClassDeclarationNode</code></a></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the created <a href="../../../../../../com/github/nsc/de/shake/interpreter/values/Class.html" title="class in com.github.nsc.de.shake.interpreter.values"><code>Class</code></a></dd>
+<dd>the created <a href="../../../../../../com/github/nsc/de/shake/interpreter/values/ClassValue.html" title="class in com.github.nsc.de.shake.interpreter.values"><code>ClassValue</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -1150,15 +1150,15 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <ul class="blockList">
 <li class="blockList">
 <h4>createClassDeclaration</h4>
-<pre>public&nbsp;<a href="../../../../../../com/github/nsc/de/shake/interpreter/values/Class.html" title="class in com.github.nsc.de.shake.interpreter.values">Class</a>&nbsp;createClassDeclaration(<a href="../../../../../../com/github/nsc/de/shake/parser/node/objects/ClassDeclarationNode.html" title="class in com.github.nsc.de.shake.parser.node.objects">ClassDeclarationNode</a>&nbsp;n,
-                                    <a href="../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</pre>
+<pre>public&nbsp;<a href="../../../../../../com/github/nsc/de/shake/interpreter/values/ClassValue.html" title="class in com.github.nsc.de.shake.interpreter.values">ClassValue</a>&nbsp;createClassDeclaration(<a href="../../../../../../com/github/nsc/de/shake/parser/node/objects/ClassDeclarationNode.html" title="class in com.github.nsc.de.shake.parser.node.objects">ClassDeclarationNode</a>&nbsp;n,
+                                         <a href="../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</pre>
 <div class="block">Create a class-declaration (<a href="../../../../../../com/github/nsc/de/shake/parser/node/objects/ClassDeclarationNode.html" title="class in com.github.nsc.de.shake.parser.node.objects"><code>ClassDeclarationNode</code></a>)</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>n</code> - the <a href="../../../../../../com/github/nsc/de/shake/parser/node/objects/ClassDeclarationNode.html" title="class in com.github.nsc.de.shake.parser.node.objects"><code>ClassDeclarationNode</code></a> to create</dd>
 <dd><code>scope</code> - the <a href="../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter"><code>Scope</code></a> to create the <a href="../../../../../../com/github/nsc/de/shake/parser/node/objects/ClassDeclarationNode.html" title="class in com.github.nsc.de.shake.parser.node.objects"><code>ClassDeclarationNode</code></a></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the created <a href="../../../../../../com/github/nsc/de/shake/interpreter/values/Class.html" title="class in com.github.nsc.de.shake.interpreter.values"><code>Class</code></a></dd>
+<dd>the created <a href="../../../../../../com/github/nsc/de/shake/interpreter/values/ClassValue.html" title="class in com.github.nsc.de.shake.interpreter.values"><code>ClassValue</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -1176,7 +1176,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <dd><code>n</code> - the <a href="../../../../../../com/github/nsc/de/shake/parser/node/objects/ClassConstructionNode.html" title="class in com.github.nsc.de.shake.parser.node.objects"><code>ClassConstructionNode</code></a> to create</dd>
 <dd><code>scope</code> - the <a href="../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter"><code>Scope</code></a> to create the <a href="../../../../../../com/github/nsc/de/shake/parser/node/objects/ClassDeclarationNode.html" title="class in com.github.nsc.de.shake.parser.node.objects"><code>ClassDeclarationNode</code></a></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the created <a href="../../../../../../com/github/nsc/de/shake/interpreter/values/Class.html" title="class in com.github.nsc.de.shake.interpreter.values"><code>Class</code></a></dd>
+<dd>the created <a href="../../../../../../com/github/nsc/de/shake/interpreter/values/ClassValue.html" title="class in com.github.nsc.de.shake.interpreter.values"><code>ClassValue</code></a></dd>
 </dl>
 </li>
 </ul>

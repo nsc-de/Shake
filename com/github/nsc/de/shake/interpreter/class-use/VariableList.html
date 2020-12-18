@@ -166,8 +166,9 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html#Scope-com.github.nsc.de.shake.interpreter.Scope-com.github.nsc.de.shake.interpreter.VariableList-">Scope</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;parent,
-     <a href="../../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html" title="class in com.github.nsc.de.shake.interpreter">VariableList</a>&nbsp;variables)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html#Scope-com.github.nsc.de.shake.interpreter.Scope-com.github.nsc.de.shake.interpreter.VariableList-com.github.nsc.de.shake.interpreter.Interpreter-">Scope</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;parent,
+     <a href="../../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html" title="class in com.github.nsc.de.shake.interpreter">VariableList</a>&nbsp;variables,
+     <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html" title="class in com.github.nsc.de.shake.interpreter">Interpreter</a>&nbsp;interpreter)</code>
 <div class="block">Constructor for <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter"><code>Scope</code></a></div>
 </td>
 </tr>
@@ -205,14 +206,14 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html" title="class in com.github.nsc.de.shake.interpreter">VariableList</a></code></td>
-<td class="colLast"><span class="typeNameLabel">Class.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/Class.html#getPrototype--">getPrototype</a></span>()</code>
-<div class="block">Getter for <a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/Class.html#prototype"><code>Class.prototype</code></a> (the prototype of the class)</div>
+<td class="colLast"><span class="typeNameLabel">ClassValue.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ClassValue.html#getPrototype--">getPrototype</a></span>()</code>
+<div class="block">Getter for <a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ClassValue.html#prototype"><code>ClassValue.prototype</code></a> (the prototype of the class)</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html" title="class in com.github.nsc.de.shake.interpreter">VariableList</a></code></td>
-<td class="colLast"><span class="typeNameLabel">Class.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/Class.html#getStatics--">getStatics</a></span>()</code>
-<div class="block">Getter for <a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/Class.html#statics"><code>Class.statics</code></a> (the statics of the class)</div>
+<td class="colLast"><span class="typeNameLabel">ClassValue.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ClassValue.html#getStatics--">getStatics</a></span>()</code>
+<div class="block">Getter for <a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ClassValue.html#statics"><code>ClassValue.statics</code></a> (the statics of the class)</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -230,15 +231,15 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/Class.html#Class-java.lang.String-com.github.nsc.de.shake.interpreter.VariableList-com.github.nsc.de.shake.parser.node.variables.VariableDeclarationNode:A-com.github.nsc.de.shake.interpreter.Scope-com.github.nsc.de.shake.interpreter.Interpreter-com.github.nsc.de.shake.interpreter.VariableList-com.github.nsc.de.shake.parser.node.AccessDescriber-boolean-">Class</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
-     <a href="../../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html" title="class in com.github.nsc.de.shake.interpreter">VariableList</a>&nbsp;statics,
-     <a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableDeclarationNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableDeclarationNode</a>[]&nbsp;fields,
-     <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope,
-     <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html" title="class in com.github.nsc.de.shake.interpreter">Interpreter</a>&nbsp;interpreter,
-     <a href="../../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html" title="class in com.github.nsc.de.shake.interpreter">VariableList</a>&nbsp;prototype,
-     <a href="../../../../../../../com/github/nsc/de/shake/parser/node/AccessDescriber.html" title="enum in com.github.nsc.de.shake.parser.node">AccessDescriber</a>&nbsp;access,
-     boolean&nbsp;isFinal)</code>
-<div class="block">The Constructor for <a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/Class.html" title="class in com.github.nsc.de.shake.interpreter.values"><code>Class</code></a></div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ClassValue.html#ClassValue-java.lang.String-com.github.nsc.de.shake.interpreter.VariableList-com.github.nsc.de.shake.parser.node.variables.VariableDeclarationNode:A-com.github.nsc.de.shake.interpreter.Scope-com.github.nsc.de.shake.interpreter.Interpreter-com.github.nsc.de.shake.interpreter.VariableList-com.github.nsc.de.shake.parser.node.AccessDescriber-boolean-">ClassValue</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+          <a href="../../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html" title="class in com.github.nsc.de.shake.interpreter">VariableList</a>&nbsp;statics,
+          <a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableDeclarationNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableDeclarationNode</a>[]&nbsp;fields,
+          <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope,
+          <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html" title="class in com.github.nsc.de.shake.interpreter">Interpreter</a>&nbsp;interpreter,
+          <a href="../../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html" title="class in com.github.nsc.de.shake.interpreter">VariableList</a>&nbsp;prototype,
+          <a href="../../../../../../../com/github/nsc/de/shake/parser/node/AccessDescriber.html" title="enum in com.github.nsc.de.shake.parser.node">AccessDescriber</a>&nbsp;access,
+          boolean&nbsp;isFinal)</code>
+<div class="block">The Constructor for <a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ClassValue.html" title="class in com.github.nsc.de.shake.interpreter.values"><code>ClassValue</code></a></div>
 </td>
 </tr>
 </tbody>
