@@ -6,9 +6,9 @@ com.github.nsc.de.shake.generators.json
 com.github.nsc.de.shake.interpreter
 com.github.nsc.de.shake.interpreter.values
 com.github.nsc.de.shake.lexer
-com.github.nsc.de.shake.lexer.characterinputstream
-com.github.nsc.de.shake.lexer.characterinputstream.charactersource
-com.github.nsc.de.shake.lexer.characterinputstream.position
+com.github.nsc.de.shake.lexer.characterinput.characterinputstream
+com.github.nsc.de.shake.lexer.characterinput.charactersource
+com.github.nsc.de.shake.lexer.characterinput.position
 com.github.nsc.de.shake.lexer.token
 com.github.nsc.de.shake.parser
 com.github.nsc.de.shake.parser.node
