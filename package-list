@@ -13,6 +13,7 @@ com.github.nsc.de.shake.lexer.token
 com.github.nsc.de.shake.parser
 com.github.nsc.de.shake.parser.node
 com.github.nsc.de.shake.parser.node.expression
+com.github.nsc.de.shake.parser.node.factor
 com.github.nsc.de.shake.parser.node.functions
 com.github.nsc.de.shake.parser.node.logical
 com.github.nsc.de.shake.parser.node.loops
