@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -181,15 +181,27 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/interpreter/Scope.html#getReturnValue--">getReturnValue</a></span>()</code>
+<div class="block">Getter for the <a href="../../../../../../com/github/nsc/de/shake/interpreter/Scope.html#returnValue"><code>returnValue</code></a> field</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html" title="class in com.github.nsc.de.shake.interpreter">VariableList</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/interpreter/Scope.html#getScopeVariables--">getScopeVariables</a></span>()</code>
 <div class="block">Getter for <a href="../../../../../../com/github/nsc/de/shake/interpreter/Scope.html#variables"><code>variables</code></a> (the scope's variables)</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html" title="class in com.github.nsc.de.shake.interpreter">VariableList</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/interpreter/Scope.html#getVariables--">getVariables</a></span>()</code>
 <div class="block">Getter for all scope variables (including all the variables of the parents)</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/interpreter/Scope.html#setReturnValue-com.github.nsc.de.shake.interpreter.values.InterpreterValue-">setReturnValue</a></span>(<a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a>&nbsp;returnValue)</code>
+<div class="block">Setter for the <a href="../../../../../../com/github/nsc/de/shake/interpreter/Scope.html#returnValue"><code>returnValue</code></a> field</div>
 </td>
 </tr>
 </table>
@@ -314,7 +326,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <a name="copy--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>copy</h4>
 <pre>public&nbsp;<a href="../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;copy()</pre>
@@ -322,6 +334,34 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the copy of the scope</dd>
+</dl>
+</li>
+</ul>
+<a name="setReturnValue-com.github.nsc.de.shake.interpreter.values.InterpreterValue-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setReturnValue</h4>
+<pre>public&nbsp;void&nbsp;setReturnValue(<a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a>&nbsp;returnValue)</pre>
+<div class="block">Setter for the <a href="../../../../../../com/github/nsc/de/shake/interpreter/Scope.html#returnValue"><code>returnValue</code></a> field</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>returnValue</code> - the <a href="../../../../../../com/github/nsc/de/shake/interpreter/Scope.html#returnValue"><code>returnValue</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="getReturnValue--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getReturnValue</h4>
+<pre>public&nbsp;<a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a>&nbsp;getReturnValue()</pre>
+<div class="block">Getter for the <a href="../../../../../../com/github/nsc/de/shake/interpreter/Scope.html#returnValue"><code>returnValue</code></a> field</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the <a href="../../../../../../com/github/nsc/de/shake/interpreter/Scope.html#returnValue"><code>returnValue</code></a></dd>
 </dl>
 </li>
 </ul>
