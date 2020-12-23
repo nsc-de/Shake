@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":9,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":9,"i26":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":9,"i6":9,"i7":9,"i8":10,"i9":10,"i10":9,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -146,10 +146,27 @@ implements <a href="../../../../../../com/github/nsc/de/shake/interpreter/values
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#Variable-java.lang.String-com.github.nsc.de.shake.parser.node.AccessDescriber-java.lang.Class-boolean-">Variable</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;identifier,
+        <a href="../../../../../../com/github/nsc/de/shake/parser/node/AccessDescriber.html" title="enum in com.github.nsc.de.shake.parser.node">AccessDescriber</a>&nbsp;access,
+        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="type parameter in Variable">V</a>&gt;&nbsp;type,
+        boolean&nbsp;finalVariable)</code>
+<div class="block">Constructor for <a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter"><code>Variable</code></a></div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#Variable-java.lang.String-com.github.nsc.de.shake.parser.node.AccessDescriber-java.lang.Class-V-">Variable</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;identifier,
         <a href="../../../../../../com/github/nsc/de/shake/parser/node/AccessDescriber.html" title="enum in com.github.nsc.de.shake.parser.node">AccessDescriber</a>&nbsp;access,
         <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="type parameter in Variable">V</a>&gt;&nbsp;type,
         <a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="type parameter in Variable">V</a>&nbsp;value)</code>
+<div class="block">Constructor for <a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter"><code>Variable</code></a></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#Variable-java.lang.String-com.github.nsc.de.shake.parser.node.AccessDescriber-java.lang.Class-V-boolean-">Variable</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;identifier,
+        <a href="../../../../../../com/github/nsc/de/shake/parser/node/AccessDescriber.html" title="enum in com.github.nsc.de.shake.parser.node">AccessDescriber</a>&nbsp;access,
+        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="type parameter in Variable">V</a>&gt;&nbsp;type,
+        <a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="type parameter in Variable">V</a>&nbsp;value,
+        boolean&nbsp;finalVariable)</code>
 <div class="block">Constructor for <a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter"><code>Variable</code></a></div>
 </td>
 </tr>
@@ -212,133 +229,170 @@ implements <a href="../../../../../../com/github/nsc/de/shake/interpreter/values
 </td>
 </tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter">Variable</a>&lt;?&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#create-java.lang.String-com.github.nsc.de.shake.parser.node.VariableType-com.github.nsc.de.shake.parser.node.AccessDescriber-boolean-com.github.nsc.de.shake.interpreter.values.InterpreterValue-">create</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+      <a href="../../../../../../com/github/nsc/de/shake/parser/node/VariableType.html" title="class in com.github.nsc.de.shake.parser.node">VariableType</a>&nbsp;type,
+      <a href="../../../../../../com/github/nsc/de/shake/parser/node/AccessDescriber.html" title="enum in com.github.nsc.de.shake.parser.node">AccessDescriber</a>&nbsp;access,
+      boolean&nbsp;finalVariable,
+      <a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a>&nbsp;value)</code>
+<div class="block">This function just creates a <a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter"><code>Variable</code></a></div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter">Variable</a>&lt;?&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#create-java.lang.String-com.github.nsc.de.shake.parser.node.VariableType-boolean-">create</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+      <a href="../../../../../../com/github/nsc/de/shake/parser/node/VariableType.html" title="class in com.github.nsc.de.shake.parser.node">VariableType</a>&nbsp;type,
+      boolean&nbsp;finalVariable)</code>
+<div class="block">This function just creates a <a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter"><code>Variable</code></a></div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter">Variable</a>&lt;?&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#create-java.lang.String-com.github.nsc.de.shake.parser.node.VariableType-boolean-com.github.nsc.de.shake.interpreter.values.InterpreterValue-">create</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+      <a href="../../../../../../com/github/nsc/de/shake/parser/node/VariableType.html" title="class in com.github.nsc.de.shake.parser.node">VariableType</a>&nbsp;type,
+      boolean&nbsp;finalVariable,
+      <a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a>&nbsp;value)</code>
+<div class="block">This function just creates a <a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter"><code>Variable</code></a></div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#div-com.github.nsc.de.shake.interpreter.values.InterpreterValue-">div</a></span>(<a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a>&nbsp;v)</code>
 <div class="block">This function will be executed when the operator '/' is used on the value</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#equals-com.github.nsc.de.shake.interpreter.values.InterpreterValue-">equals</a></span>(<a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a>&nbsp;v)</code>
 <div class="block">This function will be executed when the operator '==' is used on the value</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>static &lt;T extends <a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a>&gt;<br><a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter">Variable</a>&lt;T&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#finalOf-java.lang.String-T-">finalOf</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
        T&nbsp;v)</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/shake/parser/node/AccessDescriber.html" title="enum in com.github.nsc.de.shake.parser.node">AccessDescriber</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#getAccess--">getAccess</a></span>()</code>
 <div class="block">Getter for <a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#access"><code>access</code></a> (the variable access)</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter">Variable</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#getChild-java.lang.String-">getChild</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;c)</code>
 <div class="block">This function will be executed when getting a child (variable.child)</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#getIdentifier--">getIdentifier</a></span>()</code>
 <div class="block">Getter for <a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#identifier"><code>identifier</code></a> (the variable identifier)</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#getName--">getName</a></span>()</code>
 <div class="block">Returns the name of the type of <a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values"><code>InterpreterValue</code></a> (To identify the type of value)</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="type parameter in Variable">V</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#getType--">getType</a></span>()</code>
 <div class="block">Getter for the variable-type (<a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#type"><code>type</code></a>)</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#getValue--">getValue</a></span>()</code>
 <div class="block">Getter for <a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#value"><code>value</code></a> (the variable value)</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#hasValue--">hasValue</a></span>()</code>
 <div class="block">Checks if the <a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter"><code>Variable</code></a> has a value (<a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#value"><code>value</code></a> != null)</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#invoke-com.github.nsc.de.shake.parser.node.functions.FunctionCallNode-com.github.nsc.de.shake.interpreter.Scope-">invoke</a></span>(<a href="../../../../../../com/github/nsc/de/shake/parser/node/functions/FunctionCallNode.html" title="class in com.github.nsc.de.shake.parser.node.functions">FunctionCallNode</a>&nbsp;node,
       <a href="../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Invoke a value</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i19" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#isFinalVariable--">isFinalVariable</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i20" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#mod-com.github.nsc.de.shake.interpreter.values.InterpreterValue-">mod</a></span>(<a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a>&nbsp;v)</code>
 <div class="block">This function will be executed when the operator '%' is used on the value</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#mul-com.github.nsc.de.shake.interpreter.values.InterpreterValue-">mul</a></span>(<a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a>&nbsp;v)</code>
 <div class="block">This function will be executed when the operator '*' is used on the value</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i22" class="altColor">
+<td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#newInstance-com.github.nsc.de.shake.parser.node.objects.ClassConstructionNode-com.github.nsc.de.shake.interpreter.Scope-">newInstance</a></span>(<a href="../../../../../../com/github/nsc/de/shake/parser/node/objects/ClassConstructionNode.html" title="class in com.github.nsc.de.shake.parser.node.objects">ClassConstructionNode</a>&nbsp;node,
+           <a href="../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
+<div class="block">Create a new instance of a class</div>
+</td>
+</tr>
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#or-com.github.nsc.de.shake.interpreter.values.InterpreterValue-">or</a></span>(<a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a>&nbsp;v)</code>
 <div class="block">This function will be executed when the operator '||' is used on the value</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#pow-com.github.nsc.de.shake.interpreter.values.InterpreterValue-">pow</a></span>(<a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a>&nbsp;v)</code>
 <div class="block">This function will be executed when the operator '**' is used on the value</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i25" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#setFinal-boolean-">setFinal</a></span>(boolean&nbsp;finalVariable)</code>
+<div class="block">Should the variable be final (setter for field <a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#finalVariable"><code>finalVariable</code></a>)</div>
+</td>
+</tr>
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#setValue-V-">setValue</a></span>(<a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="type parameter in Variable">V</a>&nbsp;value)</code>
 <div class="block">Setter for <a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#value"><code>value</code></a> (the variable value)</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#smaller_equals-com.github.nsc.de.shake.interpreter.values.InterpreterValue-">smaller_equals</a></span>(<a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a>&nbsp;v)</code>
 <div class="block">This function will be executed when the operator '&lt;=' is used on the value</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#smaller-com.github.nsc.de.shake.interpreter.values.InterpreterValue-">smaller</a></span>(<a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a>&nbsp;v)</code>
 <div class="block">This function will be executed when the operator '&lt;' is used on the value</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#sub-com.github.nsc.de.shake.interpreter.values.InterpreterValue-">sub</a></span>(<a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a>&nbsp;v)</code>
 <div class="block">This function will be executed when the operator '-' is used on the value</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#toString--">toString</a></span>()</code>
 <div class="block">Returns the string representation of the <a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter"><code>Variable</code></a></div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
-<td class="colFirst"><code>static <a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter">Variable</a>&lt;?&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#valueOf-java.lang.String-com.github.nsc.de.shake.parser.node.VariableType-">valueOf</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
-       <a href="../../../../../../com/github/nsc/de/shake/parser/node/VariableType.html" title="class in com.github.nsc.de.shake.parser.node">VariableType</a>&nbsp;type)</code>
-<div class="block">This function just converts a <a href="../../../../../../com/github/nsc/de/shake/parser/node/VariableType.html" title="class in com.github.nsc.de.shake.parser.node"><code>VariableType</code></a> into a <a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter"><code>Variable</code></a></div>
-</td>
-</tr>
-<tr id="i26" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter">Variable</a>&lt;<a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="type parameter in Variable">V</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#withScope-com.github.nsc.de.shake.interpreter.Scope-">withScope</a></span>(<a href="../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Returns the same variable, but you can declare what <a href="../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter"><code>Scope</code></a> to use (for class declarations)</div>
@@ -357,7 +411,7 @@ implements <a href="../../../../../../com/github/nsc/de/shake/interpreter/values
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;com.github.nsc.de.shake.interpreter.values.<a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></h3>
-<code><a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html#of-java.lang.Object-">of</a>, <a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html#toJava--">toJava</a></code></li>
+<code><a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html#castTo-java.lang.Class-">castTo</a>, <a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html#of-java.lang.Object-">of</a>, <a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html#to-java.lang.Class-">to</a>, <a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html#toJava--">toJava</a></code></li>
 </ul>
 </li>
 </ul>
@@ -373,6 +427,28 @@ implements <a href="../../../../../../com/github/nsc/de/shake/interpreter/values
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
+<a name="Variable-java.lang.String-com.github.nsc.de.shake.parser.node.AccessDescriber-java.lang.Class-com.github.nsc.de.shake.interpreter.values.InterpreterValue-boolean-">
+<!--   -->
+</a><a name="Variable-java.lang.String-com.github.nsc.de.shake.parser.node.AccessDescriber-java.lang.Class-V-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Variable</h4>
+<pre>public&nbsp;Variable(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;identifier,
+                <a href="../../../../../../com/github/nsc/de/shake/parser/node/AccessDescriber.html" title="enum in com.github.nsc.de.shake.parser.node">AccessDescriber</a>&nbsp;access,
+                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="type parameter in Variable">V</a>&gt;&nbsp;type,
+                <a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="type parameter in Variable">V</a>&nbsp;value,
+                boolean&nbsp;finalVariable)</pre>
+<div class="block">Constructor for <a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter"><code>Variable</code></a></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>identifier</code> - the identifier of the variable</dd>
+<dd><code>access</code> - the access type of the variable</dd>
+<dd><code>value</code> - the value of the variable</dd>
+</dl>
+</li>
+</ul>
 <a name="Variable-java.lang.String-com.github.nsc.de.shake.parser.node.AccessDescriber-java.lang.Class-com.github.nsc.de.shake.interpreter.values.InterpreterValue-">
 <!--   -->
 </a><a name="Variable-java.lang.String-com.github.nsc.de.shake.parser.node.AccessDescriber-java.lang.Class-V-">
@@ -422,6 +498,24 @@ implements <a href="../../../../../../com/github/nsc/de/shake/interpreter/values
 <pre>public&nbsp;Variable(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;identifier,
                 <a href="../../../../../../com/github/nsc/de/shake/parser/node/AccessDescriber.html" title="enum in com.github.nsc.de.shake.parser.node">AccessDescriber</a>&nbsp;access,
                 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="type parameter in Variable">V</a>&gt;&nbsp;type)</pre>
+<div class="block">Constructor for <a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter"><code>Variable</code></a></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>identifier</code> - the identifier of the variable</dd>
+<dd><code>access</code> - the access of the</dd>
+</dl>
+</li>
+</ul>
+<a name="Variable-java.lang.String-com.github.nsc.de.shake.parser.node.AccessDescriber-java.lang.Class-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Variable</h4>
+<pre>public&nbsp;Variable(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;identifier,
+                <a href="../../../../../../com/github/nsc/de/shake/parser/node/AccessDescriber.html" title="enum in com.github.nsc.de.shake.parser.node">AccessDescriber</a>&nbsp;access,
+                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;<a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="type parameter in Variable">V</a>&gt;&nbsp;type,
+                boolean&nbsp;finalVariable)</pre>
 <div class="block">Constructor for <a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter"><code>Variable</code></a></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -509,6 +603,15 @@ implements <a href="../../../../../../com/github/nsc/de/shake/interpreter/values
 </dl>
 </li>
 </ul>
+<a name="isFinalVariable--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isFinalVariable</h4>
+<pre>public&nbsp;boolean&nbsp;isFinalVariable()</pre>
+</li>
+</ul>
 <a name="setValue-com.github.nsc.de.shake.interpreter.values.InterpreterValue-">
 <!--   -->
 </a><a name="setValue-V-">
@@ -522,6 +625,20 @@ implements <a href="../../../../../../com/github/nsc/de/shake/interpreter/values
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>value</code> - the value to set (value for <a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#value"><code>value</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="setFinal-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setFinal</h4>
+<pre>public&nbsp;void&nbsp;setFinal(boolean&nbsp;finalVariable)</pre>
+<div class="block">Should the variable be final (setter for field <a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#finalVariable"><code>finalVariable</code></a>)</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>finalVariable</code> - Should the variable be final</dd>
 </dl>
 </li>
 </ul>
@@ -807,6 +924,27 @@ implements <a href="../../../../../../com/github/nsc/de/shake/interpreter/values
 <dd><code>node</code> - the node that called the function</dd>
 <dd><code>scope</code> - the scope the call was made in (to process the arguments)</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
+<dd>the function result</dd>
+</dl>
+</li>
+</ul>
+<a name="newInstance-com.github.nsc.de.shake.parser.node.objects.ClassConstructionNode-com.github.nsc.de.shake.interpreter.Scope-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newInstance</h4>
+<pre>public&nbsp;<a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a>&nbsp;newInstance(<a href="../../../../../../com/github/nsc/de/shake/parser/node/objects/ClassConstructionNode.html" title="class in com.github.nsc.de.shake.parser.node.objects">ClassConstructionNode</a>&nbsp;node,
+                                    <a href="../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</pre>
+<div class="block">Create a new instance of a class</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html#newInstance-com.github.nsc.de.shake.parser.node.objects.ClassConstructionNode-com.github.nsc.de.shake.interpreter.Scope-">newInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>node</code> - the node that created the instance</dd>
+<dd><code>scope</code> - the scope the creation was made in (to process the arguments)</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the created <a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values"><code>InterpreterValue</code></a></dd>
 </dl>
 </li>
 </ul>
@@ -872,20 +1010,63 @@ implements <a href="../../../../../../com/github/nsc/de/shake/interpreter/values
 </dl>
 </li>
 </ul>
-<a name="valueOf-java.lang.String-com.github.nsc.de.shake.parser.node.VariableType-">
+<a name="create-java.lang.String-com.github.nsc.de.shake.parser.node.VariableType-com.github.nsc.de.shake.parser.node.AccessDescriber-boolean-com.github.nsc.de.shake.interpreter.values.InterpreterValue-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>valueOf</h4>
-<pre>public static&nbsp;<a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter">Variable</a>&lt;?&gt;&nbsp;valueOf(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
-                                  <a href="../../../../../../com/github/nsc/de/shake/parser/node/VariableType.html" title="class in com.github.nsc.de.shake.parser.node">VariableType</a>&nbsp;type)</pre>
-<div class="block">This function just converts a <a href="../../../../../../com/github/nsc/de/shake/parser/node/VariableType.html" title="class in com.github.nsc.de.shake.parser.node"><code>VariableType</code></a> into a <a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter"><code>Variable</code></a></div>
+<h4>create</h4>
+<pre>public static&nbsp;<a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter">Variable</a>&lt;?&gt;&nbsp;create(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+                                 <a href="../../../../../../com/github/nsc/de/shake/parser/node/VariableType.html" title="class in com.github.nsc.de.shake.parser.node">VariableType</a>&nbsp;type,
+                                 <a href="../../../../../../com/github/nsc/de/shake/parser/node/AccessDescriber.html" title="enum in com.github.nsc.de.shake.parser.node">AccessDescriber</a>&nbsp;access,
+                                 boolean&nbsp;finalVariable,
+                                 <a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a>&nbsp;value)</pre>
+<div class="block">This function just creates a <a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter"><code>Variable</code></a></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - the name of the variable</dd>
 <dd><code>type</code> - the type to convert</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>the converted type</dd>
+<dd>the created variable</dd>
+</dl>
+</li>
+</ul>
+<a name="create-java.lang.String-com.github.nsc.de.shake.parser.node.VariableType-boolean-com.github.nsc.de.shake.interpreter.values.InterpreterValue-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>create</h4>
+<pre>public static&nbsp;<a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter">Variable</a>&lt;?&gt;&nbsp;create(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+                                 <a href="../../../../../../com/github/nsc/de/shake/parser/node/VariableType.html" title="class in com.github.nsc.de.shake.parser.node">VariableType</a>&nbsp;type,
+                                 boolean&nbsp;finalVariable,
+                                 <a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a>&nbsp;value)</pre>
+<div class="block">This function just creates a <a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter"><code>Variable</code></a></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - the name of the variable</dd>
+<dd><code>type</code> - the type to convert</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the created variable</dd>
+</dl>
+</li>
+</ul>
+<a name="create-java.lang.String-com.github.nsc.de.shake.parser.node.VariableType-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>create</h4>
+<pre>public static&nbsp;<a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter">Variable</a>&lt;?&gt;&nbsp;create(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+                                 <a href="../../../../../../com/github/nsc/de/shake/parser/node/VariableType.html" title="class in com.github.nsc.de.shake.parser.node">VariableType</a>&nbsp;type,
+                                 boolean&nbsp;finalVariable)</pre>
+<div class="block">This function just creates a <a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter"><code>Variable</code></a></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - the name of the variable</dd>
+<dd><code>type</code> - the type to convert</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the created variable</dd>
 </dl>
 </li>
 </ul>
@@ -897,8 +1078,8 @@ implements <a href="../../../../../../com/github/nsc/de/shake/interpreter/values
 <ul class="blockListLast">
 <li class="blockList">
 <h4>finalOf</h4>
-<pre>public static final&nbsp;&lt;T extends <a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a>&gt;&nbsp;<a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter">Variable</a>&lt;T&gt;&nbsp;finalOf(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
-                                                                     T&nbsp;v)</pre>
+<pre>public static&nbsp;&lt;T extends <a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a>&gt;&nbsp;<a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter">Variable</a>&lt;T&gt;&nbsp;finalOf(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+                                                               T&nbsp;v)</pre>
 </li>
 </ul>
 </li>
