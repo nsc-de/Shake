@@ -87,8 +87,41 @@
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colOne"><a href="com/github/nsc/de/shake/lexer/token/TokenInputStream.html#actual--">com.github.nsc.de.shake.lexer.token.TokenInputStream.actual()</a>
+<div class="block"><span class="deprecationComment">Only use, if you need a complete <a href="com/github/nsc/de/shake/lexer/token/Token.html" title="class in com.github.nsc.de.shake.lexer.token"><code>Token</code></a>. Use <a href="com/github/nsc/de/shake/lexer/token/TokenInputStream.html#actualType--"><code>TokenInputStream.actualType()</code></a>, <a href="com/github/nsc/de/shake/lexer/token/TokenInputStream.html#actualStart--"><code>TokenInputStream.actualStart()</code></a>,
+ <a href="com/github/nsc/de/shake/lexer/token/TokenInputStream.html#actualEnd--"><code>TokenInputStream.actualEnd()</code></a>, <a href="com/github/nsc/de/shake/lexer/token/TokenInputStream.html#actualValue--"><code>TokenInputStream.actualValue()</code></a> &amp; <a href="com/github/nsc/de/shake/lexer/token/TokenInputStream.html#actualHasValue--"><code>TokenInputStream.actualHasValue()</code></a> instead, if you just need one of these!</span></div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colOne"><a href="com/github/nsc/de/shake/interpreter/values/Function.html#call-com.github.nsc.de.shake.parser.node.functions.FunctionCallNode-com.github.nsc.de.shake.interpreter.Scope-">com.github.nsc.de.shake.interpreter.values.Function.call(FunctionCallNode, Scope)</a>
 <div class="block"><span class="deprecationComment">Moved to <a href="com/github/nsc/de/shake/interpreter/values/Function.html#invoke-com.github.nsc.de.shake.parser.node.functions.FunctionCallNode-com.github.nsc.de.shake.interpreter.Scope-"><code>Function.invoke(FunctionCallNode, Scope)</code></a>. Will be removed in the future</span></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><a href="com/github/nsc/de/shake/lexer/token/TokenInputStream.html#get-int-">com.github.nsc.de.shake.lexer.token.TokenInputStream.get(int)</a></td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><a href="com/github/nsc/de/shake/lexer/token/TokenInputStream.html#getStart-int-">com.github.nsc.de.shake.lexer.token.TokenInputStream.getStart(int)</a>
+<div class="block"><span class="deprecationComment">Avoid using this method and use <a href="com/github/nsc/de/shake/lexer/token/TokenInputStream.html#peekStart--"><code>TokenInputStream.peekStart()</code></a>, <a href="com/github/nsc/de/shake/lexer/token/TokenInputStream.html#actualStart--"><code>TokenInputStream.actualStart()</code></a> instead. This method
+             is fully functional, but it uses <a href="com/github/nsc/de/shake/lexer/token/TokenInputStream.html#getValue-int-"><code>TokenInputStream.getValue(int)</code></a>, which has to loop over the complete
+             <a href="com/github/nsc/de/shake/lexer/token/TokenInputStream.html#tokens"><code>TokenInputStream.tokens</code></a> array again up to the given token position</span></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><a href="com/github/nsc/de/shake/lexer/token/TokenInputStream.html#getValue-int-">com.github.nsc.de.shake.lexer.token.TokenInputStream.getValue(int)</a>
+<div class="block"><span class="deprecationComment">This method is fully working, but it will decrease the performance of the program, because it has to
+             loop over all the <a href="com/github/nsc/de/shake/lexer/token/TokenInputStream.html#tokens"><code>TokenInputStream.tokens</code></a> again to find the value's index that should be returned</span></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><a href="com/github/nsc/de/shake/lexer/token/TokenInputStream.html#next--">com.github.nsc.de.shake.lexer.token.TokenInputStream.next()</a>
+<div class="block"><span class="deprecationComment">If you don't need a <a href="com/github/nsc/de/shake/lexer/token/Token.html" title="class in com.github.nsc.de.shake.lexer.token"><code>Token</code></a>, it is advised to use <a href="com/github/nsc/de/shake/lexer/token/TokenInputStream.html#nextType--"><code>TokenInputStream.nextType()</code></a> &amp; <a href="com/github/nsc/de/shake/lexer/token/TokenInputStream.html#nextValue--"><code>TokenInputStream.nextValue()</code></a></span></div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><a href="com/github/nsc/de/shake/lexer/token/TokenInputStream.html#peek--">com.github.nsc.de.shake.lexer.token.TokenInputStream.peek()</a>
+<div class="block"><span class="deprecationComment">Only use, if you need a complete <a href="com/github/nsc/de/shake/lexer/token/Token.html" title="class in com.github.nsc.de.shake.lexer.token"><code>Token</code></a>. Use <a href="com/github/nsc/de/shake/lexer/token/TokenInputStream.html#peekType--"><code>TokenInputStream.peekType()</code></a>, <a href="com/github/nsc/de/shake/lexer/token/TokenInputStream.html#peekStart--"><code>TokenInputStream.peekStart()</code></a>,
+ <a href="com/github/nsc/de/shake/lexer/token/TokenInputStream.html#peekEnd--"><code>TokenInputStream.peekEnd()</code></a>, <a href="com/github/nsc/de/shake/lexer/token/TokenInputStream.html#peekValue--"><code>TokenInputStream.peekValue()</code></a> &amp; <a href="com/github/nsc/de/shake/lexer/token/TokenInputStream.html#peekHasValue--"><code>TokenInputStream.peekHasValue()</code></a> instead, if you just need one of these!</span></div>
 </td>
 </tr>
 <tr class="rowColor">

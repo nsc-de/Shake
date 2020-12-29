@@ -19,4 +19,5 @@ com.github.nsc.de.shake.parser.node.logical
 com.github.nsc.de.shake.parser.node.loops
 com.github.nsc.de.shake.parser.node.objects
 com.github.nsc.de.shake.parser.node.variables
+com.github.nsc.de.shake.preprocessor
 com.github.nsc.de.shake.util

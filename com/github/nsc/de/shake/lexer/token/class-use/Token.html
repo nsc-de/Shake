@@ -104,13 +104,16 @@
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/Token.html" title="class in com.github.nsc.de.shake.lexer.token">Token</a></code></td>
 <td class="colLast"><span class="typeNameLabel">TokenInputStream.</span><code><span class="memberNameLink"><a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/TokenInputStream.html#actual--">actual</a></span>()</code>
-<div class="block">Returns the actual token of the <a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/TokenInputStream.html" title="class in com.github.nsc.de.shake.lexer.token"><code>TokenInputStream</code></a> without skipping</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">Only use, if you need a complete <a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/Token.html" title="class in com.github.nsc.de.shake.lexer.token"><code>Token</code></a>. Use <a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/TokenInputStream.html#actualType--"><code>TokenInputStream.actualType()</code></a>, <a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/TokenInputStream.html#actualStart--"><code>TokenInputStream.actualStart()</code></a>,
+ <a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/TokenInputStream.html#actualEnd--"><code>TokenInputStream.actualEnd()</code></a>, <a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/TokenInputStream.html#actualValue--"><code>TokenInputStream.actualValue()</code></a> &amp; <a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/TokenInputStream.html#actualHasValue--"><code>TokenInputStream.actualHasValue()</code></a> instead, if you just need one of these!</span></div>
+</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/Token.html" title="class in com.github.nsc.de.shake.lexer.token">Token</a></code></td>
 <td class="colLast"><span class="typeNameLabel">TokenInputStream.</span><code><span class="memberNameLink"><a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/TokenInputStream.html#get-int-">get</a></span>(int&nbsp;position)</code>
-<div class="block">Get a specific token from the <a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/TokenInputStream.html" title="class in com.github.nsc.de.shake.lexer.token"><code>TokenInputStream</code></a></div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -122,67 +125,18 @@
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/Token.html" title="class in com.github.nsc.de.shake.lexer.token">Token</a></code></td>
 <td class="colLast"><span class="typeNameLabel">TokenInputStream.</span><code><span class="memberNameLink"><a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/TokenInputStream.html#next--">next</a></span>()</code>
-<div class="block">Returns the next token of the <a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/TokenInputStream.html" title="class in com.github.nsc.de.shake.lexer.token"><code>TokenInputStream</code></a></div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">If you don't need a <a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/Token.html" title="class in com.github.nsc.de.shake.lexer.token"><code>Token</code></a>, it is advised to use <a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/TokenInputStream.html#nextType--"><code>TokenInputStream.nextType()</code></a> &amp; <a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/TokenInputStream.html#nextValue--"><code>TokenInputStream.nextValue()</code></a></span></div>
+</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/Token.html" title="class in com.github.nsc.de.shake.lexer.token">Token</a></code></td>
 <td class="colLast"><span class="typeNameLabel">TokenInputStream.</span><code><span class="memberNameLink"><a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/TokenInputStream.html#peek--">peek</a></span>()</code>
-<div class="block">Returns the next token of the <a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/TokenInputStream.html" title="class in com.github.nsc.de.shake.lexer.token"><code>TokenInputStream</code></a> without skipping</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/Token.html" title="class in com.github.nsc.de.shake.lexer.token">Token</a></code></td>
-<td class="colLast"><span class="typeNameLabel">TokenInputStream.</span><code><span class="memberNameLink"><a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/TokenInputStream.html#peek-int-">peek</a></span>(int&nbsp;num)</code>
-<div class="block">Returns one of the following tokens (described by the num argument) of the <a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/TokenInputStream.html" title="class in com.github.nsc.de.shake.lexer.token"><code>TokenInputStream</code></a> without skipping</div>
-</td>
-</tr>
-</tbody>
-</table>
-<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing constructors, and an explanation">
-<caption><span>Constructors in <a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/package-summary.html">com.github.nsc.de.shake.lexer.token</a> with parameters of type <a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/Token.html" title="class in com.github.nsc.de.shake.lexer.token">Token</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colOne" scope="col">Constructor and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/TokenInputStream.html#TokenInputStream-java.lang.String-com.github.nsc.de.shake.lexer.token.Token:A-int-com.github.nsc.de.shake.lexer.characterinput.position.PositionMap-">TokenInputStream</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;source,
-                <a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/Token.html" title="class in com.github.nsc.de.shake.lexer.token">Token</a>[]&nbsp;tokens,
-                int&nbsp;position,
-                <a href="../../../../../../../../com/github/nsc/de/shake/lexer/characterinput/position/PositionMap.html" title="class in com.github.nsc.de.shake.lexer.characterinput.position">PositionMap</a>&nbsp;map)</code>
-<div class="block">Create a <a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/TokenInputStream.html" title="class in com.github.nsc.de.shake.lexer.token"><code>TokenInputStream</code></a> giving the <a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/TokenInputStream.html#source"><code>TokenInputStream.source</code></a>, <a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/TokenInputStream.html#tokens"><code>TokenInputStream.tokens</code></a>
- and <a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/TokenInputStream.html#position"><code>TokenInputStream.position</code></a></div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/TokenInputStream.html#TokenInputStream-java.lang.String-com.github.nsc.de.shake.lexer.token.Token:A-com.github.nsc.de.shake.lexer.characterinput.position.PositionMap-">TokenInputStream</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;source,
-                <a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/Token.html" title="class in com.github.nsc.de.shake.lexer.token">Token</a>[]&nbsp;tokens,
-                <a href="../../../../../../../../com/github/nsc/de/shake/lexer/characterinput/position/PositionMap.html" title="class in com.github.nsc.de.shake.lexer.characterinput.position">PositionMap</a>&nbsp;map)</code>
-<div class="block">Create a <a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/TokenInputStream.html" title="class in com.github.nsc.de.shake.lexer.token"><code>TokenInputStream</code></a> giving the <a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/TokenInputStream.html#source"><code>TokenInputStream.source</code></a> and <a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/TokenInputStream.html#tokens"><code>TokenInputStream.tokens</code></a></div>
-</td>
-</tr>
-</tbody>
-</table>
-<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing constructors, and an explanation">
-<caption><span>Constructor parameters in <a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/package-summary.html">com.github.nsc.de.shake.lexer.token</a> with type arguments of type <a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/Token.html" title="class in com.github.nsc.de.shake.lexer.token">Token</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colOne" scope="col">Constructor and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/TokenInputStream.html#TokenInputStream-java.lang.String-java.util.List-int-com.github.nsc.de.shake.lexer.characterinput.position.PositionMap-">TokenInputStream</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;source,
-                <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/Token.html" title="class in com.github.nsc.de.shake.lexer.token">Token</a>&gt;&nbsp;tokens,
-                int&nbsp;position,
-                <a href="../../../../../../../../com/github/nsc/de/shake/lexer/characterinput/position/PositionMap.html" title="class in com.github.nsc.de.shake.lexer.characterinput.position">PositionMap</a>&nbsp;map)</code>
-<div class="block">Create a <a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/TokenInputStream.html" title="class in com.github.nsc.de.shake.lexer.token"><code>TokenInputStream</code></a> giving the <a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/TokenInputStream.html#source"><code>TokenInputStream.source</code></a>, <a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/TokenInputStream.html#tokens"><code>TokenInputStream.tokens</code></a>
- and <a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/TokenInputStream.html#position"><code>TokenInputStream.position</code></a></div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/TokenInputStream.html#TokenInputStream-java.lang.String-java.util.List-com.github.nsc.de.shake.lexer.characterinput.position.PositionMap-">TokenInputStream</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;source,
-                <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/Token.html" title="class in com.github.nsc.de.shake.lexer.token">Token</a>&gt;&nbsp;tokens,
-                <a href="../../../../../../../../com/github/nsc/de/shake/lexer/characterinput/position/PositionMap.html" title="class in com.github.nsc.de.shake.lexer.characterinput.position">PositionMap</a>&nbsp;map)</code>
-<div class="block">Create a <a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/TokenInputStream.html" title="class in com.github.nsc.de.shake.lexer.token"><code>TokenInputStream</code></a> giving the <a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/TokenInputStream.html#source"><code>TokenInputStream.source</code></a> and <a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/TokenInputStream.html#tokens"><code>TokenInputStream.tokens</code></a></div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">Only use, if you need a complete <a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/Token.html" title="class in com.github.nsc.de.shake.lexer.token"><code>Token</code></a>. Use <a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/TokenInputStream.html#peekType--"><code>TokenInputStream.peekType()</code></a>, <a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/TokenInputStream.html#peekStart--"><code>TokenInputStream.peekStart()</code></a>,
+ <a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/TokenInputStream.html#peekEnd--"><code>TokenInputStream.peekEnd()</code></a>, <a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/TokenInputStream.html#peekValue--"><code>TokenInputStream.peekValue()</code></a> &amp; <a href="../../../../../../../../com/github/nsc/de/shake/lexer/token/TokenInputStream.html#peekHasValue--"><code>TokenInputStream.peekHasValue()</code></a> instead, if you just need one of these!</span></div>
+</div>
 </td>
 </tr>
 </tbody>
