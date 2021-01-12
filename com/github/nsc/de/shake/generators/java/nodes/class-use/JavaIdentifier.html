@@ -107,7 +107,8 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaIdentifier.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaIdentifier</a></code></td>
-<td class="colLast"><span class="typeNameLabel">JavaGenerator.</span><code><span class="memberNameLink"><a href="../../../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitIdentifierNode-com.github.nsc.de.shake.parser.node.IdentifierNode-">visitIdentifierNode</a></span>(<a href="../../../../../../../../../com/github/nsc/de/shake/parser/node/IdentifierNode.html" title="class in com.github.nsc.de.shake.parser.node">IdentifierNode</a>&nbsp;n)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">JavaGenerator.</span><code><span class="memberNameLink"><a href="../../../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitIdentifierNode-com.github.nsc.de.shake.parser.node.IdentifierNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">visitIdentifierNode</a></span>(<a href="../../../../../../../../../com/github/nsc/de/shake/parser/node/IdentifierNode.html" title="class in com.github.nsc.de.shake.parser.node">IdentifierNode</a>&nbsp;n,
+                   <a href="../../../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>
@@ -123,25 +124,29 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaFunctionCall.html#JavaFunctionCall-com.github.nsc.de.shake.generators.java.nodes.JavaIdentifier-com.github.nsc.de.shake.generators.java.nodes.JavaNode.JavaValuedOperation:A-">JavaFunctionCall</a></span>(<a href="../../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaIdentifier.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaIdentifier</a>&nbsp;function,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaConstruction.html#JavaConstruction-com.github.nsc.de.shake.generators.java.nodes.JavaIdentifier-com.github.nsc.de.shake.generators.java.nodes.JavaNode.JavaValuedOperation:A-">JavaConstruction</a></span>(<a href="../../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaIdentifier.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaIdentifier</a>&nbsp;function,
                 <a href="../../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.JavaValuedOperation.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode.JavaValuedOperation</a>[]&nbsp;args)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaVariable.html#JavaVariable-com.github.nsc.de.shake.generators.java.nodes.JavaIdentifier-">JavaVariable</a></span>(<a href="../../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaIdentifier.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaIdentifier</a>&nbsp;variable)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaFunctionCall.html#JavaFunctionCall-com.github.nsc.de.shake.generators.java.nodes.JavaIdentifier-com.github.nsc.de.shake.generators.java.nodes.JavaNode.JavaValuedOperation:A-">JavaFunctionCall</a></span>(<a href="../../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaIdentifier.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaIdentifier</a>&nbsp;function,
+                <a href="../../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.JavaValuedOperation.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode.JavaValuedOperation</a>[]&nbsp;args)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaVariable.html#JavaVariable-com.github.nsc.de.shake.generators.java.nodes.JavaIdentifier-">JavaVariable</a></span>(<a href="../../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaIdentifier.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaIdentifier</a>&nbsp;variable)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaVariableAssignment.html#JavaVariableAssignment-com.github.nsc.de.shake.generators.java.nodes.JavaIdentifier-com.github.nsc.de.shake.generators.java.nodes.JavaNode.JavaValuedOperation-">JavaVariableAssignment</a></span>(<a href="../../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaIdentifier.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaIdentifier</a>&nbsp;name,
                       <a href="../../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.JavaValuedOperation.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode.JavaValuedOperation</a>&nbsp;value)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaVariableDecr.html#JavaVariableDecr-com.github.nsc.de.shake.generators.java.nodes.JavaIdentifier-">JavaVariableDecr</a></span>(<a href="../../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaIdentifier.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaIdentifier</a>&nbsp;variable)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaVariableExpressionAssignment.html#JavaVariableExpressionAssignment-com.github.nsc.de.shake.generators.java.nodes.JavaIdentifier-com.github.nsc.de.shake.generators.java.nodes.JavaNode.JavaValuedOperation-char-">JavaVariableExpressionAssignment</a></span>(<a href="../../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaIdentifier.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaIdentifier</a>&nbsp;name,
                                 <a href="../../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.JavaValuedOperation.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode.JavaValuedOperation</a>&nbsp;value,
                                 char&nbsp;operator)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaVariableIncr.html#JavaVariableIncr-com.github.nsc.de.shake.generators.java.nodes.JavaIdentifier-">JavaVariableIncr</a></span>(<a href="../../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaIdentifier.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaIdentifier</a>&nbsp;variable)</code>&nbsp;</td>
 </tr>
 </tbody>
@@ -197,6 +202,6 @@
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2020. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2021. All rights reserved.</small></p>
 </body>
 </html>

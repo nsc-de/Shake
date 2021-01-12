@@ -18,6 +18,12 @@
     catch(err) {
     }
 //-->
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var altColor = "altColor";
+var rowColor = "rowColor";
+var tableTab = "tableTab";
+var activeTableTab = "activeTableTab";
 </script>
 <noscript>
 <div>JavaScript is disabled on your browser.</div>
@@ -42,7 +48,7 @@
 </div>
 <div class="subNav">
 <ul class="navList">
-<li>Prev&nbsp;Class</li>
+<li><a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaAccessDescriptor.html" title="enum in com.github.nsc.de.shake.generators.java.nodes"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaDoWhileLoop.html" title="class in com.github.nsc.de.shake.generators.java.nodes"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -70,13 +76,13 @@
 <li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#methods.inherited.from.class.java.lang.Object">Method</a></li>
+<li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a name="skip.navbar.top">
@@ -100,16 +106,36 @@
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>, <a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.JavaOperation.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode.JavaOperation</a></dd>
+</dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">JavaClass</span>
-extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
+implements <a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.JavaOperation.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode.JavaOperation</a></pre>
 </li>
 </ul>
 </div>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="nested.class.summary">
+<!--   -->
+</a>
+<h3>Nested Class Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a name="nested.classes.inherited.from.class.com.github.nsc.de.shake.generators.java.nodes.JavaNode">
+<!--   -->
+</a>
+<h3>Nested classes/interfaces inherited from interface&nbsp;com.github.nsc.de.shake.generators.java.nodes.<a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a></h3>
+<code><a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.JavaOperation.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode.JavaOperation</a>, <a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.JavaType.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode.JavaType</a>, <a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.JavaValuedOperation.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode.JavaValuedOperation</a></code></li>
+</ul>
+</li>
+</ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.summary">
@@ -122,7 +148,19 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaClass.html#JavaClass--">JavaClass</a></span>()</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaClass.html#JavaClass-java.lang.String-com.github.nsc.de.shake.generators.java.nodes.JavaAccessDescriptor-boolean-boolean-">JavaClass</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+         <a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaAccessDescriptor.html" title="enum in com.github.nsc.de.shake.generators.java.nodes">JavaAccessDescriptor</a>&nbsp;access,
+         boolean&nbsp;isStatic,
+         boolean&nbsp;isFinal)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaClass.html#JavaClass-java.lang.String-java.util.List-java.util.List-java.util.List-com.github.nsc.de.shake.generators.java.nodes.JavaAccessDescriptor-boolean-boolean-">JavaClass</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+         <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaVariableDeclaration.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaVariableDeclaration</a>&gt;&nbsp;fields,
+         <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaFunction.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaFunction</a>&gt;&nbsp;functions,
+         <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaClass.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaClass</a>&gt;&nbsp;subClasses,
+         <a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaAccessDescriptor.html" title="enum in com.github.nsc.de.shake.generators.java.nodes">JavaAccessDescriptor</a>&nbsp;access,
+         boolean&nbsp;isStatic,
+         boolean&nbsp;isFinal)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -133,12 +171,57 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Method Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaVariableDeclaration.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaVariableDeclaration</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaClass.html#getFields--">getFields</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaFunction.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaFunction</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaClass.html#getFunctions--">getFunctions</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaClass.html#getName--">getName</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaClass.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaClass</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaClass.html#getSubClasses--">getSubClasses</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaClass.html#isFinal--">isFinal</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaClass.html#isStatic--">isStatic</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaClass.html#toString-java.lang.String-java.lang.String-">toString</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;indent,
+        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;add)</code>
+<div class="block">Generates Java code</div>
+</td>
+</tr>
+</table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
 <code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#clone--" title="class or interface in java.lang">clone</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#equals-java.lang.Object-" title="class or interface in java.lang">equals</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#finalize--" title="class or interface in java.lang">finalize</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#getClass--" title="class or interface in java.lang">getClass</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#hashCode--" title="class or interface in java.lang">hashCode</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notify--" title="class or interface in java.lang">notify</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#notifyAll--" title="class or interface in java.lang">notifyAll</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#toString--" title="class or interface in java.lang">toString</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait--" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-" title="class or interface in java.lang">wait</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true#wait-long-int-" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.com.github.nsc.de.shake.generators.java.nodes.JavaNode">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;com.github.nsc.de.shake.generators.java.nodes.<a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a></h3>
+<code><a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html#toString--">toString</a></code></li>
 </ul>
 </li>
 </ul>
@@ -154,13 +237,113 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="JavaClass--">
+<a name="JavaClass-java.lang.String-java.util.List-java.util.List-java.util.List-com.github.nsc.de.shake.generators.java.nodes.JavaAccessDescriptor-boolean-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>JavaClass</h4>
+<pre>public&nbsp;JavaClass(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+                 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaVariableDeclaration.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaVariableDeclaration</a>&gt;&nbsp;fields,
+                 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaFunction.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaFunction</a>&gt;&nbsp;functions,
+                 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaClass.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaClass</a>&gt;&nbsp;subClasses,
+                 <a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaAccessDescriptor.html" title="enum in com.github.nsc.de.shake.generators.java.nodes">JavaAccessDescriptor</a>&nbsp;access,
+                 boolean&nbsp;isStatic,
+                 boolean&nbsp;isFinal)</pre>
+</li>
+</ul>
+<a name="JavaClass-java.lang.String-com.github.nsc.de.shake.generators.java.nodes.JavaAccessDescriptor-boolean-boolean-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>JavaClass</h4>
-<pre>public&nbsp;JavaClass()</pre>
+<pre>public&nbsp;JavaClass(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+                 <a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaAccessDescriptor.html" title="enum in com.github.nsc.de.shake.generators.java.nodes">JavaAccessDescriptor</a>&nbsp;access,
+                 boolean&nbsp;isStatic,
+                 boolean&nbsp;isFinal)</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method.detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="getName--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getName</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getName()</pre>
+</li>
+</ul>
+<a name="getFunctions--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFunctions</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaFunction.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaFunction</a>&gt;&nbsp;getFunctions()</pre>
+</li>
+</ul>
+<a name="getSubClasses--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSubClasses</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaClass.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaClass</a>&gt;&nbsp;getSubClasses()</pre>
+</li>
+</ul>
+<a name="getFields--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFields</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaVariableDeclaration.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaVariableDeclaration</a>&gt;&nbsp;getFields()</pre>
+</li>
+</ul>
+<a name="isFinal--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isFinal</h4>
+<pre>public&nbsp;boolean&nbsp;isFinal()</pre>
+</li>
+</ul>
+<a name="isStatic--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isStatic</h4>
+<pre>public&nbsp;boolean&nbsp;isStatic()</pre>
+</li>
+</ul>
+<a name="toString-java.lang.String-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>toString</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;indent,
+                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;add)</pre>
+<div class="block">Generates Java code</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html#toString-java.lang.String-java.lang.String-">toString</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>indent</code> - the space the code should be indented with</dd>
+<dd><code>add</code> - the space to be added to indent per indention</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the generated java code</dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -190,7 +373,7 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 </div>
 <div class="subNav">
 <ul class="navList">
-<li>Prev&nbsp;Class</li>
+<li><a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaAccessDescriptor.html" title="enum in com.github.nsc.de.shake.generators.java.nodes"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaDoWhileLoop.html" title="class in com.github.nsc.de.shake.generators.java.nodes"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -218,19 +401,19 @@ extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html
 <li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#methods.inherited.from.class.java.lang.Object">Method</a></li>
+<li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
-<li>Method</li>
+<li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
 <a name="skip.navbar.bottom">
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2020. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2021. All rights reserved.</small></p>
 </body>
 </html>

@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaForLoop.html" title="class in com.github.nsc.de.shake.generators.java.nodes"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaFunction.JavaAccess.html" title="enum in com.github.nsc.de.shake.generators.java.nodes"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaFunction.JavaFunctionArgument.html" title="class in com.github.nsc.de.shake.generators.java.nodes"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../../../index.html?com/github/nsc/de/shake/generators/java/nodes/JavaFunction.html" target="_top">Frames</a></li>
@@ -135,10 +135,6 @@ implements <a href="../../../../../../../../com/github/nsc/de/shake/generators/j
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaFunction.JavaAccess.html" title="enum in com.github.nsc.de.shake.generators.java.nodes">JavaFunction.JavaAccess</a></span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaFunction.JavaFunctionArgument.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaFunction.JavaFunctionArgument</a></span></code>&nbsp;</td>
 </tr>
 </table>
@@ -163,11 +159,11 @@ implements <a href="../../../../../../../../com/github/nsc/de/shake/generators/j
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaFunction.html#JavaFunction-java.lang.String-com.github.nsc.de.shake.generators.java.nodes.JavaNode.JavaType-com.github.nsc.de.shake.generators.java.nodes.JavaFunction.JavaFunctionArgument:A-com.github.nsc.de.shake.generators.java.nodes.JavaTree-com.github.nsc.de.shake.generators.java.nodes.JavaFunction.JavaAccess-boolean-boolean-">JavaFunction</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
-            <a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.JavaType.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode.JavaType</a>&nbsp;type,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaFunction.html#JavaFunction-java.lang.String-com.github.nsc.de.shake.generators.java.nodes.JavaVariableType-com.github.nsc.de.shake.generators.java.nodes.JavaFunction.JavaFunctionArgument:A-com.github.nsc.de.shake.generators.java.nodes.JavaTree-com.github.nsc.de.shake.generators.java.nodes.JavaAccessDescriptor-boolean-boolean-">JavaFunction</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+            <a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaVariableType.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaVariableType</a>&nbsp;type,
             <a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaFunction.JavaFunctionArgument.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaFunction.JavaFunctionArgument</a>[]&nbsp;args,
             <a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaTree.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaTree</a>&nbsp;body,
-            <a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaFunction.JavaAccess.html" title="enum in com.github.nsc.de.shake.generators.java.nodes">JavaFunction.JavaAccess</a>&nbsp;access,
+            <a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaAccessDescriptor.html" title="enum in com.github.nsc.de.shake.generators.java.nodes">JavaAccessDescriptor</a>&nbsp;access,
             boolean&nbsp;isStatic,
             boolean&nbsp;isFinal)</code>&nbsp;</td>
 </tr>
@@ -222,17 +218,17 @@ implements <a href="../../../../../../../../com/github/nsc/de/shake/generators/j
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="JavaFunction-java.lang.String-com.github.nsc.de.shake.generators.java.nodes.JavaNode.JavaType-com.github.nsc.de.shake.generators.java.nodes.JavaFunction.JavaFunctionArgument:A-com.github.nsc.de.shake.generators.java.nodes.JavaTree-com.github.nsc.de.shake.generators.java.nodes.JavaFunction.JavaAccess-boolean-boolean-">
+<a name="JavaFunction-java.lang.String-com.github.nsc.de.shake.generators.java.nodes.JavaVariableType-com.github.nsc.de.shake.generators.java.nodes.JavaFunction.JavaFunctionArgument:A-com.github.nsc.de.shake.generators.java.nodes.JavaTree-com.github.nsc.de.shake.generators.java.nodes.JavaAccessDescriptor-boolean-boolean-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>JavaFunction</h4>
 <pre>public&nbsp;JavaFunction(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
-                    <a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.JavaType.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode.JavaType</a>&nbsp;type,
+                    <a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaVariableType.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaVariableType</a>&nbsp;type,
                     <a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaFunction.JavaFunctionArgument.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaFunction.JavaFunctionArgument</a>[]&nbsp;args,
                     <a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaTree.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaTree</a>&nbsp;body,
-                    <a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaFunction.JavaAccess.html" title="enum in com.github.nsc.de.shake.generators.java.nodes">JavaFunction.JavaAccess</a>&nbsp;access,
+                    <a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaAccessDescriptor.html" title="enum in com.github.nsc.de.shake.generators.java.nodes">JavaAccessDescriptor</a>&nbsp;access,
                     boolean&nbsp;isStatic,
                     boolean&nbsp;isFinal)</pre>
 </li>
@@ -294,7 +290,7 @@ implements <a href="../../../../../../../../com/github/nsc/de/shake/generators/j
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaForLoop.html" title="class in com.github.nsc.de.shake.generators.java.nodes"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaFunction.JavaAccess.html" title="enum in com.github.nsc.de.shake.generators.java.nodes"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaFunction.JavaFunctionArgument.html" title="class in com.github.nsc.de.shake.generators.java.nodes"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../../../index.html?com/github/nsc/de/shake/generators/java/nodes/JavaFunction.html" target="_top">Frames</a></li>
@@ -334,6 +330,6 @@ implements <a href="../../../../../../../../com/github/nsc/de/shake/generators/j
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2020. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2021. All rights reserved.</small></p>
 </body>
 </html>

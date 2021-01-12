@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -48,8 +48,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li>Prev&nbsp;Class</li>
-<li><a href="../../../../../../../com/github/nsc/de/shake/generators/java/SimpleJavaGenerator.html" title="class in com.github.nsc.de.shake.generators.java"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li>Next&nbsp;Class</li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../../index.html?com/github/nsc/de/shake/generators/java/JavaGenerator.html" target="_top">Frames</a></li>
@@ -99,12 +99,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html" title="class in com.github.nsc.de.shake.generators">com.github.nsc.de.shake.generators.Generator</a>&lt;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&gt;</li>
-<li>
-<ul class="inheritance">
 <li>com.github.nsc.de.shake.generators.java.JavaGenerator</li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -114,7 +109,7 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">JavaGenerator</span>
-extends <a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html" title="class in com.github.nsc.de.shake.generators">Generator</a>&lt;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&gt;</pre>
+extends <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
 </li>
 </ul>
 </div>
@@ -151,157 +146,192 @@ extends <a href="../../../../../../../com/github/nsc/de/shake/generators/Generat
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaExpression.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaExpression</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitAddNode-com.github.nsc.de.shake.parser.node.expression.AddNode-">visitAddNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/expression/AddNode.html" title="class in com.github.nsc.de.shake.parser.node.expression">AddNode</a>&nbsp;n)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visit-com.github.nsc.de.shake.parser.node.Node-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">visit</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/Node.html" title="interface in com.github.nsc.de.shake.parser.node">Node</a>&nbsp;n,
+     <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaExpression.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaExpression</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitBiggerEqualsNode-com.github.nsc.de.shake.parser.node.logical.LogicalBiggerEqualsNode-">visitBiggerEqualsNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalBiggerEqualsNode.html" title="class in com.github.nsc.de.shake.parser.node.logical">LogicalBiggerEqualsNode</a>&nbsp;n)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitAddNode-com.github.nsc.de.shake.parser.node.expression.AddNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">visitAddNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/expression/AddNode.html" title="class in com.github.nsc.de.shake.parser.node.expression">AddNode</a>&nbsp;n,
+            <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaExpression.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaExpression</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitBiggerNode-com.github.nsc.de.shake.parser.node.logical.LogicalBiggerNode-">visitBiggerNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalBiggerNode.html" title="class in com.github.nsc.de.shake.parser.node.logical">LogicalBiggerNode</a>&nbsp;n)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitBiggerEqualsNode-com.github.nsc.de.shake.parser.node.logical.LogicalBiggerEqualsNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">visitBiggerEqualsNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalBiggerEqualsNode.html" title="class in com.github.nsc.de.shake.parser.node.logical">LogicalBiggerEqualsNode</a>&nbsp;n,
+                     <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitClassConstruction-com.github.nsc.de.shake.parser.node.objects.ClassConstructionNode-">visitClassConstruction</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/objects/ClassConstructionNode.html" title="class in com.github.nsc.de.shake.parser.node.objects">ClassConstructionNode</a>&nbsp;n)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaExpression.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaExpression</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitBiggerNode-com.github.nsc.de.shake.parser.node.logical.LogicalBiggerNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">visitBiggerNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalBiggerNode.html" title="class in com.github.nsc.de.shake.parser.node.logical">LogicalBiggerNode</a>&nbsp;n,
+               <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitClassDeclarationNode-com.github.nsc.de.shake.parser.node.objects.ClassDeclarationNode-">visitClassDeclarationNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/objects/ClassDeclarationNode.html" title="class in com.github.nsc.de.shake.parser.node.objects">ClassDeclarationNode</a>&nbsp;n)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaValue.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaValue</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitCharacterNode-com.github.nsc.de.shake.parser.node.factor.CharacterNode-">visitCharacterNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/factor/CharacterNode.html" title="class in com.github.nsc.de.shake.parser.node.factor">CharacterNode</a>&nbsp;n)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaExpression.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaExpression</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitDivNode-com.github.nsc.de.shake.parser.node.expression.DivNode-">visitDivNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/expression/DivNode.html" title="class in com.github.nsc.de.shake.parser.node.expression">DivNode</a>&nbsp;n)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaConstruction.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaConstruction</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitClassConstruction-com.github.nsc.de.shake.parser.node.objects.ClassConstructionNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">visitClassConstruction</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/objects/ClassConstructionNode.html" title="class in com.github.nsc.de.shake.parser.node.objects">ClassConstructionNode</a>&nbsp;n,
+                      <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitClassDeclarationNode-com.github.nsc.de.shake.parser.node.objects.ClassDeclarationNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">visitClassDeclarationNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/objects/ClassDeclarationNode.html" title="class in com.github.nsc.de.shake.parser.node.objects">ClassDeclarationNode</a>&nbsp;n,
+                         <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaExpression.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaExpression</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitDivNode-com.github.nsc.de.shake.parser.node.expression.DivNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">visitDivNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/expression/DivNode.html" title="class in com.github.nsc.de.shake.parser.node.expression">DivNode</a>&nbsp;n,
+            <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaDoublePart.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaDoublePart</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitDoubleNode-com.github.nsc.de.shake.parser.node.factor.DoubleNode-">visitDoubleNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/factor/DoubleNode.html" title="class in com.github.nsc.de.shake.parser.node.factor">DoubleNode</a>&nbsp;n)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaDoWhileLoop.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaDoWhileLoop</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitDoWhileNode-com.github.nsc.de.shake.parser.node.loops.DoWhileNode-">visitDoWhileNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/loops/DoWhileNode.html" title="class in com.github.nsc.de.shake.parser.node.loops">DoWhileNode</a>&nbsp;n)</code>&nbsp;</td>
-</tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaExpression.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaExpression</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitEqEqualsNode-com.github.nsc.de.shake.parser.node.logical.LogicalEqEqualsNode-">visitEqEqualsNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalEqEqualsNode.html" title="class in com.github.nsc.de.shake.parser.node.logical">LogicalEqEqualsNode</a>&nbsp;n)</code>&nbsp;</td>
-</tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaForLoop.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaForLoop</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitForNode-com.github.nsc.de.shake.parser.node.loops.ForNode-">visitForNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/loops/ForNode.html" title="class in com.github.nsc.de.shake.parser.node.loops">ForNode</a>&nbsp;n)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaDoWhileLoop.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaDoWhileLoop</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitDoWhileNode-com.github.nsc.de.shake.parser.node.loops.DoWhileNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">visitDoWhileNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/loops/DoWhileNode.html" title="class in com.github.nsc.de.shake.parser.node.loops">DoWhileNode</a>&nbsp;n,
+                <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaFunctionCall.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaFunctionCall</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitFunctionCallNode-com.github.nsc.de.shake.parser.node.functions.FunctionCallNode-">visitFunctionCallNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/functions/FunctionCallNode.html" title="class in com.github.nsc.de.shake.parser.node.functions">FunctionCallNode</a>&nbsp;n)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaExpression.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaExpression</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitEqEqualsNode-com.github.nsc.de.shake.parser.node.logical.LogicalEqEqualsNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">visitEqEqualsNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalEqEqualsNode.html" title="class in com.github.nsc.de.shake.parser.node.logical">LogicalEqEqualsNode</a>&nbsp;n,
+                 <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</code>&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitFunctionDeclarationNode-com.github.nsc.de.shake.parser.node.functions.FunctionDeclarationNode-">visitFunctionDeclarationNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/functions/FunctionDeclarationNode.html" title="class in com.github.nsc.de.shake.parser.node.functions">FunctionDeclarationNode</a>&nbsp;n)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaForLoop.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaForLoop</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitForNode-com.github.nsc.de.shake.parser.node.loops.ForNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">visitForNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/loops/ForNode.html" title="class in com.github.nsc.de.shake.parser.node.loops">ForNode</a>&nbsp;n,
+            <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</code>&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaIdentifier.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaIdentifier</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitIdentifierNode-com.github.nsc.de.shake.parser.node.IdentifierNode-">visitIdentifierNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/IdentifierNode.html" title="class in com.github.nsc.de.shake.parser.node">IdentifierNode</a>&nbsp;n)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaFunctionCall.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaFunctionCall</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitFunctionCallNode-com.github.nsc.de.shake.parser.node.functions.FunctionCallNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">visitFunctionCallNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/functions/FunctionCallNode.html" title="class in com.github.nsc.de.shake.parser.node.functions">FunctionCallNode</a>&nbsp;n,
+                     <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</code>&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaIfCondition.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaIfCondition</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitIfNode-com.github.nsc.de.shake.parser.node.IfNode-">visitIfNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/IfNode.html" title="class in com.github.nsc.de.shake.parser.node">IfNode</a>&nbsp;n)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitFunctionDeclarationNode-com.github.nsc.de.shake.parser.node.functions.FunctionDeclarationNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">visitFunctionDeclarationNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/functions/FunctionDeclarationNode.html" title="class in com.github.nsc.de.shake.parser.node.functions">FunctionDeclarationNode</a>&nbsp;n,
+                            <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</code>&nbsp;</td>
 </tr>
 <tr id="i14" class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaIdentifier.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaIdentifier</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitIdentifierNode-com.github.nsc.de.shake.parser.node.IdentifierNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">visitIdentifierNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/IdentifierNode.html" title="class in com.github.nsc.de.shake.parser.node">IdentifierNode</a>&nbsp;n,
+                   <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</code>&nbsp;</td>
+</tr>
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaIfCondition.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaIfCondition</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitIfNode-com.github.nsc.de.shake.parser.node.IfNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">visitIfNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/IfNode.html" title="class in com.github.nsc.de.shake.parser.node">IfNode</a>&nbsp;n,
+           <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</code>&nbsp;</td>
+</tr>
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaIntegerPart.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaIntegerPart</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitIntegerNode-com.github.nsc.de.shake.parser.node.factor.IntegerNode-">visitIntegerNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/factor/IntegerNode.html" title="class in com.github.nsc.de.shake.parser.node.factor">IntegerNode</a>&nbsp;n)</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaExpression.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaExpression</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitLogicalAndNode-com.github.nsc.de.shake.parser.node.logical.LogicalAndNode-">visitLogicalAndNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalAndNode.html" title="class in com.github.nsc.de.shake.parser.node.logical">LogicalAndNode</a>&nbsp;n)</code>&nbsp;</td>
-</tr>
-<tr id="i16" class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitLogicalFalseNode-com.github.nsc.de.shake.parser.node.logical.LogicalFalseNode-">visitLogicalFalseNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalFalseNode.html" title="class in com.github.nsc.de.shake.parser.node.logical">LogicalFalseNode</a>&nbsp;n)</code>&nbsp;</td>
-</tr>
 <tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaExpression.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaExpression</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitLogicalOrNode-com.github.nsc.de.shake.parser.node.logical.LogicalOrNode-">visitLogicalOrNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalOrNode.html" title="class in com.github.nsc.de.shake.parser.node.logical">LogicalOrNode</a>&nbsp;n)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitLogicalAndNode-com.github.nsc.de.shake.parser.node.logical.LogicalAndNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">visitLogicalAndNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalAndNode.html" title="class in com.github.nsc.de.shake.parser.node.logical">LogicalAndNode</a>&nbsp;n,
+                   <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</code>&nbsp;</td>
 </tr>
 <tr id="i18" class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitLogicalTrueNode-com.github.nsc.de.shake.parser.node.logical.LogicalTrueNode-">visitLogicalTrueNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalTrueNode.html" title="class in com.github.nsc.de.shake.parser.node.logical">LogicalTrueNode</a>&nbsp;n)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaExpression.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaExpression</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitLogicalOrNode-com.github.nsc.de.shake.parser.node.logical.LogicalOrNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">visitLogicalOrNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalOrNode.html" title="class in com.github.nsc.de.shake.parser.node.logical">LogicalOrNode</a>&nbsp;n,
+                  <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</code>&nbsp;</td>
 </tr>
 <tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaExpression.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaExpression</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitMulNode-com.github.nsc.de.shake.parser.node.expression.MulNode-">visitMulNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/expression/MulNode.html" title="class in com.github.nsc.de.shake.parser.node.expression">MulNode</a>&nbsp;n)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitMulNode-com.github.nsc.de.shake.parser.node.expression.MulNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">visitMulNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/expression/MulNode.html" title="class in com.github.nsc.de.shake.parser.node.expression">MulNode</a>&nbsp;n,
+            <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</code>&nbsp;</td>
 </tr>
 <tr id="i20" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaFunctionCall.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaFunctionCall</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitPowNode-com.github.nsc.de.shake.parser.node.expression.PowNode-">visitPowNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/expression/PowNode.html" title="class in com.github.nsc.de.shake.parser.node.expression">PowNode</a>&nbsp;n)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitPowNode-com.github.nsc.de.shake.parser.node.expression.PowNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">visitPowNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/expression/PowNode.html" title="class in com.github.nsc.de.shake.parser.node.expression">PowNode</a>&nbsp;n,
+            <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</code>&nbsp;</td>
 </tr>
 <tr id="i21" class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaExpression.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaExpression</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitSmallerEqualsNode-com.github.nsc.de.shake.parser.node.logical.LogicalSmallerEqualsNode-">visitSmallerEqualsNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalSmallerEqualsNode.html" title="class in com.github.nsc.de.shake.parser.node.logical">LogicalSmallerEqualsNode</a>&nbsp;n)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaClass.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaClass</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitProgram-com.github.nsc.de.shake.parser.node.Tree-java.lang.String-">visitProgram</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/Tree.html" title="class in com.github.nsc.de.shake.parser.node">Tree</a>&nbsp;t,
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;filename)</code>&nbsp;</td>
 </tr>
 <tr id="i22" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaExpression.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaExpression</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitSmallerNode-com.github.nsc.de.shake.parser.node.logical.LogicalSmallerNode-">visitSmallerNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalSmallerNode.html" title="class in com.github.nsc.de.shake.parser.node.logical">LogicalSmallerNode</a>&nbsp;n)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitSmallerEqualsNode-com.github.nsc.de.shake.parser.node.logical.LogicalSmallerEqualsNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">visitSmallerEqualsNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalSmallerEqualsNode.html" title="class in com.github.nsc.de.shake.parser.node.logical">LogicalSmallerEqualsNode</a>&nbsp;n,
+                      <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</code>&nbsp;</td>
 </tr>
 <tr id="i23" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaExpression.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaExpression</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitSubNode-com.github.nsc.de.shake.parser.node.expression.SubNode-">visitSubNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/expression/SubNode.html" title="class in com.github.nsc.de.shake.parser.node.expression">SubNode</a>&nbsp;n)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitSmallerNode-com.github.nsc.de.shake.parser.node.logical.LogicalSmallerNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">visitSmallerNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalSmallerNode.html" title="class in com.github.nsc.de.shake.parser.node.logical">LogicalSmallerNode</a>&nbsp;n,
+                <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</code>&nbsp;</td>
 </tr>
 <tr id="i24" class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaTree.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaTree</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitTree-com.github.nsc.de.shake.parser.node.Tree-">visitTree</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/Tree.html" title="class in com.github.nsc.de.shake.parser.node">Tree</a>&nbsp;t)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaValue.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaValue</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitStringNode-com.github.nsc.de.shake.parser.node.factor.StringNode-">visitStringNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/factor/StringNode.html" title="class in com.github.nsc.de.shake.parser.node.factor">StringNode</a>&nbsp;n)</code>&nbsp;</td>
 </tr>
 <tr id="i25" class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitVariableAddAssignmentNode-com.github.nsc.de.shake.parser.node.variables.VariableAddAssignmentNode-">visitVariableAddAssignmentNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableAddAssignmentNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableAddAssignmentNode</a>&nbsp;n)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaExpression.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaExpression</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitSubNode-com.github.nsc.de.shake.parser.node.expression.SubNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">visitSubNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/expression/SubNode.html" title="class in com.github.nsc.de.shake.parser.node.expression">SubNode</a>&nbsp;n,
+            <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</code>&nbsp;</td>
 </tr>
 <tr id="i26" class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaVariableAssignment.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaVariableAssignment</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitVariableAssignmentNode-com.github.nsc.de.shake.parser.node.variables.VariableAssignmentNode-">visitVariableAssignmentNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableAssignmentNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableAssignmentNode</a>&nbsp;n)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaTree.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaTree</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitTree-com.github.nsc.de.shake.parser.node.Tree-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">visitTree</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/Tree.html" title="class in com.github.nsc.de.shake.parser.node">Tree</a>&nbsp;t,
+         <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</code>&nbsp;</td>
 </tr>
 <tr id="i27" class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaVariableDeclaration.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaVariableDeclaration</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitVariableDeclarationNode-com.github.nsc.de.shake.parser.node.variables.VariableDeclarationNode-">visitVariableDeclarationNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableDeclarationNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableDeclarationNode</a>&nbsp;n)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitVariableAddAssignmentNode-com.github.nsc.de.shake.parser.node.variables.VariableAddAssignmentNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">visitVariableAddAssignmentNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableAddAssignmentNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableAddAssignmentNode</a>&nbsp;n,
+                              <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</code>&nbsp;</td>
 </tr>
 <tr id="i28" class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaVariableDecr.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaVariableDecr</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitVariableDecreaseNode-com.github.nsc.de.shake.parser.node.variables.VariableDecreaseNode-">visitVariableDecreaseNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableDecreaseNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableDecreaseNode</a>&nbsp;n)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaVariableAssignment.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaVariableAssignment</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitVariableAssignmentNode-com.github.nsc.de.shake.parser.node.variables.VariableAssignmentNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">visitVariableAssignmentNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableAssignmentNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableAssignmentNode</a>&nbsp;n,
+                           <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</code>&nbsp;</td>
 </tr>
 <tr id="i29" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitVariableDivAssignmentNode-com.github.nsc.de.shake.parser.node.variables.VariableDivAssignmentNode-">visitVariableDivAssignmentNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableDivAssignmentNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableDivAssignmentNode</a>&nbsp;n)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitVariableDeclarationNode-com.github.nsc.de.shake.parser.node.variables.VariableDeclarationNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">visitVariableDeclarationNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableDeclarationNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableDeclarationNode</a>&nbsp;n,
+                            <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</code>&nbsp;</td>
 </tr>
 <tr id="i30" class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaVariableIncr.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaVariableIncr</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitVariableIncreaseNode-com.github.nsc.de.shake.parser.node.variables.VariableIncreaseNode-">visitVariableIncreaseNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableIncreaseNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableIncreaseNode</a>&nbsp;n)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaVariableDecr.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaVariableDecr</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitVariableDecreaseNode-com.github.nsc.de.shake.parser.node.variables.VariableDecreaseNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">visitVariableDecreaseNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableDecreaseNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableDecreaseNode</a>&nbsp;n,
+                         <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</code>&nbsp;</td>
 </tr>
 <tr id="i31" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitVariableMulAssignmentNode-com.github.nsc.de.shake.parser.node.variables.VariableMulAssignmentNode-">visitVariableMulAssignmentNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableMulAssignmentNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableMulAssignmentNode</a>&nbsp;n)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitVariableDivAssignmentNode-com.github.nsc.de.shake.parser.node.variables.VariableDivAssignmentNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">visitVariableDivAssignmentNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableDivAssignmentNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableDivAssignmentNode</a>&nbsp;n,
+                              <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</code>&nbsp;</td>
 </tr>
 <tr id="i32" class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaVariableAssignment.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaVariableAssignment</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitVariablePowAssignmentNode-com.github.nsc.de.shake.parser.node.variables.VariablePowAssignmentNode-">visitVariablePowAssignmentNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariablePowAssignmentNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariablePowAssignmentNode</a>&nbsp;n)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaVariableIncr.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaVariableIncr</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitVariableIncreaseNode-com.github.nsc.de.shake.parser.node.variables.VariableIncreaseNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">visitVariableIncreaseNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableIncreaseNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableIncreaseNode</a>&nbsp;n,
+                         <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</code>&nbsp;</td>
 </tr>
 <tr id="i33" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitVariableSubAssignmentNode-com.github.nsc.de.shake.parser.node.variables.VariableSubAssignmentNode-">visitVariableSubAssignmentNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableSubAssignmentNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableSubAssignmentNode</a>&nbsp;n)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitVariableMulAssignmentNode-com.github.nsc.de.shake.parser.node.variables.VariableMulAssignmentNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">visitVariableMulAssignmentNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableMulAssignmentNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableMulAssignmentNode</a>&nbsp;n,
+                              <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</code>&nbsp;</td>
 </tr>
 <tr id="i34" class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaVariable.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaVariable</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitVariableUsageNode-com.github.nsc.de.shake.parser.node.variables.VariableUsageNode-">visitVariableUsageNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableUsageNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableUsageNode</a>&nbsp;n)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaVariableAssignment.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaVariableAssignment</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitVariablePowAssignmentNode-com.github.nsc.de.shake.parser.node.variables.VariablePowAssignmentNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">visitVariablePowAssignmentNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariablePowAssignmentNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariablePowAssignmentNode</a>&nbsp;n,
+                              <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</code>&nbsp;</td>
 </tr>
 <tr id="i35" class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitVariableSubAssignmentNode-com.github.nsc.de.shake.parser.node.variables.VariableSubAssignmentNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">visitVariableSubAssignmentNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableSubAssignmentNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableSubAssignmentNode</a>&nbsp;n,
+                              <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</code>&nbsp;</td>
+</tr>
+<tr id="i36" class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaVariable.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaVariable</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitVariableUsageNode-com.github.nsc.de.shake.parser.node.variables.VariableUsageNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">visitVariableUsageNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableUsageNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableUsageNode</a>&nbsp;n,
+                      <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</code>&nbsp;</td>
+</tr>
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaWhileLoop.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaWhileLoop</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitWhileNode-com.github.nsc.de.shake.parser.node.loops.WhileNode-">visitWhileNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/loops/WhileNode.html" title="class in com.github.nsc.de.shake.parser.node.loops">WhileNode</a>&nbsp;n)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerator.html#visitWhileNode-com.github.nsc.de.shake.parser.node.loops.WhileNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">visitWhileNode</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/loops/WhileNode.html" title="class in com.github.nsc.de.shake.parser.node.loops">WhileNode</a>&nbsp;n,
+              <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</code>&nbsp;</td>
 </tr>
 </table>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.com.github.nsc.de.shake.generators.Generator">
-<!--   -->
-</a>
-<h3>Methods inherited from class&nbsp;com.github.nsc.de.shake.generators.<a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html" title="class in com.github.nsc.de.shake.generators">Generator</a></h3>
-<code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html#visit-com.github.nsc.de.shake.parser.node.Node-">visit</a></code></li>
-</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
@@ -340,17 +370,34 @@ extends <a href="../../../../../../../com/github/nsc/de/shake/generators/Generat
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="visitTree-com.github.nsc.de.shake.parser.node.Tree-">
+<a name="visitProgram-com.github.nsc.de.shake.parser.node.Tree-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitProgram</h4>
+<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaClass.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaClass</a>&nbsp;visitProgram(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/Tree.html" title="class in com.github.nsc.de.shake.parser.node">Tree</a>&nbsp;t,
+                              <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;filename)</pre>
+</li>
+</ul>
+<a name="visit-com.github.nsc.de.shake.parser.node.Node-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visit</h4>
+<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&nbsp;visit(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/Node.html" title="interface in com.github.nsc.de.shake.parser.node">Node</a>&nbsp;n,
+                      <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</pre>
+</li>
+</ul>
+<a name="visitTree-com.github.nsc.de.shake.parser.node.Tree-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>visitTree</h4>
-<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaTree.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaTree</a>&nbsp;visitTree(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/Tree.html" title="class in com.github.nsc.de.shake.parser.node">Tree</a>&nbsp;t)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html#visitTree-com.github.nsc.de.shake.parser.node.Tree-">visitTree</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html" title="class in com.github.nsc.de.shake.generators">Generator</a>&lt;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&gt;</code></dd>
-</dl>
+<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaTree.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaTree</a>&nbsp;visitTree(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/Tree.html" title="class in com.github.nsc.de.shake.parser.node">Tree</a>&nbsp;t,
+                          <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</pre>
 </li>
 </ul>
 <a name="visitDoubleNode-com.github.nsc.de.shake.parser.node.factor.DoubleNode-">
@@ -360,10 +407,6 @@ extends <a href="../../../../../../../com/github/nsc/de/shake/generators/Generat
 <li class="blockList">
 <h4>visitDoubleNode</h4>
 <pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaDoublePart.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaDoublePart</a>&nbsp;visitDoubleNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/factor/DoubleNode.html" title="class in com.github.nsc.de.shake.parser.node.factor">DoubleNode</a>&nbsp;n)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html#visitDoubleNode-com.github.nsc.de.shake.parser.node.factor.DoubleNode-">visitDoubleNode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html" title="class in com.github.nsc.de.shake.generators">Generator</a>&lt;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&gt;</code></dd>
-</dl>
 </li>
 </ul>
 <a name="visitIntegerNode-com.github.nsc.de.shake.parser.node.factor.IntegerNode-">
@@ -373,439 +416,334 @@ extends <a href="../../../../../../../com/github/nsc/de/shake/generators/Generat
 <li class="blockList">
 <h4>visitIntegerNode</h4>
 <pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaIntegerPart.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaIntegerPart</a>&nbsp;visitIntegerNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/factor/IntegerNode.html" title="class in com.github.nsc.de.shake.parser.node.factor">IntegerNode</a>&nbsp;n)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html#visitIntegerNode-com.github.nsc.de.shake.parser.node.factor.IntegerNode-">visitIntegerNode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html" title="class in com.github.nsc.de.shake.generators">Generator</a>&lt;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&gt;</code></dd>
-</dl>
 </li>
 </ul>
-<a name="visitAddNode-com.github.nsc.de.shake.parser.node.expression.AddNode-">
+<a name="visitStringNode-com.github.nsc.de.shake.parser.node.factor.StringNode-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitStringNode</h4>
+<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaValue.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaValue</a>&nbsp;visitStringNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/factor/StringNode.html" title="class in com.github.nsc.de.shake.parser.node.factor">StringNode</a>&nbsp;n)</pre>
+</li>
+</ul>
+<a name="visitCharacterNode-com.github.nsc.de.shake.parser.node.factor.CharacterNode-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>visitCharacterNode</h4>
+<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaValue.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaValue</a>&nbsp;visitCharacterNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/factor/CharacterNode.html" title="class in com.github.nsc.de.shake.parser.node.factor">CharacterNode</a>&nbsp;n)</pre>
+</li>
+</ul>
+<a name="visitAddNode-com.github.nsc.de.shake.parser.node.expression.AddNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>visitAddNode</h4>
-<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaExpression.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaExpression</a>&nbsp;visitAddNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/expression/AddNode.html" title="class in com.github.nsc.de.shake.parser.node.expression">AddNode</a>&nbsp;n)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html#visitAddNode-com.github.nsc.de.shake.parser.node.expression.AddNode-">visitAddNode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html" title="class in com.github.nsc.de.shake.generators">Generator</a>&lt;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&gt;</code></dd>
-</dl>
+<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaExpression.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaExpression</a>&nbsp;visitAddNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/expression/AddNode.html" title="class in com.github.nsc.de.shake.parser.node.expression">AddNode</a>&nbsp;n,
+                                              <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</pre>
 </li>
 </ul>
-<a name="visitSubNode-com.github.nsc.de.shake.parser.node.expression.SubNode-">
+<a name="visitSubNode-com.github.nsc.de.shake.parser.node.expression.SubNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>visitSubNode</h4>
-<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaExpression.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaExpression</a>&nbsp;visitSubNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/expression/SubNode.html" title="class in com.github.nsc.de.shake.parser.node.expression">SubNode</a>&nbsp;n)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html#visitSubNode-com.github.nsc.de.shake.parser.node.expression.SubNode-">visitSubNode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html" title="class in com.github.nsc.de.shake.generators">Generator</a>&lt;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&gt;</code></dd>
-</dl>
+<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaExpression.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaExpression</a>&nbsp;visitSubNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/expression/SubNode.html" title="class in com.github.nsc.de.shake.parser.node.expression">SubNode</a>&nbsp;n,
+                                              <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</pre>
 </li>
 </ul>
-<a name="visitMulNode-com.github.nsc.de.shake.parser.node.expression.MulNode-">
+<a name="visitMulNode-com.github.nsc.de.shake.parser.node.expression.MulNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>visitMulNode</h4>
-<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaExpression.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaExpression</a>&nbsp;visitMulNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/expression/MulNode.html" title="class in com.github.nsc.de.shake.parser.node.expression">MulNode</a>&nbsp;n)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html#visitMulNode-com.github.nsc.de.shake.parser.node.expression.MulNode-">visitMulNode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html" title="class in com.github.nsc.de.shake.generators">Generator</a>&lt;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&gt;</code></dd>
-</dl>
+<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaExpression.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaExpression</a>&nbsp;visitMulNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/expression/MulNode.html" title="class in com.github.nsc.de.shake.parser.node.expression">MulNode</a>&nbsp;n,
+                                              <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</pre>
 </li>
 </ul>
-<a name="visitDivNode-com.github.nsc.de.shake.parser.node.expression.DivNode-">
+<a name="visitDivNode-com.github.nsc.de.shake.parser.node.expression.DivNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>visitDivNode</h4>
-<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaExpression.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaExpression</a>&nbsp;visitDivNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/expression/DivNode.html" title="class in com.github.nsc.de.shake.parser.node.expression">DivNode</a>&nbsp;n)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html#visitDivNode-com.github.nsc.de.shake.parser.node.expression.DivNode-">visitDivNode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html" title="class in com.github.nsc.de.shake.generators">Generator</a>&lt;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&gt;</code></dd>
-</dl>
+<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaExpression.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaExpression</a>&nbsp;visitDivNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/expression/DivNode.html" title="class in com.github.nsc.de.shake.parser.node.expression">DivNode</a>&nbsp;n,
+                                              <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</pre>
 </li>
 </ul>
-<a name="visitPowNode-com.github.nsc.de.shake.parser.node.expression.PowNode-">
+<a name="visitPowNode-com.github.nsc.de.shake.parser.node.expression.PowNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>visitPowNode</h4>
-<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaFunctionCall.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaFunctionCall</a>&nbsp;visitPowNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/expression/PowNode.html" title="class in com.github.nsc.de.shake.parser.node.expression">PowNode</a>&nbsp;n)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html#visitPowNode-com.github.nsc.de.shake.parser.node.expression.PowNode-">visitPowNode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html" title="class in com.github.nsc.de.shake.generators">Generator</a>&lt;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&gt;</code></dd>
-</dl>
+<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaFunctionCall.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaFunctionCall</a>&nbsp;visitPowNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/expression/PowNode.html" title="class in com.github.nsc.de.shake.parser.node.expression">PowNode</a>&nbsp;n,
+                                                <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</pre>
 </li>
 </ul>
-<a name="visitVariableDeclarationNode-com.github.nsc.de.shake.parser.node.variables.VariableDeclarationNode-">
+<a name="visitVariableDeclarationNode-com.github.nsc.de.shake.parser.node.variables.VariableDeclarationNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>visitVariableDeclarationNode</h4>
-<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaVariableDeclaration.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaVariableDeclaration</a>&nbsp;visitVariableDeclarationNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableDeclarationNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableDeclarationNode</a>&nbsp;n)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html#visitVariableDeclarationNode-com.github.nsc.de.shake.parser.node.variables.VariableDeclarationNode-">visitVariableDeclarationNode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html" title="class in com.github.nsc.de.shake.generators">Generator</a>&lt;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&gt;</code></dd>
-</dl>
+<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&nbsp;visitVariableDeclarationNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableDeclarationNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableDeclarationNode</a>&nbsp;n,
+                                             <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</pre>
 </li>
 </ul>
-<a name="visitVariableAssignmentNode-com.github.nsc.de.shake.parser.node.variables.VariableAssignmentNode-">
+<a name="visitVariableAssignmentNode-com.github.nsc.de.shake.parser.node.variables.VariableAssignmentNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>visitVariableAssignmentNode</h4>
-<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaVariableAssignment.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaVariableAssignment</a>&nbsp;visitVariableAssignmentNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableAssignmentNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableAssignmentNode</a>&nbsp;n)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html#visitVariableAssignmentNode-com.github.nsc.de.shake.parser.node.variables.VariableAssignmentNode-">visitVariableAssignmentNode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html" title="class in com.github.nsc.de.shake.generators">Generator</a>&lt;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&gt;</code></dd>
-</dl>
+<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaVariableAssignment.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaVariableAssignment</a>&nbsp;visitVariableAssignmentNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableAssignmentNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableAssignmentNode</a>&nbsp;n,
+                                                                     <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</pre>
 </li>
 </ul>
-<a name="visitVariableAddAssignmentNode-com.github.nsc.de.shake.parser.node.variables.VariableAddAssignmentNode-">
+<a name="visitVariableAddAssignmentNode-com.github.nsc.de.shake.parser.node.variables.VariableAddAssignmentNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>visitVariableAddAssignmentNode</h4>
-<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&nbsp;visitVariableAddAssignmentNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableAddAssignmentNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableAddAssignmentNode</a>&nbsp;n)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html#visitVariableAddAssignmentNode-com.github.nsc.de.shake.parser.node.variables.VariableAddAssignmentNode-">visitVariableAddAssignmentNode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html" title="class in com.github.nsc.de.shake.generators">Generator</a>&lt;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&gt;</code></dd>
-</dl>
+<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&nbsp;visitVariableAddAssignmentNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableAddAssignmentNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableAddAssignmentNode</a>&nbsp;n,
+                                               <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</pre>
 </li>
 </ul>
-<a name="visitVariableSubAssignmentNode-com.github.nsc.de.shake.parser.node.variables.VariableSubAssignmentNode-">
+<a name="visitVariableSubAssignmentNode-com.github.nsc.de.shake.parser.node.variables.VariableSubAssignmentNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>visitVariableSubAssignmentNode</h4>
-<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&nbsp;visitVariableSubAssignmentNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableSubAssignmentNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableSubAssignmentNode</a>&nbsp;n)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html#visitVariableSubAssignmentNode-com.github.nsc.de.shake.parser.node.variables.VariableSubAssignmentNode-">visitVariableSubAssignmentNode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html" title="class in com.github.nsc.de.shake.generators">Generator</a>&lt;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&gt;</code></dd>
-</dl>
+<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&nbsp;visitVariableSubAssignmentNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableSubAssignmentNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableSubAssignmentNode</a>&nbsp;n,
+                                               <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</pre>
 </li>
 </ul>
-<a name="visitVariableMulAssignmentNode-com.github.nsc.de.shake.parser.node.variables.VariableMulAssignmentNode-">
+<a name="visitVariableMulAssignmentNode-com.github.nsc.de.shake.parser.node.variables.VariableMulAssignmentNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>visitVariableMulAssignmentNode</h4>
-<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&nbsp;visitVariableMulAssignmentNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableMulAssignmentNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableMulAssignmentNode</a>&nbsp;n)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html#visitVariableMulAssignmentNode-com.github.nsc.de.shake.parser.node.variables.VariableMulAssignmentNode-">visitVariableMulAssignmentNode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html" title="class in com.github.nsc.de.shake.generators">Generator</a>&lt;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&gt;</code></dd>
-</dl>
+<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&nbsp;visitVariableMulAssignmentNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableMulAssignmentNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableMulAssignmentNode</a>&nbsp;n,
+                                               <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</pre>
 </li>
 </ul>
-<a name="visitVariableDivAssignmentNode-com.github.nsc.de.shake.parser.node.variables.VariableDivAssignmentNode-">
+<a name="visitVariableDivAssignmentNode-com.github.nsc.de.shake.parser.node.variables.VariableDivAssignmentNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>visitVariableDivAssignmentNode</h4>
-<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&nbsp;visitVariableDivAssignmentNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableDivAssignmentNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableDivAssignmentNode</a>&nbsp;n)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html#visitVariableDivAssignmentNode-com.github.nsc.de.shake.parser.node.variables.VariableDivAssignmentNode-">visitVariableDivAssignmentNode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html" title="class in com.github.nsc.de.shake.generators">Generator</a>&lt;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&gt;</code></dd>
-</dl>
+<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&nbsp;visitVariableDivAssignmentNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableDivAssignmentNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableDivAssignmentNode</a>&nbsp;n,
+                                               <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</pre>
 </li>
 </ul>
-<a name="visitVariablePowAssignmentNode-com.github.nsc.de.shake.parser.node.variables.VariablePowAssignmentNode-">
+<a name="visitVariablePowAssignmentNode-com.github.nsc.de.shake.parser.node.variables.VariablePowAssignmentNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>visitVariablePowAssignmentNode</h4>
-<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaVariableAssignment.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaVariableAssignment</a>&nbsp;visitVariablePowAssignmentNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariablePowAssignmentNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariablePowAssignmentNode</a>&nbsp;n)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html#visitVariablePowAssignmentNode-com.github.nsc.de.shake.parser.node.variables.VariablePowAssignmentNode-">visitVariablePowAssignmentNode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html" title="class in com.github.nsc.de.shake.generators">Generator</a>&lt;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&gt;</code></dd>
-</dl>
+<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaVariableAssignment.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaVariableAssignment</a>&nbsp;visitVariablePowAssignmentNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariablePowAssignmentNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariablePowAssignmentNode</a>&nbsp;n,
+                                                                        <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</pre>
 </li>
 </ul>
-<a name="visitVariableIncreaseNode-com.github.nsc.de.shake.parser.node.variables.VariableIncreaseNode-">
+<a name="visitVariableIncreaseNode-com.github.nsc.de.shake.parser.node.variables.VariableIncreaseNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>visitVariableIncreaseNode</h4>
-<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaVariableIncr.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaVariableIncr</a>&nbsp;visitVariableIncreaseNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableIncreaseNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableIncreaseNode</a>&nbsp;n)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html#visitVariableIncreaseNode-com.github.nsc.de.shake.parser.node.variables.VariableIncreaseNode-">visitVariableIncreaseNode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html" title="class in com.github.nsc.de.shake.generators">Generator</a>&lt;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&gt;</code></dd>
-</dl>
+<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaVariableIncr.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaVariableIncr</a>&nbsp;visitVariableIncreaseNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableIncreaseNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableIncreaseNode</a>&nbsp;n,
+                                                             <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</pre>
 </li>
 </ul>
-<a name="visitVariableDecreaseNode-com.github.nsc.de.shake.parser.node.variables.VariableDecreaseNode-">
+<a name="visitVariableDecreaseNode-com.github.nsc.de.shake.parser.node.variables.VariableDecreaseNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>visitVariableDecreaseNode</h4>
-<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaVariableDecr.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaVariableDecr</a>&nbsp;visitVariableDecreaseNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableDecreaseNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableDecreaseNode</a>&nbsp;n)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html#visitVariableDecreaseNode-com.github.nsc.de.shake.parser.node.variables.VariableDecreaseNode-">visitVariableDecreaseNode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html" title="class in com.github.nsc.de.shake.generators">Generator</a>&lt;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&gt;</code></dd>
-</dl>
+<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaVariableDecr.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaVariableDecr</a>&nbsp;visitVariableDecreaseNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableDecreaseNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableDecreaseNode</a>&nbsp;n,
+                                                             <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</pre>
 </li>
 </ul>
-<a name="visitVariableUsageNode-com.github.nsc.de.shake.parser.node.variables.VariableUsageNode-">
+<a name="visitVariableUsageNode-com.github.nsc.de.shake.parser.node.variables.VariableUsageNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>visitVariableUsageNode</h4>
-<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaVariable.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaVariable</a>&nbsp;visitVariableUsageNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableUsageNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableUsageNode</a>&nbsp;n)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html#visitVariableUsageNode-com.github.nsc.de.shake.parser.node.variables.VariableUsageNode-">visitVariableUsageNode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html" title="class in com.github.nsc.de.shake.generators">Generator</a>&lt;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&gt;</code></dd>
-</dl>
+<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaVariable.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaVariable</a>&nbsp;visitVariableUsageNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/variables/VariableUsageNode.html" title="class in com.github.nsc.de.shake.parser.node.variables">VariableUsageNode</a>&nbsp;n,
+                                                      <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</pre>
 </li>
 </ul>
-<a name="visitEqEqualsNode-com.github.nsc.de.shake.parser.node.logical.LogicalEqEqualsNode-">
+<a name="visitEqEqualsNode-com.github.nsc.de.shake.parser.node.logical.LogicalEqEqualsNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>visitEqEqualsNode</h4>
-<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaExpression.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaExpression</a>&nbsp;visitEqEqualsNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalEqEqualsNode.html" title="class in com.github.nsc.de.shake.parser.node.logical">LogicalEqEqualsNode</a>&nbsp;n)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html#visitEqEqualsNode-com.github.nsc.de.shake.parser.node.logical.LogicalEqEqualsNode-">visitEqEqualsNode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html" title="class in com.github.nsc.de.shake.generators">Generator</a>&lt;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&gt;</code></dd>
-</dl>
+<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaExpression.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaExpression</a>&nbsp;visitEqEqualsNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalEqEqualsNode.html" title="class in com.github.nsc.de.shake.parser.node.logical">LogicalEqEqualsNode</a>&nbsp;n,
+                                                   <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</pre>
 </li>
 </ul>
-<a name="visitBiggerEqualsNode-com.github.nsc.de.shake.parser.node.logical.LogicalBiggerEqualsNode-">
+<a name="visitBiggerEqualsNode-com.github.nsc.de.shake.parser.node.logical.LogicalBiggerEqualsNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>visitBiggerEqualsNode</h4>
-<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaExpression.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaExpression</a>&nbsp;visitBiggerEqualsNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalBiggerEqualsNode.html" title="class in com.github.nsc.de.shake.parser.node.logical">LogicalBiggerEqualsNode</a>&nbsp;n)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html#visitBiggerEqualsNode-com.github.nsc.de.shake.parser.node.logical.LogicalBiggerEqualsNode-">visitBiggerEqualsNode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html" title="class in com.github.nsc.de.shake.generators">Generator</a>&lt;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&gt;</code></dd>
-</dl>
+<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaExpression.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaExpression</a>&nbsp;visitBiggerEqualsNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalBiggerEqualsNode.html" title="class in com.github.nsc.de.shake.parser.node.logical">LogicalBiggerEqualsNode</a>&nbsp;n,
+                                                       <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</pre>
 </li>
 </ul>
-<a name="visitSmallerEqualsNode-com.github.nsc.de.shake.parser.node.logical.LogicalSmallerEqualsNode-">
+<a name="visitSmallerEqualsNode-com.github.nsc.de.shake.parser.node.logical.LogicalSmallerEqualsNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>visitSmallerEqualsNode</h4>
-<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaExpression.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaExpression</a>&nbsp;visitSmallerEqualsNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalSmallerEqualsNode.html" title="class in com.github.nsc.de.shake.parser.node.logical">LogicalSmallerEqualsNode</a>&nbsp;n)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html#visitSmallerEqualsNode-com.github.nsc.de.shake.parser.node.logical.LogicalSmallerEqualsNode-">visitSmallerEqualsNode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html" title="class in com.github.nsc.de.shake.generators">Generator</a>&lt;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&gt;</code></dd>
-</dl>
+<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaExpression.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaExpression</a>&nbsp;visitSmallerEqualsNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalSmallerEqualsNode.html" title="class in com.github.nsc.de.shake.parser.node.logical">LogicalSmallerEqualsNode</a>&nbsp;n,
+                                                        <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</pre>
 </li>
 </ul>
-<a name="visitBiggerNode-com.github.nsc.de.shake.parser.node.logical.LogicalBiggerNode-">
+<a name="visitBiggerNode-com.github.nsc.de.shake.parser.node.logical.LogicalBiggerNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>visitBiggerNode</h4>
-<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaExpression.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaExpression</a>&nbsp;visitBiggerNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalBiggerNode.html" title="class in com.github.nsc.de.shake.parser.node.logical">LogicalBiggerNode</a>&nbsp;n)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html#visitBiggerNode-com.github.nsc.de.shake.parser.node.logical.LogicalBiggerNode-">visitBiggerNode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html" title="class in com.github.nsc.de.shake.generators">Generator</a>&lt;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&gt;</code></dd>
-</dl>
+<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaExpression.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaExpression</a>&nbsp;visitBiggerNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalBiggerNode.html" title="class in com.github.nsc.de.shake.parser.node.logical">LogicalBiggerNode</a>&nbsp;n,
+                                                 <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</pre>
 </li>
 </ul>
-<a name="visitSmallerNode-com.github.nsc.de.shake.parser.node.logical.LogicalSmallerNode-">
+<a name="visitSmallerNode-com.github.nsc.de.shake.parser.node.logical.LogicalSmallerNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>visitSmallerNode</h4>
-<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaExpression.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaExpression</a>&nbsp;visitSmallerNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalSmallerNode.html" title="class in com.github.nsc.de.shake.parser.node.logical">LogicalSmallerNode</a>&nbsp;n)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html#visitSmallerNode-com.github.nsc.de.shake.parser.node.logical.LogicalSmallerNode-">visitSmallerNode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html" title="class in com.github.nsc.de.shake.generators">Generator</a>&lt;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&gt;</code></dd>
-</dl>
+<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaExpression.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaExpression</a>&nbsp;visitSmallerNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalSmallerNode.html" title="class in com.github.nsc.de.shake.parser.node.logical">LogicalSmallerNode</a>&nbsp;n,
+                                                  <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</pre>
 </li>
 </ul>
-<a name="visitLogicalAndNode-com.github.nsc.de.shake.parser.node.logical.LogicalAndNode-">
+<a name="visitLogicalAndNode-com.github.nsc.de.shake.parser.node.logical.LogicalAndNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>visitLogicalAndNode</h4>
-<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaExpression.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaExpression</a>&nbsp;visitLogicalAndNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalAndNode.html" title="class in com.github.nsc.de.shake.parser.node.logical">LogicalAndNode</a>&nbsp;n)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html#visitLogicalAndNode-com.github.nsc.de.shake.parser.node.logical.LogicalAndNode-">visitLogicalAndNode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html" title="class in com.github.nsc.de.shake.generators">Generator</a>&lt;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&gt;</code></dd>
-</dl>
+<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaExpression.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaExpression</a>&nbsp;visitLogicalAndNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalAndNode.html" title="class in com.github.nsc.de.shake.parser.node.logical">LogicalAndNode</a>&nbsp;n,
+                                                     <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</pre>
 </li>
 </ul>
-<a name="visitLogicalOrNode-com.github.nsc.de.shake.parser.node.logical.LogicalOrNode-">
+<a name="visitLogicalOrNode-com.github.nsc.de.shake.parser.node.logical.LogicalOrNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>visitLogicalOrNode</h4>
-<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaExpression.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaExpression</a>&nbsp;visitLogicalOrNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalOrNode.html" title="class in com.github.nsc.de.shake.parser.node.logical">LogicalOrNode</a>&nbsp;n)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html#visitLogicalOrNode-com.github.nsc.de.shake.parser.node.logical.LogicalOrNode-">visitLogicalOrNode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html" title="class in com.github.nsc.de.shake.generators">Generator</a>&lt;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&gt;</code></dd>
-</dl>
+<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaExpression.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaExpression</a>&nbsp;visitLogicalOrNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalOrNode.html" title="class in com.github.nsc.de.shake.parser.node.logical">LogicalOrNode</a>&nbsp;n,
+                                                    <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</pre>
 </li>
 </ul>
-<a name="visitWhileNode-com.github.nsc.de.shake.parser.node.loops.WhileNode-">
+<a name="visitWhileNode-com.github.nsc.de.shake.parser.node.loops.WhileNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>visitWhileNode</h4>
-<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaWhileLoop.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaWhileLoop</a>&nbsp;visitWhileNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/loops/WhileNode.html" title="class in com.github.nsc.de.shake.parser.node.loops">WhileNode</a>&nbsp;n)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html#visitWhileNode-com.github.nsc.de.shake.parser.node.loops.WhileNode-">visitWhileNode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html" title="class in com.github.nsc.de.shake.generators">Generator</a>&lt;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&gt;</code></dd>
-</dl>
+<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaWhileLoop.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaWhileLoop</a>&nbsp;visitWhileNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/loops/WhileNode.html" title="class in com.github.nsc.de.shake.parser.node.loops">WhileNode</a>&nbsp;n,
+                                    <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</pre>
 </li>
 </ul>
-<a name="visitDoWhileNode-com.github.nsc.de.shake.parser.node.loops.DoWhileNode-">
+<a name="visitDoWhileNode-com.github.nsc.de.shake.parser.node.loops.DoWhileNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>visitDoWhileNode</h4>
-<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaDoWhileLoop.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaDoWhileLoop</a>&nbsp;visitDoWhileNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/loops/DoWhileNode.html" title="class in com.github.nsc.de.shake.parser.node.loops">DoWhileNode</a>&nbsp;n)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html#visitDoWhileNode-com.github.nsc.de.shake.parser.node.loops.DoWhileNode-">visitDoWhileNode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html" title="class in com.github.nsc.de.shake.generators">Generator</a>&lt;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&gt;</code></dd>
-</dl>
+<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaDoWhileLoop.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaDoWhileLoop</a>&nbsp;visitDoWhileNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/loops/DoWhileNode.html" title="class in com.github.nsc.de.shake.parser.node.loops">DoWhileNode</a>&nbsp;n,
+                                        <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</pre>
 </li>
 </ul>
-<a name="visitForNode-com.github.nsc.de.shake.parser.node.loops.ForNode-">
+<a name="visitForNode-com.github.nsc.de.shake.parser.node.loops.ForNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>visitForNode</h4>
-<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaForLoop.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaForLoop</a>&nbsp;visitForNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/loops/ForNode.html" title="class in com.github.nsc.de.shake.parser.node.loops">ForNode</a>&nbsp;n)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html#visitForNode-com.github.nsc.de.shake.parser.node.loops.ForNode-">visitForNode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html" title="class in com.github.nsc.de.shake.generators">Generator</a>&lt;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&gt;</code></dd>
-</dl>
+<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaForLoop.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaForLoop</a>&nbsp;visitForNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/loops/ForNode.html" title="class in com.github.nsc.de.shake.parser.node.loops">ForNode</a>&nbsp;n,
+                                <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</pre>
 </li>
 </ul>
-<a name="visitIfNode-com.github.nsc.de.shake.parser.node.IfNode-">
+<a name="visitIfNode-com.github.nsc.de.shake.parser.node.IfNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>visitIfNode</h4>
-<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaIfCondition.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaIfCondition</a>&nbsp;visitIfNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/IfNode.html" title="class in com.github.nsc.de.shake.parser.node">IfNode</a>&nbsp;n)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html#visitIfNode-com.github.nsc.de.shake.parser.node.IfNode-">visitIfNode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html" title="class in com.github.nsc.de.shake.generators">Generator</a>&lt;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&gt;</code></dd>
-</dl>
+<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaIfCondition.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaIfCondition</a>&nbsp;visitIfNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/IfNode.html" title="class in com.github.nsc.de.shake.parser.node">IfNode</a>&nbsp;n,
+                                   <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</pre>
 </li>
 </ul>
-<a name="visitFunctionDeclarationNode-com.github.nsc.de.shake.parser.node.functions.FunctionDeclarationNode-">
+<a name="visitFunctionDeclarationNode-com.github.nsc.de.shake.parser.node.functions.FunctionDeclarationNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>visitFunctionDeclarationNode</h4>
-<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&nbsp;visitFunctionDeclarationNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/functions/FunctionDeclarationNode.html" title="class in com.github.nsc.de.shake.parser.node.functions">FunctionDeclarationNode</a>&nbsp;n)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html#visitFunctionDeclarationNode-com.github.nsc.de.shake.parser.node.functions.FunctionDeclarationNode-">visitFunctionDeclarationNode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html" title="class in com.github.nsc.de.shake.generators">Generator</a>&lt;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&gt;</code></dd>
-</dl>
+<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&nbsp;visitFunctionDeclarationNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/functions/FunctionDeclarationNode.html" title="class in com.github.nsc.de.shake.parser.node.functions">FunctionDeclarationNode</a>&nbsp;n,
+                                             <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</pre>
 </li>
 </ul>
-<a name="visitClassDeclarationNode-com.github.nsc.de.shake.parser.node.objects.ClassDeclarationNode-">
+<a name="visitClassDeclarationNode-com.github.nsc.de.shake.parser.node.objects.ClassDeclarationNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>visitClassDeclarationNode</h4>
-<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&nbsp;visitClassDeclarationNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/objects/ClassDeclarationNode.html" title="class in com.github.nsc.de.shake.parser.node.objects">ClassDeclarationNode</a>&nbsp;n)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html#visitClassDeclarationNode-com.github.nsc.de.shake.parser.node.objects.ClassDeclarationNode-">visitClassDeclarationNode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html" title="class in com.github.nsc.de.shake.generators">Generator</a>&lt;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&gt;</code></dd>
-</dl>
+<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&nbsp;visitClassDeclarationNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/objects/ClassDeclarationNode.html" title="class in com.github.nsc.de.shake.parser.node.objects">ClassDeclarationNode</a>&nbsp;n,
+                                          <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</pre>
 </li>
 </ul>
-<a name="visitClassConstruction-com.github.nsc.de.shake.parser.node.objects.ClassConstructionNode-">
+<a name="visitClassConstruction-com.github.nsc.de.shake.parser.node.objects.ClassConstructionNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>visitClassConstruction</h4>
-<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&nbsp;visitClassConstruction(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/objects/ClassConstructionNode.html" title="class in com.github.nsc.de.shake.parser.node.objects">ClassConstructionNode</a>&nbsp;n)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html#visitClassConstruction-com.github.nsc.de.shake.parser.node.objects.ClassConstructionNode-">visitClassConstruction</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html" title="class in com.github.nsc.de.shake.generators">Generator</a>&lt;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&gt;</code></dd>
-</dl>
+<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaConstruction.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaConstruction</a>&nbsp;visitClassConstruction(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/objects/ClassConstructionNode.html" title="class in com.github.nsc.de.shake.parser.node.objects">ClassConstructionNode</a>&nbsp;n,
+                                                          <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</pre>
 </li>
 </ul>
-<a name="visitFunctionCallNode-com.github.nsc.de.shake.parser.node.functions.FunctionCallNode-">
+<a name="visitFunctionCallNode-com.github.nsc.de.shake.parser.node.functions.FunctionCallNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>visitFunctionCallNode</h4>
-<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaFunctionCall.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaFunctionCall</a>&nbsp;visitFunctionCallNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/functions/FunctionCallNode.html" title="class in com.github.nsc.de.shake.parser.node.functions">FunctionCallNode</a>&nbsp;n)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html#visitFunctionCallNode-com.github.nsc.de.shake.parser.node.functions.FunctionCallNode-">visitFunctionCallNode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html" title="class in com.github.nsc.de.shake.generators">Generator</a>&lt;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&gt;</code></dd>
-</dl>
+<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaValued.JavaFunctionCall.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaValued.JavaFunctionCall</a>&nbsp;visitFunctionCallNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/functions/FunctionCallNode.html" title="class in com.github.nsc.de.shake.parser.node.functions">FunctionCallNode</a>&nbsp;n,
+                                                         <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</pre>
 </li>
 </ul>
-<a name="visitIdentifierNode-com.github.nsc.de.shake.parser.node.IdentifierNode-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>visitIdentifierNode</h4>
-<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaIdentifier.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaIdentifier</a>&nbsp;visitIdentifierNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/IdentifierNode.html" title="class in com.github.nsc.de.shake.parser.node">IdentifierNode</a>&nbsp;n)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html#visitIdentifierNode-com.github.nsc.de.shake.parser.node.IdentifierNode-">visitIdentifierNode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html" title="class in com.github.nsc.de.shake.generators">Generator</a>&lt;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="visitLogicalTrueNode-com.github.nsc.de.shake.parser.node.logical.LogicalTrueNode-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>visitLogicalTrueNode</h4>
-<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&nbsp;visitLogicalTrueNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalTrueNode.html" title="class in com.github.nsc.de.shake.parser.node.logical">LogicalTrueNode</a>&nbsp;n)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html#visitLogicalTrueNode-com.github.nsc.de.shake.parser.node.logical.LogicalTrueNode-">visitLogicalTrueNode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html" title="class in com.github.nsc.de.shake.generators">Generator</a>&lt;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&gt;</code></dd>
-</dl>
-</li>
-</ul>
-<a name="visitLogicalFalseNode-com.github.nsc.de.shake.parser.node.logical.LogicalFalseNode-">
+<a name="visitIdentifierNode-com.github.nsc.de.shake.parser.node.IdentifierNode-com.github.nsc.de.shake.generators.java.JavaGenerationContext-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>visitLogicalFalseNode</h4>
-<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&nbsp;visitLogicalFalseNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/logical/LogicalFalseNode.html" title="class in com.github.nsc.de.shake.parser.node.logical">LogicalFalseNode</a>&nbsp;n)</pre>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html#visitLogicalFalseNode-com.github.nsc.de.shake.parser.node.logical.LogicalFalseNode-">visitLogicalFalseNode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../../com/github/nsc/de/shake/generators/Generator.html" title="class in com.github.nsc.de.shake.generators">Generator</a>&lt;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode</a>&gt;</code></dd>
-</dl>
+<h4>visitIdentifierNode</h4>
+<pre>public&nbsp;<a href="../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaIdentifier.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaIdentifier</a>&nbsp;visitIdentifierNode(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/IdentifierNode.html" title="class in com.github.nsc.de.shake.parser.node">IdentifierNode</a>&nbsp;n,
+                                          <a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java">JavaGenerationContext</a>&nbsp;context)</pre>
 </li>
 </ul>
 </li>
@@ -835,8 +773,8 @@ extends <a href="../../../../../../../com/github/nsc/de/shake/generators/Generat
 </div>
 <div class="subNav">
 <ul class="navList">
-<li>Prev&nbsp;Class</li>
-<li><a href="../../../../../../../com/github/nsc/de/shake/generators/java/SimpleJavaGenerator.html" title="class in com.github.nsc.de.shake.generators.java"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../../../com/github/nsc/de/shake/generators/java/JavaGenerationContext.html" title="class in com.github.nsc.de.shake.generators.java"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li>Next&nbsp;Class</li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../../../index.html?com/github/nsc/de/shake/generators/java/JavaGenerator.html" target="_top">Frames</a></li>
@@ -876,6 +814,6 @@ extends <a href="../../../../../../../com/github/nsc/de/shake/generators/Generat
 <!--   -->
 </a></div>
 <!-- ======== END OF BOTTOM NAVBAR ======= -->
-<p class="legalCopy"><small>Copyright &#169; 2020. All rights reserved.</small></p>
+<p class="legalCopy"><small>Copyright &#169; 2021. All rights reserved.</small></p>
 </body>
 </html>
