@@ -148,13 +148,19 @@ implements <a href="../../../../../../../../com/github/nsc/de/shake/generators/j
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaVariableDeclaration.html#JavaVariableDeclaration-com.github.nsc.de.shake.generators.java.nodes.JavaVariableType-java.lang.String-">JavaVariableDeclaration</a></span>(<a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaVariableType.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaVariableType</a>&nbsp;type,
-                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaVariableDeclaration.html#JavaVariableDeclaration-com.github.nsc.de.shake.generators.java.nodes.JavaVariableType-java.lang.String-boolean-boolean-com.github.nsc.de.shake.generators.java.nodes.JavaAccessDescriptor-">JavaVariableDeclaration</a></span>(<a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaVariableType.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaVariableType</a>&nbsp;type,
+                       <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+                       boolean&nbsp;isStatic,
+                       boolean&nbsp;isFinal,
+                       <a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaAccessDescriptor.html" title="enum in com.github.nsc.de.shake.generators.java.nodes">JavaAccessDescriptor</a>&nbsp;access)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaVariableDeclaration.html#JavaVariableDeclaration-com.github.nsc.de.shake.generators.java.nodes.JavaVariableType-java.lang.String-com.github.nsc.de.shake.generators.java.nodes.JavaNode.JavaValuedOperation-">JavaVariableDeclaration</a></span>(<a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaVariableType.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaVariableType</a>&nbsp;type,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaVariableDeclaration.html#JavaVariableDeclaration-com.github.nsc.de.shake.generators.java.nodes.JavaVariableType-java.lang.String-com.github.nsc.de.shake.generators.java.nodes.JavaNode.JavaValuedOperation-boolean-boolean-com.github.nsc.de.shake.generators.java.nodes.JavaAccessDescriptor-">JavaVariableDeclaration</a></span>(<a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaVariableType.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaVariableType</a>&nbsp;type,
                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
-                       <a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.JavaValuedOperation.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode.JavaValuedOperation</a>&nbsp;assignment)</code>&nbsp;</td>
+                       <a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.JavaValuedOperation.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode.JavaValuedOperation</a>&nbsp;assignment,
+                       boolean&nbsp;isStatic,
+                       boolean&nbsp;isFinal,
+                       <a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaAccessDescriptor.html" title="enum in com.github.nsc.de.shake.generators.java.nodes">JavaAccessDescriptor</a>&nbsp;access)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -207,7 +213,7 @@ implements <a href="../../../../../../../../com/github/nsc/de/shake/generators/j
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="JavaVariableDeclaration-com.github.nsc.de.shake.generators.java.nodes.JavaVariableType-java.lang.String-com.github.nsc.de.shake.generators.java.nodes.JavaNode.JavaValuedOperation-">
+<a name="JavaVariableDeclaration-com.github.nsc.de.shake.generators.java.nodes.JavaVariableType-java.lang.String-com.github.nsc.de.shake.generators.java.nodes.JavaNode.JavaValuedOperation-boolean-boolean-com.github.nsc.de.shake.generators.java.nodes.JavaAccessDescriptor-">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -215,17 +221,23 @@ implements <a href="../../../../../../../../com/github/nsc/de/shake/generators/j
 <h4>JavaVariableDeclaration</h4>
 <pre>public&nbsp;JavaVariableDeclaration(<a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaVariableType.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaVariableType</a>&nbsp;type,
                                <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
-                               <a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.JavaValuedOperation.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode.JavaValuedOperation</a>&nbsp;assignment)</pre>
+                               <a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaNode.JavaValuedOperation.html" title="interface in com.github.nsc.de.shake.generators.java.nodes">JavaNode.JavaValuedOperation</a>&nbsp;assignment,
+                               boolean&nbsp;isStatic,
+                               boolean&nbsp;isFinal,
+                               <a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaAccessDescriptor.html" title="enum in com.github.nsc.de.shake.generators.java.nodes">JavaAccessDescriptor</a>&nbsp;access)</pre>
 </li>
 </ul>
-<a name="JavaVariableDeclaration-com.github.nsc.de.shake.generators.java.nodes.JavaVariableType-java.lang.String-">
+<a name="JavaVariableDeclaration-com.github.nsc.de.shake.generators.java.nodes.JavaVariableType-java.lang.String-boolean-boolean-com.github.nsc.de.shake.generators.java.nodes.JavaAccessDescriptor-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>JavaVariableDeclaration</h4>
 <pre>public&nbsp;JavaVariableDeclaration(<a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaVariableType.html" title="class in com.github.nsc.de.shake.generators.java.nodes">JavaVariableType</a>&nbsp;type,
-                               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</pre>
+                               <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+                               boolean&nbsp;isStatic,
+                               boolean&nbsp;isFinal,
+                               <a href="../../../../../../../../com/github/nsc/de/shake/generators/java/nodes/JavaAccessDescriptor.html" title="enum in com.github.nsc.de.shake.generators.java.nodes">JavaAccessDescriptor</a>&nbsp;access)</pre>
 </li>
 </ul>
 </li>
