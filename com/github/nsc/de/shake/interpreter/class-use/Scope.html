@@ -417,15 +417,15 @@
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html" title="class in com.github.nsc.de.shake.interpreter">VariableList</a></code></td>
-<td class="colLast"><span class="typeNameLabel">VariableList.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html#withScope-com.github.nsc.de.shake.interpreter.Scope-">withScope</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
-<div class="block">Let's all the children of the <a href="../../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html" title="class in com.github.nsc.de.shake.interpreter"><code>VariableList</code></a> use the given scope</div>
-</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter">Variable</a>&lt;<a href="../../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="type parameter in Variable">V</a>&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">Variable.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#withScope-com.github.nsc.de.shake.interpreter.Scope-">withScope</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Returns the same variable, but you can declare what <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter"><code>Scope</code></a> to use (for class declarations)</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html" title="class in com.github.nsc.de.shake.interpreter">VariableList</a></code></td>
+<td class="colLast"><span class="typeNameLabel">VariableList.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html#withScope-com.github.nsc.de.shake.interpreter.Scope-">withScope</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
+<div class="block">Let's all the children of the <a href="../../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html" title="class in com.github.nsc.de.shake.interpreter"><code>VariableList</code></a> use the given scope</div>
 </td>
 </tr>
 </tbody>
@@ -477,20 +477,20 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a></code></td>
-<td class="colLast"><span class="typeNameLabel">ClassValue.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ClassValue.html#getScope--">getScope</a></span>()</code>
-<div class="block">Getter for <a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ClassValue.html#scope"><code>ClassValue.scope</code></a> (the scope the class is located in)</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Function.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/Function.html#getScope--">getScope</a></span>()</code>
 <div class="block">Getter for <a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/Function.html#scope"><code>Function.scope</code></a> (the scope the function is declared in (for accessing variables in the function))</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a></code></td>
 <td class="colLast"><span class="typeNameLabel">ObjectValue.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ObjectValue.html#getScope--">getScope</a></span>()</code>
 <div class="block">Getter for <a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ObjectValue.html#scope"><code>ObjectValue.scope</code></a> (the scope inside of the class)</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a></code></td>
+<td class="colLast"><span class="typeNameLabel">ClassValue.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ClassValue.html#getScope--">getScope</a></span>()</code>
+<div class="block">Getter for <a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ClassValue.html#scope"><code>ClassValue.scope</code></a> (the scope the class is located in)</div>
 </td>
 </tr>
 </tbody>
@@ -517,43 +517,43 @@
       <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>default <a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
-<td class="colLast"><span class="typeNameLabel">InterpreterValue.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html#invoke-com.github.nsc.de.shake.parser.node.functions.FunctionCallNode-com.github.nsc.de.shake.interpreter.Scope-">invoke</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/functions/FunctionCallNode.html" title="class in com.github.nsc.de.shake.parser.node.functions">FunctionCallNode</a>&nbsp;node,
-      <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
-<div class="block">Invoke a value</div>
-</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Function.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/Function.html#invoke-com.github.nsc.de.shake.parser.node.functions.FunctionCallNode-com.github.nsc.de.shake.interpreter.Scope-">invoke</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/functions/FunctionCallNode.html" title="class in com.github.nsc.de.shake.parser.node.functions">FunctionCallNode</a>&nbsp;node,
       <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Invoke a function</div>
 </td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
-<td class="colLast"><span class="typeNameLabel">ClassValue.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ClassValue.html#newInstance-com.github.nsc.de.shake.parser.node.objects.ClassConstructionNode-com.github.nsc.de.shake.interpreter.Scope-">newInstance</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/objects/ClassConstructionNode.html" title="class in com.github.nsc.de.shake.parser.node.objects">ClassConstructionNode</a>&nbsp;node,
-           <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
-<div class="block">Create a new instance of a class</div>
+<tr class="rowColor">
+<td class="colFirst"><code>default <a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
+<td class="colLast"><span class="typeNameLabel">InterpreterValue.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html#invoke-com.github.nsc.de.shake.parser.node.functions.FunctionCallNode-com.github.nsc.de.shake.interpreter.Scope-">invoke</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/functions/FunctionCallNode.html" title="class in com.github.nsc.de.shake.parser.node.functions">FunctionCallNode</a>&nbsp;node,
+      <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
+<div class="block">Invoke a value</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>default <a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
 <td class="colLast"><span class="typeNameLabel">InterpreterValue.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html#newInstance-com.github.nsc.de.shake.parser.node.objects.ClassConstructionNode-com.github.nsc.de.shake.interpreter.Scope-">newInstance</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/objects/ClassConstructionNode.html" title="class in com.github.nsc.de.shake.parser.node.objects">ClassConstructionNode</a>&nbsp;node,
            <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Create a new instance of a class</div>
 </td>
 </tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ClassValue.html" title="class in com.github.nsc.de.shake.interpreter.values">ClassValue</a></code></td>
-<td class="colLast"><span class="typeNameLabel">ClassValue.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ClassValue.html#withScope-com.github.nsc.de.shake.interpreter.Scope-">withScope</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
-<div class="block">Returns the same class, but you can declare what <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter"><code>Scope</code></a> (<a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ClassValue.html#scope"><code>ClassValue.scope</code></a>) to use (for class declarations)</div>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></td>
+<td class="colLast"><span class="typeNameLabel">ClassValue.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ClassValue.html#newInstance-com.github.nsc.de.shake.parser.node.objects.ClassConstructionNode-com.github.nsc.de.shake.interpreter.Scope-">newInstance</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/objects/ClassConstructionNode.html" title="class in com.github.nsc.de.shake.parser.node.objects">ClassConstructionNode</a>&nbsp;node,
+           <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
+<div class="block">Create a new instance of a class</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/Function.html" title="class in com.github.nsc.de.shake.interpreter.values">Function</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Function.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/Function.html#withScope-com.github.nsc.de.shake.interpreter.Scope-">withScope</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Returns the same function, but you can declare what <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter"><code>Scope</code></a> (<a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/Function.html#scope"><code>Function.scope</code></a>) to use (for class declarations)</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ClassValue.html" title="class in com.github.nsc.de.shake.interpreter.values">ClassValue</a></code></td>
+<td class="colLast"><span class="typeNameLabel">ClassValue.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ClassValue.html#withScope-com.github.nsc.de.shake.interpreter.Scope-">withScope</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
+<div class="block">Returns the same class, but you can declare what <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter"><code>Scope</code></a> (<a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ClassValue.html#scope"><code>ClassValue.scope</code></a>) to use (for class declarations)</div>
 </td>
 </tr>
 </tbody>
