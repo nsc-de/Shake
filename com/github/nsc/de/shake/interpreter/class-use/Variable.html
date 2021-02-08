@@ -169,12 +169,16 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter">Variable</a></code></td>
+<td class="colLast"><span class="typeNameLabel">VariableList.ScopeVariableList.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/VariableList.ScopeVariableList.html#getChild-java.lang.String-">getChild</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;c)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter">Variable</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Interpreter.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Interpreter.html#visitIdentifier-com.github.nsc.de.shake.parser.node.IdentifierNode-com.github.nsc.de.shake.interpreter.Scope-">visitIdentifier</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/parser/node/IdentifierNode.html" title="class in com.github.nsc.de.shake.parser.node">IdentifierNode</a>&nbsp;node,
                <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Visit an <a href="../../../../../../../com/github/nsc/de/shake/parser/node/IdentifierNode.html" title="class in com.github.nsc.de.shake.parser.node"><code>IdentifierNode</code></a></div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter">Variable</a>&lt;<a href="../../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="type parameter in Variable">V</a>&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">Variable.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Variable.html#withScope-com.github.nsc.de.shake.interpreter.Scope-">withScope</a></span>(<a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Returns the same variable, but you can declare what <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter"><code>Scope</code></a> to use (for class declarations)</div>
@@ -257,44 +261,44 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter">Variable</a></code></td>
-<td class="colLast"><span class="typeNameLabel">Java.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/Java.html#getChild-java.lang.String-">getChild</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;c)</code>
-<div class="block">This function will be executed when getting a child (variable.child)</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter">Variable</a></code></td>
-<td class="colLast"><span class="typeNameLabel">Java.JavaUnknown.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/Java.JavaUnknown.html#getChild-java.lang.String-">getChild</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;c)</code>
-<div class="block">This function will be executed when getting a child (variable.child)</div>
-</td>
-</tr>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter">Variable</a></code></td>
-<td class="colLast"><span class="typeNameLabel">Java.JavaClass.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/Java.JavaClass.html#getChild-java.lang.String-">getChild</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;c)</code>
-<div class="block">This function will be executed when getting a child (variable.child)</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter">Variable</a></code></td>
-<td class="colLast"><span class="typeNameLabel">Java.JavaValue.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/Java.JavaValue.html#getChild-java.lang.String-">getChild</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;c)</code>
-<div class="block">This function will be executed when getting a child (variable.child)</div>
-</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><code>default <a href="../../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter">Variable</a>&lt;?&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">InterpreterValue.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html#getChild-java.lang.String-">getChild</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;c)</code>
 <div class="block">This function will be executed when getting a child (variable.child)</div>
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter">Variable</a></code></td>
+<td class="colLast"><span class="typeNameLabel">ClassValue.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ClassValue.html#getChild-java.lang.String-">getChild</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;c)</code>
+<div class="block">This function will be executed when getting a child (variable.child)</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter">Variable</a>&lt;?&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">ObjectValue.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ObjectValue.html#getChild-java.lang.String-">getChild</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;c)</code>
 <div class="block">This function will be executed when getting a child (variable.child)</div>
 </td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter">Variable</a></code></td>
+<td class="colLast"><span class="typeNameLabel">Java.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/Java.html#getChild-java.lang.String-">getChild</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;c)</code>
+<div class="block">This function will be executed when getting a child (variable.child)</div>
+</td>
+</tr>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter">Variable</a></code></td>
-<td class="colLast"><span class="typeNameLabel">ClassValue.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ClassValue.html#getChild-java.lang.String-">getChild</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;c)</code>
+<td class="colLast"><span class="typeNameLabel">Java.JavaUnknown.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/Java.JavaUnknown.html#getChild-java.lang.String-">getChild</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;c)</code>
+<div class="block">This function will be executed when getting a child (variable.child)</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter">Variable</a></code></td>
+<td class="colLast"><span class="typeNameLabel">Java.JavaClass.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/Java.JavaClass.html#getChild-java.lang.String-">getChild</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;c)</code>
+<div class="block">This function will be executed when getting a child (variable.child)</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter">Variable</a></code></td>
+<td class="colLast"><span class="typeNameLabel">Java.JavaValue.</span><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/Java.JavaValue.html#getChild-java.lang.String-">getChild</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;c)</code>
 <div class="block">This function will be executed when getting a child (variable.child)</div>
 </td>
 </tr>

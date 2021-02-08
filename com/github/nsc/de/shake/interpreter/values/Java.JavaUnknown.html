@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -144,16 +144,22 @@ implements <a href="../../../../../../../com/github/nsc/de/shake/interpreter/val
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/Java.JavaUnknown.html#getChildren--">getChildren</a></span>()</code>
+<div class="block">This function will be executed when getting all child keys</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/Java.JavaUnknown.html#getName--">getName</a></span>()</code>
 <div class="block">Returns the name of the type of <a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values"><code>InterpreterValue</code></a> (To identify the type of value)</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/Java.JavaUnknown.html#getUnknownName--">getUnknownName</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/Java.JavaUnknown.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
@@ -210,6 +216,22 @@ implements <a href="../../../../../../../com/github/nsc/de/shake/interpreter/val
 <dd><code>c</code> - the child to get</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the child variable</dd>
+</dl>
+</li>
+</ul>
+<a name="getChildren--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getChildren</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;getChildren()</pre>
+<div class="block">This function will be executed when getting all child keys</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html#getChildren--">getChildren</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the keys of all children</dd>
 </dl>
 </li>
 </ul>

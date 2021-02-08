@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -160,31 +160,37 @@ implements <a href="../../../../../../../com/github/nsc/de/shake/interpreter/val
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ObjectValue.html#getChildren--">getChildren</a></span>()</code>
+<div class="block">This function will be executed when getting all child keys</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ObjectValue.html#getName--">getName</a></span>()</code>
 <div class="block">Returns the name of the type of <a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values"><code>InterpreterValue</code></a> (To identify the type of value)
  For <a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ObjectValue.html" title="class in com.github.nsc.de.shake.interpreter.values"><code>ObjectValue</code></a> it just always returns "object"</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ClassValue.html" title="class in com.github.nsc.de.shake.interpreter.values">ClassValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ObjectValue.html#getParent--">getParent</a></span>()</code>
 <div class="block">Getter for <a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ObjectValue.html#parent"><code>parent</code></a> (the parent class)</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ObjectValue.html#getScope--">getScope</a></span>()</code>
 <div class="block">Getter for <a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ObjectValue.html#scope"><code>scope</code></a> (the scope inside of the class)</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html" title="class in com.github.nsc.de.shake.interpreter">VariableList</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ObjectValue.html#getThisObject--">getThisObject</a></span>()</code>
 <div class="block">Getter for <a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ObjectValue.html#this_object"><code>this_object</code></a> (all the fields, functions and subclasses of the object)</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ObjectValue.html#toString--">toString</a></span>()</code>
 <div class="block">Returns the string representation of the <a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/ObjectValue.html" title="class in com.github.nsc.de.shake.interpreter.values"><code>ObjectValue</code></a></div>
@@ -298,6 +304,22 @@ implements <a href="../../../../../../../com/github/nsc/de/shake/interpreter/val
 <dd><code>c</code> - the child to get</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the child variable</dd>
+</dl>
+</li>
+</ul>
+<a name="getChildren--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getChildren</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;getChildren()</pre>
+<div class="block">This function will be executed when getting all child keys</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html#getChildren--">getChildren</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the keys of all children</dd>
 </dl>
 </li>
 </ul>

@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -190,18 +190,30 @@ extends <a href="../../../../../../com/github/nsc/de/shake/interpreter/VariableL
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter">Variable</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/interpreter/VariableList.ScopeVariableList.html#getChild-java.lang.String-">getChild</a></span>(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;c)</code>
+<div class="block">This function will be executed when getting a child (variable.child)</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/interpreter/VariableList.ScopeVariableList.html#getChildren--">getChildren</a></span>()</code>
+<div class="block">This function will be executed when getting all child keys</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/interpreter/VariableList.ScopeVariableList.html#getScope--">getScope</a></span>()</code>
 <div class="block">Getter for <a href="../../../../../../com/github/nsc/de/shake/interpreter/VariableList.ScopeVariableList.html#scope"><code>scope</code></a> (the scope to use for all variables)</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter">Variable</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/interpreter/VariableList.ScopeVariableList.html#getVariables--">getVariables</a></span>()</code>
 <div class="block">Getter for <a href="../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html#variables"><code>VariableList.variables</code></a> (the variable map)</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/nsc/de/shake/interpreter/VariableList.ScopeVariableList.html#setScope-com.github.nsc.de.shake.interpreter.Scope-">setScope</a></span>(<a href="../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</code>
 <div class="block">Setter for <a href="../../../../../../com/github/nsc/de/shake/interpreter/VariableList.ScopeVariableList.html#scope"><code>scope</code></a> (the scope to use for all variables)</div>
@@ -213,7 +225,7 @@ extends <a href="../../../../../../com/github/nsc/de/shake/interpreter/VariableL
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;com.github.nsc.de.shake.interpreter.<a href="../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html" title="class in com.github.nsc.de.shake.interpreter">VariableList</a></h3>
-<code><a href="../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html#copy--">copy</a>, <a href="../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html#declare-com.github.nsc.de.shake.interpreter.Variable-">declare</a>, <a href="../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html#getChild-java.lang.String-">getChild</a>, <a href="../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html#getName--">getName</a>, <a href="../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html#getParentList--">getParentList</a>, <a href="../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html#toString--">toString</a>, <a href="../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html#withScope-com.github.nsc.de.shake.interpreter.Scope-">withScope</a></code></li>
+<code><a href="../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html#copy--">copy</a>, <a href="../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html#declare-com.github.nsc.de.shake.interpreter.Variable-">declare</a>, <a href="../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html#getName--">getName</a>, <a href="../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html#getParentList--">getParentList</a>, <a href="../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html#toString--">toString</a>, <a href="../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html#withScope-com.github.nsc.de.shake.interpreter.Scope-">withScope</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -322,7 +334,7 @@ extends <a href="../../../../../../com/github/nsc/de/shake/interpreter/VariableL
 <a name="setScope-com.github.nsc.de.shake.interpreter.Scope-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>setScope</h4>
 <pre>public&nbsp;void&nbsp;setScope(<a href="../../../../../../com/github/nsc/de/shake/interpreter/Scope.html" title="class in com.github.nsc.de.shake.interpreter">Scope</a>&nbsp;scope)</pre>
@@ -330,6 +342,42 @@ extends <a href="../../../../../../com/github/nsc/de/shake/interpreter/VariableL
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>scope</code> - the scope to use for all variables (this.<a href="../../../../../../com/github/nsc/de/shake/interpreter/VariableList.ScopeVariableList.html#scope"><code>scope</code></a>)</dd>
+</dl>
+</li>
+</ul>
+<a name="getChildren--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getChildren</h4>
+<pre>public&nbsp;<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>[]&nbsp;getChildren()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html#getChildren--">InterpreterValue</a></code></span></div>
+<div class="block">This function will be executed when getting all child keys</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the keys of all children</dd>
+</dl>
+</li>
+</ul>
+<a name="getChild-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getChild</h4>
+<pre>public&nbsp;<a href="../../../../../../com/github/nsc/de/shake/interpreter/Variable.html" title="class in com.github.nsc.de.shake.interpreter">Variable</a>&nbsp;getChild(<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;c)</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html#getChild-java.lang.String-">VariableList</a></code></span></div>
+<div class="block">This function will be executed when getting a child (variable.child)</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html#getChild-java.lang.String-">getChild</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../com/github/nsc/de/shake/interpreter/values/InterpreterValue.html" title="interface in com.github.nsc.de.shake.interpreter.values">InterpreterValue</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html#getChild-java.lang.String-">getChild</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../../com/github/nsc/de/shake/interpreter/VariableList.html" title="class in com.github.nsc.de.shake.interpreter">VariableList</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>c</code> - the child to get</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the child variable</dd>
 </dl>
 </li>
 </ul>
