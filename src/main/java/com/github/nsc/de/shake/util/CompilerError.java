@@ -14,8 +14,40 @@ public class CompilerError extends Error {
     private static Position start_zw;
     private static Position end_zw;
 
+    private CompilerError(String message, ErrorMarker marker, String name, String details, Position start, Position end,
+                          Throwable cause) {
+        super(String.format("%s: %s%n%n%s%n", message, details, marker), cause);
+        this.name = name;
+        this.details = details;
+        this.start = start;
+        this.end = end;
+        this.marker = marker;
+    }
+
+    private CompilerError(String message, ErrorMarker marker, String name, String details, PositionMap map, int start, int end,
+                          Throwable cause) {
+        super(String.format("%s: %s%n%n%s%n", message, details, marker), cause);
+        this.name = name;
+        this.details = details;
+        this.start = map.resolve(start);
+        this.end = map.resolve(end);
+        this.marker = marker;
+    }
+
+    public CompilerError(String message, String name, String details, Position start, Position end,
+                         Throwable cause) {
+        this(message, createPositionMarker(CompilerError.maxLength, start, end), name, details, start, end, cause);
+    }
+
+    public CompilerError(String message, String name, String details, PositionMap map, int start, int end,
+                         Throwable cause) {
+        this(message, createPositionMarker(CompilerError.maxLength, start_zw = map.resolve(start),
+                end_zw = map.resolve(end)), name, details, start_zw, end_zw, cause);
+        start_zw = end_zw = null;
+    }
+
     private CompilerError(String message, ErrorMarker marker, String name, String details, Position start, Position end) {
-        super(message + "\n\n" + marker + "\n");
+        super(String.format("%s: %s%n%n%s%n", message, details, marker));
         this.name = name;
         this.details = details;
         this.start = start;
@@ -24,7 +56,7 @@ public class CompilerError extends Error {
     }
 
     private CompilerError(String message, ErrorMarker marker, String name, String details, PositionMap map, int start, int end) {
-        super(message + "\n\n" + marker + "\n");
+        super(String.format("%s: %s%n%n%s%n", message, details, marker));
         this.name = name;
         this.details = details;
         this.start = map.resolve(start);
@@ -37,7 +69,8 @@ public class CompilerError extends Error {
     }
 
     public CompilerError(String message, String name, String details, PositionMap map, int start, int end) {
-        this(message, createPositionMarker(CompilerError.maxLength, start_zw = map.resolve(start), end_zw = map.resolve(end)), name, details, start_zw, end_zw);
+        this(message, createPositionMarker(CompilerError.maxLength, start_zw = map.resolve(start),
+                end_zw = map.resolve(end)), name, details, start_zw, end_zw);
         start_zw = end_zw = null;
     }
 
@@ -122,10 +155,12 @@ public class CompilerError extends Error {
         // The start of the line
         String start = line_str
                 + (before_dif > 0 ? ("+" + before_dif + "...") : "")
-                + String.valueOf(pos1.getSource().getSource().get(pos1.getIndex() - real_before, pos1.getIndex()));
+                + String.valueOf(pos1.getSource().getSource().get(pos1.getIndex() - real_before, pos1.getIndex()))
+                    .replaceAll("\t", " ");
 
         // The end of the line
         String end = String.valueOf(pos1.getSource().getSource().get(pos2.getIndex()+1, pos2.getIndex() + real_after))
+                    .replaceAll("\t", " ").replaceAll("\n", " ")
                 + (after_dif > 0 ? ("...+" + after_dif) : "");
 
         // Generate end-string

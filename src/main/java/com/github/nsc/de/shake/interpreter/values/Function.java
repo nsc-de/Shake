@@ -219,21 +219,6 @@ public class Function implements InterpreterValue {
         return value != null ? value : NullValue.NULL;
     }
 
-    /**
-     * Function call method
-     *
-     * @deprecated Moved to {@link Function#invoke(FunctionCallNode, Scope)}. Will be removed in the future
-     *
-     * @param node the node that called the function
-     * @param scope the scope the call was made in (to process the arguments)
-     *
-     * @author <a href="https://github.com/nsc-de">Nicolas Schmidt &lt;@nsc-de&gt;</a>
-     */
-    @Deprecated
-    public void call(FunctionCallNode node, Scope scope) {
-        this.invoke(node, scope);
-    }
-
 
 
     // *******************************

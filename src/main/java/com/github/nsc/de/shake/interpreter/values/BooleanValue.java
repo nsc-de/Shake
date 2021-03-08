@@ -1,6 +1,8 @@
 package com.github.nsc.de.shake.interpreter.values;
 
 
+import com.github.nsc.de.shake.interpreter.UnformattedInterpreterError;
+import com.github.nsc.de.shake.parser.node.CastNode;
 
 /**
  * {@link InterpreterValue}s for booleans ({@link BooleanValue#TRUE} &amp; {@link BooleanValue#FALSE}
@@ -75,7 +77,7 @@ public enum BooleanValue implements InterpreterValue {
 
         // if v is null return null
         if(v == null) return FALSE;
-        throw new Error("Could not create boolean from " + v.getName());
+        throw new UnformattedInterpreterError("Could not create boolean from " + v.getName());
     }
 
 
@@ -133,7 +135,25 @@ public enum BooleanValue implements InterpreterValue {
         if(v instanceof BooleanValue) {
             return BooleanValue.from(this.value || ((BooleanValue) v).value);
         }
-        throw new Error("Operator '||' is not defined for type boolean and " + v.getName());
+        throw new UnformattedInterpreterError("Operator '||' is not defined for type boolean and " + v.getName());
+    }
+
+    /**
+     * This function will be executed when the operator '^' is used on the value
+     *
+     * @param v The other value for the or operator
+     * @return The Calculation-Result
+     *
+     * @author <a href="https://github.com/nsc-de">Nicolas Schmidt &lt;@nsc-de&gt;</a>
+     */
+    @Override
+    public InterpreterValue xor(InterpreterValue v) {
+        // if the given value is a BooleanValue check if at least one of the values is true and return a BooleanValue
+        // again if not just throw an error
+        if(v instanceof BooleanValue) {
+            return BooleanValue.from(this.value ^ ((BooleanValue) v).value);
+        }
+        throw new UnformattedInterpreterError("Operator '^' is not defined for type boolean and " + v.getName());
     }
 
     /**
@@ -151,7 +171,7 @@ public enum BooleanValue implements InterpreterValue {
         if(v instanceof BooleanValue) {
             return BooleanValue.from(this.value && ((BooleanValue) v).value);
         }
-        throw new Error("Operator '&&' is not defined for type boolean and " + v.getName());
+        throw new UnformattedInterpreterError("Operator '&&' is not defined for type boolean and " + v.getName());
     }
 
     /**
@@ -169,7 +189,7 @@ public enum BooleanValue implements InterpreterValue {
         if(v instanceof BooleanValue) {
             return BooleanValue.from(this.value == ((BooleanValue) v).value);
         }
-        throw new Error("Operator '==' is not defined for type boolean and " + v.getName());
+        throw new UnformattedInterpreterError("Operator '==' is not defined for type boolean and " + v.getName());
     }
 
 
@@ -205,13 +225,16 @@ public enum BooleanValue implements InterpreterValue {
      *
      * @author <a href="https://github.com/nsc-de">Nicolas Schmidt &lt;@nsc-de&gt;</a>
      */
-    @SuppressWarnings("unchecked")
-    public <T extends InterpreterValue> T castTo(Class<T> type) {
-        if(type.isInstance(this)) return (T) this;
-        if(type == DoubleValue.class) return (T) new DoubleValue(this.getValue() ? 1 : 0);
-        if(type == IntegerValue.class) return (T) new IntegerValue(this.getValue() ? 1 : 0);
-        if(type == CharacterValue.class) return (T) new CharacterValue((char) (this.getValue() ? 1 : 0));
-        return InterpreterValue.super.to(type);
+    public <T extends InterpreterValue> T castTo(CastNode.CastTarget type) {
+        if(type == CastNode.CastTarget.BYTE) return (T) new IntegerValue(this.value ? 1 : 0);
+        if(type == CastNode.CastTarget.SHORT) return (T) new IntegerValue(this.value ? 1 : 0);
+        if(type == CastNode.CastTarget.INTEGER) return (T) new IntegerValue(this.value ? 1 : 0);
+        if(type == CastNode.CastTarget.LONG) return (T) new IntegerValue(this.value ? 1 : 0);
+        if(type == CastNode.CastTarget.FLOAT) return (T) new DoubleValue(this.value ? 1 : 0);
+        if(type == CastNode.CastTarget.DOUBLE) return (T) new DoubleValue(this.value ? 1 : 0);
+        if(type == CastNode.CastTarget.BOOLEAN) return (T) this;
+        if(type == CastNode.CastTarget.STRING) return (T) new StringValue(String.valueOf(this.getValue()));
+        return InterpreterValue.super.castTo(type);
     }
 
     /**

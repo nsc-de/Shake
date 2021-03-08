@@ -1,14 +1,18 @@
 package com.github.nsc.de.shake.parser.node.expression;
 
+import com.github.nsc.de.shake.lexer.characterinput.position.PositionMap;
 import com.github.nsc.de.shake.parser.node.ValuedNode;
 
-public abstract class ExpressionNode implements ValuedNode {
+public abstract class ExpressionNode extends ValuedNode {
     private final ValuedNode left;
     private final ValuedNode right;
+    private final int operatorPosition;
 
-    public ExpressionNode(ValuedNode left, ValuedNode right) {
+    public ExpressionNode(PositionMap map, ValuedNode left, ValuedNode right, int operatorPosition) {
+        super(map);
         this.left = left;
         this.right = right;
+        this.operatorPosition = operatorPosition;
     }
 
     public abstract char getOperator();
@@ -18,6 +22,9 @@ public abstract class ExpressionNode implements ValuedNode {
     }
     public ValuedNode getRight() {
         return right;
+    }
+    public int getOperatorPosition() {
+        return operatorPosition;
     }
 
     @Override

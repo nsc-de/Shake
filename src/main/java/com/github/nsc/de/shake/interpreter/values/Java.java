@@ -1,17 +1,20 @@
 package com.github.nsc.de.shake.interpreter.values;
 
 import com.github.nsc.de.shake.interpreter.Scope;
+import com.github.nsc.de.shake.interpreter.UnformattedInterpreterError;
 import com.github.nsc.de.shake.interpreter.Variable;
 import com.github.nsc.de.shake.parser.node.functions.FunctionCallNode;
+import com.github.nsc.de.shake.parser.node.objects.ClassConstructionNode;
 import org.reflections.Reflections;
 
 import java.beans.Expression;
+import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
-import java.util.Set;
 
 public class Java implements InterpreterValue {
 
@@ -143,7 +146,7 @@ public class Java implements InterpreterValue {
                         return Variable.finalOf(c, new JavaValue(fields[i].getType(), fields[i].get(null)));
                     } catch (IllegalAccessException e) {
                         e.printStackTrace();
-                        throw new Error(e);
+                        throw new UnformattedInterpreterError(e);
                     }
                 }
 
@@ -187,6 +190,50 @@ public class Java implements InterpreterValue {
             return l.stream().filter(str -> str.equals(s)).findFirst().isPresent();
         }
 
+        @Override
+        public InterpreterValue newInstance(ClassConstructionNode node, Scope scope) {
+
+            Object[] args = new Object[node.getArgs().length];
+
+            for(int i = 0; i < node.getArgs().length; i++) {
+                args[i] = scope.getInterpreter().visit(node.getArgs()[i], scope).toJava();
+            }
+
+            try {
+
+                Constructor[] allConstructors = this.javaClass.getDeclaredConstructors();
+                for (Constructor constructor : allConstructors) {
+
+                    Class<?>[] pType  = constructor.getParameterTypes();
+
+                    boolean matches = true;
+                    int i;
+                    for (i = 0; i < pType.length; i++) {
+
+                        if(i >= args.length || !pType[i].isInstance(args[i])) {
+                            matches = false;
+                            break;
+                        }
+                    }
+
+                    if(matches && i == args.length) {
+
+                        return InterpreterValue.of(constructor.newInstance(args));
+
+                    }
+
+                }
+
+                throw new UnformattedInterpreterError(String.format("No constructor of class %s for arguments %s found",
+                        this.getJavaClass().getName(), Arrays.toString(Arrays.stream(args)
+                                .map(arg -> arg.getClass()).toArray())));
+
+            } catch (Exception e) {
+                throw new UnformattedInterpreterError(e);
+            }
+
+        }
+
         /**
          * Returns the name of the type of {@link InterpreterValue} (To identify the type of value)
          *
@@ -204,6 +251,11 @@ public class Java implements InterpreterValue {
             return "JavaClass{" +
                     "javaClass=" + javaClass +
                     '}';
+        }
+
+        @Override
+        public Object toJava() {
+            return this.javaClass;
         }
     }
 
@@ -237,7 +289,7 @@ public class Java implements InterpreterValue {
                 s.execute();
                 return InterpreterValue.of(s.getValue());
             } catch (Exception e) {
-                throw new Error(e);
+                throw new UnformattedInterpreterError(e);
             }
         }
 
@@ -305,7 +357,7 @@ public class Java implements InterpreterValue {
                 Class[] classes = this.type.getClasses();
                 for(int i = 0; i < classes.length; i++)
                     if(classes[i].getSimpleName().equals(c) && !Modifier.isStatic(classes[i].getModifiers()))
-                        throw new Error("Can't get non-static inner classes");
+                        throw new UnformattedInterpreterError("Can't get non-static inner classes");
 
             } catch (IllegalAccessException e) {
                 e.printStackTrace();
@@ -334,6 +386,11 @@ public class Java implements InterpreterValue {
             return "JavaValue{" +
                     "value=" + object +
                     '}';
+        }
+
+        @Override
+        public Object toJava() {
+            return this.object;
         }
     }
 }

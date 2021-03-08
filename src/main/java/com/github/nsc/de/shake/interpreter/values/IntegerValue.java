@@ -1,5 +1,8 @@
 package com.github.nsc.de.shake.interpreter.values;
 
+import com.github.nsc.de.shake.interpreter.UnformattedInterpreterError;
+import com.github.nsc.de.shake.parser.node.CastNode;
+
 /**
  * {@link InterpreterValue}s for integers
  *
@@ -90,7 +93,7 @@ public class IntegerValue implements InterpreterValue {
         if(v instanceof StringValue) return new StringValue(this.value + ((StringValue) v).getValue());
 
         // In other case just throw an error
-        throw new Error("Operator '+' is not defined for type integer and " + v.getName());
+        throw new UnformattedInterpreterError("Operator '+' is not defined for type integer and " + v.getName());
 
     }
 
@@ -119,7 +122,7 @@ public class IntegerValue implements InterpreterValue {
         if(v instanceof CharacterValue) return new IntegerValue(getValue() - ((CharacterValue) v).getValue());
 
         // In other case just throw an error
-        throw new Error("Operator '-' is not defined for type integer and " + v.getName());
+        throw new UnformattedInterpreterError("Operator '-' is not defined for type integer and " + v.getName());
 
     }
 
@@ -148,7 +151,7 @@ public class IntegerValue implements InterpreterValue {
         if(v instanceof CharacterValue) return new IntegerValue(getValue() * ((CharacterValue) v).getValue());
 
         // In other case just throw an error
-        throw new Error("Operator '*' is not defined for type integer and " + v.getName());
+        throw new UnformattedInterpreterError("Operator '*' is not defined for type integer and " + v.getName());
 
     }
 
@@ -177,7 +180,7 @@ public class IntegerValue implements InterpreterValue {
         if(v instanceof CharacterValue) return new IntegerValue(getValue() / ((CharacterValue) v).getValue());
 
         // In other case just throw an error
-        throw new Error("Operator '/' is not defined for type integer and " + v.getName());
+        throw new UnformattedInterpreterError("Operator '/' is not defined for type integer and " + v.getName());
 
     }
 
@@ -206,7 +209,7 @@ public class IntegerValue implements InterpreterValue {
         if(v instanceof CharacterValue) return new IntegerValue(getValue() % ((CharacterValue) v).getValue());
 
         // In other case just throw an error
-        throw new Error("Operator '%' is not defined for type integer and " + v.getName());
+        throw new UnformattedInterpreterError("Operator '%' is not defined for type integer and " + v.getName());
 
     }
 
@@ -235,7 +238,7 @@ public class IntegerValue implements InterpreterValue {
         if(v instanceof CharacterValue) return new IntegerValue((int) Math.pow(getValue(), ((CharacterValue) v).getValue()));
 
         // In other case just throw an error
-        throw new Error("Operator '**' is not defined for type integer and " + v.getName());
+        throw new UnformattedInterpreterError("Operator '**' is not defined for type integer and " + v.getName());
 
     }
 
@@ -265,7 +268,7 @@ public class IntegerValue implements InterpreterValue {
         if(v instanceof DoubleValue) return BooleanValue.from(getValue() == ((DoubleValue) v).getValue());
 
         // In other case just throw an error
-        throw new Error("Operator '==' is not defined for type integer and " + v.getName());
+        throw new UnformattedInterpreterError("Operator '==' is not defined for type integer and " + v.getName());
 
     }
 
@@ -289,7 +292,7 @@ public class IntegerValue implements InterpreterValue {
         if(v instanceof DoubleValue) return BooleanValue.from(getValue() >= ((DoubleValue) v).getValue());
 
         // In other case just throw an error
-        throw new Error("Operator '>=' is not defined for type integer and " + v.getName());
+        throw new UnformattedInterpreterError("Operator '>=' is not defined for type integer and " + v.getName());
 
     }
 
@@ -313,7 +316,7 @@ public class IntegerValue implements InterpreterValue {
         if(v instanceof DoubleValue) return BooleanValue.from(getValue() <= ((DoubleValue) v).getValue());
 
         // In other case just throw an error
-        throw new Error("Operator '<=' is not defined for type integer and " + v.getName());
+        throw new UnformattedInterpreterError("Operator '<=' is not defined for type integer and " + v.getName());
 
     }
 
@@ -337,7 +340,7 @@ public class IntegerValue implements InterpreterValue {
         if(v instanceof DoubleValue) return BooleanValue.from(getValue() > ((DoubleValue) v).getValue());
 
         // In other case just throw an error
-        throw new Error("Operator '>' is not defined for type integer and " + v.getName());
+        throw new UnformattedInterpreterError("Operator '>' is not defined for type integer and " + v.getName());
 
     }
 
@@ -361,7 +364,7 @@ public class IntegerValue implements InterpreterValue {
         if(v instanceof DoubleValue) return BooleanValue.from(getValue() < ((DoubleValue) v).getValue());
 
         // In other case just throw an error
-        throw new Error("Operator '<' is not defined for type integer and " + v.getName());
+        throw new UnformattedInterpreterError("Operator '<' is not defined for type integer and " + v.getName());
 
     }
 
@@ -415,11 +418,17 @@ public class IntegerValue implements InterpreterValue {
      * @author <a href="https://github.com/nsc-de">Nicolas Schmidt &lt;@nsc-de&gt;</a>
      */
     @SuppressWarnings("unchecked")
-    public <T extends InterpreterValue> T castTo(Class<T> type) {
-        if(type.isInstance(this)) return (T) this;
-        if(type == DoubleValue.class) return (T) new DoubleValue(this.getValue());
-        if(type == CharacterValue.class) return (T) new CharacterValue((char) this.getValue());
-        if(type == BooleanValue.class) return (T) BooleanValue.from(this);
+    @Override
+    public <T extends InterpreterValue> T castTo(CastNode.CastTarget type) {
+        if(type == CastNode.CastTarget.BYTE) return (T) new IntegerValue((byte) this.getValue());
+        if(type == CastNode.CastTarget.SHORT) return (T) new IntegerValue((short) this.getValue());
+        if(type == CastNode.CastTarget.INTEGER) return (T) this;
+        if(type == CastNode.CastTarget.LONG) return (T) new IntegerValue(this.getValue());
+        if(type == CastNode.CastTarget.FLOAT) return (T) new DoubleValue((float) this.getValue());
+        if(type == CastNode.CastTarget.DOUBLE) return (T) new DoubleValue(this.getValue());
+        if(type == CastNode.CastTarget.CHAR) return (T) new CharacterValue((char) this.getValue());
+        if(type == CastNode.CastTarget.BOOLEAN) return (T) BooleanValue.from(this);
+        if(type == CastNode.CastTarget.STRING) return (T) new StringValue(String.valueOf(this.getValue()));
         return InterpreterValue.super.castTo(type);
     }
 

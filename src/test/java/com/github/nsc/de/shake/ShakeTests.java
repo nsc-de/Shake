@@ -6,6 +6,7 @@ import com.github.nsc.de.shake.interpreter.values.InterpreterValue;
 import com.github.nsc.de.shake.lexer.Lexer;
 import com.github.nsc.de.shake.lexer.characterinput.characterinputstream.CharacterInputStream;
 import com.github.nsc.de.shake.lexer.characterinput.characterinputstream.SourceCharacterInputStream;
+import com.github.nsc.de.shake.lexer.characterinput.position.PositionMap;
 import com.github.nsc.de.shake.lexer.token.TokenInputStream;
 import com.github.nsc.de.shake.parser.Parser;
 import com.github.nsc.de.shake.parser.node.Tree;
@@ -51,9 +52,9 @@ public class ShakeTests {
 
     }
 
-    public InterpreterValue run(Tree tree) {
+    public InterpreterValue run(ParseResult parsed) {
 
-        return new Interpreter().visit(tree);
+        return new Interpreter().visit(parsed.getTree());
 
     }
 
@@ -63,22 +64,24 @@ public class ShakeTests {
 
     }
 
-    public JSONObject generateJson(Tree tree) {
+    public JSONObject generateJson(ParseResult parsed) {
 
-        return new JsonGenerator().visitTree(tree);
+        return new JsonGenerator().visitTree(parsed.getTree());
 
     }
 
-    public Tree parse(String source, String code) {
+    public ParseResult parse(String source, String code) {
 
         CharacterInputStream in = new SourceCharacterInputStream(source, code);
         Lexer lexer = new Lexer(in);
         TokenInputStream tokens = lexer.makeTokens();
 
         Parser parser = new Parser(tokens);
-        return parser.parse();
+        return new ParseResult(parser.parse(), tokens.getMap());
 
     }
+
+
 
     public static class ShakeTest {
 
@@ -129,6 +132,25 @@ public class ShakeTests {
         @Override
         public String toString() {
             return getName();
+        }
+    }
+
+    private static class ParseResult {
+
+        private final Tree tree;
+        private final PositionMap map;
+
+        private ParseResult(Tree tree, PositionMap map) {
+            this.tree = tree;
+            this.map = map;
+        }
+
+        public Tree getTree() {
+            return tree;
+        }
+
+        public PositionMap getMap() {
+            return map;
         }
     }
 

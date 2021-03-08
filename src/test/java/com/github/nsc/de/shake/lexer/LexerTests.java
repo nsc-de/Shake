@@ -107,6 +107,7 @@ public class LexerTests {
 
         // logical concatenation
         generateToken("||", TokenType.LOGICAL_OR); // "||"
+        generateToken("^", TokenType.LOGICAL_XOR); // "^"
         generateToken("&&", TokenType.LOGICAL_AND); // "&&"
 
     }
@@ -208,6 +209,9 @@ public class LexerTests {
         NEW ("new", TokenType.KEYWORD_NEW),
 
         IMPORT ("import", TokenType.KEYWORD_IMPORT),
+        VOID ("void", TokenType.KEYWORD_VOID),
+        CONSTRUCTOR ("constructor", TokenType.KEYWORD_CONSTRUCTOR),
+        AS ("as", TokenType.KEYWORD_AS),
         ;
         private final String input;
         private final byte output;

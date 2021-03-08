@@ -72,6 +72,7 @@ public class Lexer {
             else if (next == '+') addPosition(TokenType.ADD, in.getPosition());
 
             // Logical operators
+            else if (next == '^') { addPosition(TokenType.LOGICAL_XOR, in.getPosition()); }
             else if (next == '|' && peek == '|') { in.skip(); addPosition(TokenType.LOGICAL_OR, in.getPosition()); }
             else if (next == '&' && peek == '&') { in.skip(); addPosition(TokenType.LOGICAL_AND, in.getPosition()); }
 
@@ -164,6 +165,14 @@ public class Lexer {
                     }
                     break;
                 }
+                if(chars[0] == 'a') {
+                    if(chars[1] == 's') {
+                        addPosition(TokenType.KEYWORD_AS, end);
+                        return;
+                    }
+                    break;
+                }
+                // if keyword
                 if(chars[0] == 'i' && chars[1] == 'f') {
                     addPosition(TokenType.KEYWORD_IF, end);
                     return;
@@ -208,6 +217,13 @@ public class Lexer {
                 if(chars[0] == 'b') {
                     if(chars[1] == 'y' && chars[2] == 't' && chars[3] == 'e') {
                         addPosition(TokenType.KEYWORD_BYTE, end);
+                        return;
+                    }
+                    break;
+                }
+                if(chars[0] == 'v') {
+                    if(chars[1] == 'o' && chars[2] == 'i' && chars[3] == 'd') {
+                        addPosition(TokenType.KEYWORD_VOID, end);
                         return;
                     }
                     break;
@@ -364,6 +380,14 @@ public class Lexer {
                 if(chars[0] == 'i' && chars[1] == 'm' && chars[2] == 'p' && chars[3] == 'l' && chars[4] == 'e'
                         && chars[5] == 'm' && chars[6] == 'e' && chars[7] == 'n' && chars[8] == 't' && chars[9] == 's') {
                     addPosition(TokenType.KEYWORD_IMPLEMENTS, end);
+                    return;
+                }
+                break;
+            case 11:
+                if(chars[0] == 'c' && chars[1] == 'o' && chars[2] == 'n' && chars[3] == 's' && chars[4] == 't'
+                        && chars[5] == 'r' && chars[6] == 'u' && chars[7] == 'c' && chars[8] == 't'
+                        && chars[9] == 'o' && chars[10] == 'r') {
+                    addPosition(TokenType.KEYWORD_CONSTRUCTOR, end);
                     return;
                 }
                 break;
